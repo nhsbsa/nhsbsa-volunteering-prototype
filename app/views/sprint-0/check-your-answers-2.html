@@ -1,0 +1,128 @@
+{% extends 'layout.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+  Check your answers - NHS Volunteering
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+
+      <h1 class="nhsuk-u-margin-top-4">
+        Check your answers
+      </h1>
+
+      <h2>
+        Personal details
+      </h2>
+
+      {{ summaryList({
+        rows: [
+        {
+          key: {
+            text: "Would you prefer to be placed in a face to face or behind the scenes role?"
+          },
+          value: {
+            text: "Face to face role"
+          },
+          actions: {
+            items: [
+              {
+                href: "/question-page-1a",
+                text: "Change",
+                visuallyHiddenText: "Face to face or behind the scenes"
+              }
+            ]
+          }
+        },
+
+        {
+            key: {
+              text: "Do you have any disabilities or special needs?"
+            },
+            value: {
+              text: "No"
+            },
+            actions: {
+              items: [
+                {
+                  href: "/question-page-1b",
+                  text: "Change",
+                  visuallyHiddenText: "disabilities"
+                }
+              ]
+            }
+          },
+          {
+            key: {
+              text: "How would you rate your digital competency?"
+            },
+            value: {
+              text: "4/5"
+            },
+            actions: {
+              items: [
+                {
+                  href: "/question-page-1c",
+                  text: "Change",
+                  visuallyHiddenText: "digital competency"
+                }
+              ]
+            }
+          },
+          {
+            key: {
+              text: "Which skills do you have"
+            },
+            value: {
+              html: "Skill 1<br>Skill 2<br>Skill 7"
+            },
+            actions: {
+              items: [
+                {
+                  href: "/question-page-1d",
+                  text: "Change",
+                  visuallyHiddenText: "skills"
+                }
+              ]
+            }
+          },
+          {
+            key: {
+              text: "What is your postcode?"
+            },
+            value: {
+              html: 'MK9 2NL'
+            },
+            actions: {
+              items: [
+                {
+                  href: "/question-page-1e",
+                  text: "Change",
+                  visuallyHiddenText: "postcode"
+                }
+              ]
+            }
+          }
+        ]
+      }) }}
+
+
+
+      <p>
+        blah
+      </p>
+
+      <p>
+        blah
+      </p>
+
+      <a href="/sprint-0/results-list-1" class="nhsuk-button">
+        Search
+      </a>
+
+    </div>
+  </div>
+{% endblock %}

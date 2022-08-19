@@ -1,0 +1,222 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Content page template - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Breadcrumb -->
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/sprint-0/nhsuk-homepage-1">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/level-one/?">Match me with the right role</a></li>
+    </ol>
+  </div>
+</nav>
+
+
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-full">
+
+      <h1>
+        Skills match results
+      </h1>
+
+
+<!--OPTION PLAYBACK-->
+<h3>
+  Search options
+  </h3>
+
+<!--flex container-->
+<style>
+/* (A) FLEX CONTAINER */
+.wrap-flex { display: flex; }
+
+/* (B) NOT IMPORTANT - COSMETICS */
+.wrap-flex > * {
+  width: 33%;
+  border: 1px solid black;
+  padding: 10px;
+}
+</style>
+
+<!-- (C) THE HTML -->
+<div class="wrap-flex">
+
+  <!--col 1-->
+  <div class="nhsuk-form-group">
+    <label class="nhsuk-label" for="select-1">
+      Role types
+    </label>
+    <select class="nhsuk-select" id="select-1" name="select-1">
+      <option value="0">- Select an option -</option>
+      <option value="1">Information desk support - Front of house</option>
+      <option value="2">Meeting and greeting - Front of house</option>
+      <option value="3">Refreshment or library trolley services - Front of house</option>
+      <option value="4">Hospital shops, cafes or libraries - Front of house</option>
+      <option value="5">Ambulance service volunteer - Patient and therapy support</option>
+      <option value="6">Befriender, visitor or companion for patients - Patient and therapy support</option>
+      <option value="7">Hospital/virtual research volunteer - Patient and therapy support</option>
+      <option value="8">Mealtimes volunteer - Patient and therapy support</option>
+      <option value="9">Patient transport and other driving support services - Patient and therapy support</option>
+      <option value="10">Peer support and other roles using lived experience - Patient and therapy support</option>
+      <option value="11">Pets or animals therapy - Patient and therapy support</option>
+      <option value="12">Providing support to people with dementia - Patient and therapy support</option>
+      <option value="13">Supporting clinical service delivery - Patient and therapy support</option>
+      <option value="14">Gardening - Recreational activities</option>
+      <option value="15" selected>Hospital radio and live entertainment - Recreational activities</option>
+      <option value="16">Patient entertainment activities and exercise - Recreational activities</option>
+      <option value="17">Admin or clerical support - Admin and volunteering support</option>
+      <option value="18">Patient experience, surveys, or feedback collection - Admin and volunteering support</option>
+    </select>
+  </div>
+
+    <!--col 2-->
+    <div class="nhsuk-form-group">
+    <label class="nhsuk-label" for="address-postcode">
+      Postcode
+    </label>
+    <input class="nhsuk-input nhsuk-input--width-10" id="address-postcode" name="address-postcode" type="text" value="HP2 4JN">
+    <!--col 2a-->
+    <div class="nhsuk-checkboxes">
+      <br>
+      <div class="nhsuk-checkboxes__item">
+        <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="email">
+        <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
+          Show me remote roles only
+        </label>
+      </div>
+  </div>
+  </div>
+
+   <!--col 3-->
+   <div class="nhsuk-form-group">
+     <label class="nhsuk-label" for="select-1">
+       Maximum radius
+     </label>
+     <select class="nhsuk-select" id="select-1" name="select-1">
+       <option value="0">- Select a radius -</option>
+       <option value="1">up to 1 mile</option>
+       <option value="2">up to 2 miles</option>
+       <option value="3">up to 5 miles</option>
+       <option value="4">up to 10 miles</option>
+       <option value="5" selected>up to 15 miles</option>
+       <option value="6">up to 20 miles</option>
+       <option value="7">up to 25 miles</option>
+       <option value="8">up to 30 miles</option>
+       <option value="9">up to 40 miles</option>
+       <option value="10">up to 50 miles</option>
+       <option value="11">50 miles +</option>
+     </select>
+   </div>
+
+   <!--col 4-->
+   <div class="nhsuk-form-group">
+       <label class="nhsuk-label" for="select-1">
+         Commitment level
+         </label>
+         <select class="nhsuk-select" id="select-1" name="select-1">
+         <option value="0">- Select a commitment level -</option>
+         <option value="1" selected>Part time (20 hours per week)</option>
+         <option value="2">Full time (20 hours per week)</option>
+         <option value="3">Flexable</option>
+         <option value="4">Less than part time (less than 20 hours)</option>
+         </select>
+           </div>
+
+     <!--col 5-->
+     <div class="nhsuk-form-group">
+     <button class="nhsuk-button nhsuk-button--secondary" type="submit">
+  Update search
+</button>
+
+</div>
+</div>
+
+
+<br>
+
+<!--SEARCH RESULTS-->
+      <h2>
+        (2) suitable roles near HP2 4JN
+      </h2>
+
+<!--result 1-->
+<div class="nhsuk-hint" id="contact-hint">
+  7.37 miles away
+</div>
+
+      <p> <a href="https://www.westhertshospitals.nhs.uk/joinourteam/volunteer.asp" target="_blank"> West Hertfordshire Hospitals NHS Trust (opens in new tab)</a></p>
+
+<!--included-->
+<ul>
+    <li> Hospital radio and live entertainment - Recreational activities</li>
+    <li> Part time (under 20 hours per week)</li>
+    <li> Remote roles available</li>
+    </ul>
+
+<!--Contact info 1-->
+      <h5>
+        Contact information
+        </h5>
+
+
+          <p>
+            <strong>Tel:</strong> 01923 244366
+<br>
+          <strong>Address:</strong> Trust Offices, Watford General Hospital, Vicarage Road, Watford, Hertfordshire, WD18 0HB
+        </p>
+
+
+<!--button to application-->
+<a href="/?" class="nhsuk-button" target="_blank">
+  Apply now
+</a>
+
+<hr>
+
+<!--result 2-->
+<div class="nhsuk-hint" id="contact-hint">
+  10.28 miles away
+</div>
+
+      <p> <a href="https://www.hpft.nhs.uk/get-involved/become-a-volunteer" target="_blank"> Hertfordshire Partnership University NHS Foundation Trust (opens in new tab)</a></p>
+
+<!--included-->
+  <ul>
+    <li> Hospital radio and live entertainment - Recreational activities</li>
+    <li> Part time (under 20 hours per week)</li>
+    <li> Remote roles available</li>
+    </ul>
+
+<!--Contact info 1-->
+      <h5>
+        Contact information
+        </h5>
+
+
+          <p>
+            <strong>Tel:</strong> 01707 253900
+<br>
+          <strong>Address:</strong> Hertfordshire Partnership University NHS Foundation Trust, Head Office, The Colonnades, Beaconsfield Road, Hatfield, Hertfordshire, AL10 8YE
+        </p>
+
+
+<!--button to application-->
+        <a href="/?" class="nhsuk-button" target="_blank">
+          Apply now
+        </a>
+
+<hr>
+
+
+    </div>
+
+  </div>
+{% endblock %}

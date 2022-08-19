@@ -1,0 +1,154 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Content page template - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    href: "/sprint-0/nhsuk-homepage-1",
+    text: "Home"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-full">
+
+      <h1>
+        Questionnaire results
+      </h1>
+
+
+<!--Question details-->
+      <details class="nhsuk-details">
+  <summary class="nhsuk-details__summary">
+    <span class="nhsuk-details__summary-text">
+      Questionnaire answers
+    </span>
+  </summary>
+
+  <div class="nhsuk-details__text">
+    <table class="nhsuk-table">
+  <caption class="nhsuk-table__caption"><a href="/check-your-answers-2">Change answers</a></caption>
+  <thead role="rowgroup" class="nhsuk-table__head">
+    <tr role="row">
+      <th role="columnheader" class="" scope="col">
+        Questions
+      </th>
+      <th role="columnheader" class="" scope="col">
+        Your answers
+      </th>
+    </tr>
+  </thead>
+  <tbody class="nhsuk-table__body">
+    <tr role="row" class="nhsuk-table__row">
+      <td class="nhsuk-table__cell">Would you prefer to be placed in a face to face or behind the scenes role?</td>
+      <td class="nhsuk-table__cell ">Face to face role</td>
+    </tr>
+    <tr role="row" class="nhsuk-table__row">
+      <td class="nhsuk-table__cell">Do you have any disabilities or special needs?</td>
+      <td class="nhsuk-table__cell ">No</td>
+    </tr>
+    <tr role="row" class="nhsuk-table__row">
+      <td class="nhsuk-table__cell">How would you rate your digital competency?</td>
+      <td class="nhsuk-table__cell ">4/5</td>
+    </tr>
+    <tr role="row" class="nhsuk-table__row">
+      <td class="nhsuk-table__cell">Which skills do you have?</td>
+      <td class="nhsuk-table__cell ">Skill 1<br>Skill 2<br>Skill 7</td>
+    </tr>
+    <tr role="row" class="nhsuk-table__row">
+      <td class="nhsuk-table__cell">What is your postcode?</td>
+      <td class="nhsuk-table__cell ">MK9 2NL</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+</details>
+
+<!--Start agin link-->
+<p>
+    <a href="/sprint-0/q-start-page-1">Start questionnaire again</a>
+</p>
+
+
+      <h2>
+        (2) suitable roles near MK9 2NL
+      </h2>
+
+<!--result 1-->
+<div class="nhsuk-hint" id="contact-hint">
+  1.61 miles away
+</div>
+
+      <p> <a href="https://www.mkuh.nhs.uk/working-at-mkuh/volunteering" target="_blank"> Milton Keynes University Hospital NHS Foundation Trust (opens in new tab)</a></p>
+
+<!--included-->
+<ul>
+    <li> Face to face roles</li>
+    <li> High digital competency</li>
+    <li> Skill 1</li>
+    <li> Skill 7</li>
+    </ul>
+
+<!--Contact info 1-->
+      <h5>
+        Contact information
+        </h5>
+
+
+          <p>
+            <strong>Tel:</strong> 01908 660033
+<br>
+          <strong>Address:</strong> Standing Way, Eaglestone, Milton Keynes, Buckinghamshire, MK6 5LD
+        </p>
+
+<!--button to application-->
+<a href="/?" class="nhsuk-button" target="_blank">
+  Apply now
+</a>
+
+<hr>
+
+<!--result 2-->
+<div class="nhsuk-hint" id="contact-hint">
+  16.95 miles away
+</div>
+
+      <p> <a href="https://www.buckshealthcare.nhs.uk/get-involved-2/volunteering" target="_blank"> Buckinghamshire Healthcare NHS Trust (opens in new tab)</a></p>
+
+<!--included-->
+<ul class="two">
+    <li> Face to face roles</li>
+    <li> High digital competency</li>
+    <li> Skill 1</li>
+    <li> Skill 2</li>
+    </ul>
+
+<!--Contact info 1-->
+      <h5>
+        Contact information
+        </h5>
+
+
+          <p>
+            <strong>Tel:</strong> 01296 315000
+<br>
+          <strong>Address:</strong> Executive Office, Hartwell Wing, Stoke Mandeville Hospital, Mandeville Road, Aylesbury, Buckinghamshire, HP21 8AL
+        </p>
+
+<!--button to application-->
+        <a href="/?" class="nhsuk-button" target="_blank">
+          Apply now
+        </a>
+
+<hr>
+
+
+    </div>
+
+  </div>
+{% endblock %}

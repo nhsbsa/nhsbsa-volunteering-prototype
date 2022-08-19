@@ -1,0 +1,116 @@
+{% extends 'layout.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block outerContent %}
+  {{ backLink({
+    "href": "/sprint-0/question-page-1c",
+    "text": "Back",
+    "classes": "nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <form action="/sprint-0/question-page-1e" method="post" class="form">
+
+  <!--Radios, conditionally reveal-->
+
+<div class="nhsuk-form-group">
+
+<fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
+<legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+  <h1 class="nhsuk-fieldset__heading">
+    Which skills do you have?
+  </h1>
+</legend>
+
+<div class="nhsuk-hint" id="contact-hint">
+  Question 4 of 5
+</div>
+
+<div class="nhsuk-hint" id="example-hint">
+  Select all options that are relevant to you.
+</div>
+
+<div class="nhsuk-checkboxes">
+
+  <div class="nhsuk-checkboxes__item">
+    <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="email">
+    <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
+      Skill 1
+    </label>
+  </div>
+
+  <div class="nhsuk-checkboxes__item">
+    <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="phone">
+    <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
+      Skill 2
+    </label>
+  </div>
+
+  <div class="nhsuk-checkboxes__item">
+    <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="text message">
+    <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
+      Skill 3
+    </label>
+  </div>
+
+  <div class="nhsuk-checkboxes__item">
+    <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="text message">
+    <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
+      Skill 4
+    </label>
+  </div>
+
+  <div class="nhsuk-checkboxes__item">
+    <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="text message">
+    <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
+      Skill 5
+    </label>
+  </div>
+
+  <div class="nhsuk-checkboxes__item">
+    <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="text message">
+    <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
+      Skill 6
+    </label>
+  </div>
+
+  <div class="nhsuk-checkboxes__item">
+    <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="text message">
+    <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
+      Skill 7
+    </label>
+  </div>
+
+  <div class="nhsuk-checkboxes__item">
+    <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="text message">
+    <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
+      Skill 8
+    </label>
+  </div>
+
+
+      <div>
+        </fieldset>
+
+</div>
+{{ button({
+"text": "Continue",
+"id": "btn_submit"
+}) }}
+
+
+
+
+</div>
+</div>
+
+{% endblock %}

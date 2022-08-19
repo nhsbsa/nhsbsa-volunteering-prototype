@@ -1,0 +1,51 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Start page template - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Breadcrumb -->
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/sprint-0/nhsuk-homepage-1">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/level-one/?">Exploring volunteering opportunities</a></li>
+    </ol>
+  </div>
+</nav>
+
+
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1>
+        Skills match journey
+      </h1>
+
+      <p>Use this service to:</p>
+
+      <ul>
+        <li>do something</li>
+        <li>update your name, address or other details</li>
+        <li>do something else</li>
+      </ul>
+
+      <p>The form takes around 1 minute to complete.</p>
+
+
+      <h2 class="nhsuk-heading-m">Before you start</h2>
+
+      <p>You can only use this service if you live in the UK.</p>
+
+      <a href="/sprint-0/form-page-1" class="nhsuk-button">
+        Start now
+      </a>
+
+    </div>
+
+  </div>
+{% endblock %}

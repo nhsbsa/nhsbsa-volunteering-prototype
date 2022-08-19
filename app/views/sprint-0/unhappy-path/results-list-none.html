@@ -1,0 +1,83 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Content page template - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    href: "/nhsuk-homepage-1",
+    text: "Home"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-full">
+
+      <h1>
+        Questionnaire results
+      </h1>
+
+
+<!--Question details-->
+      <details class="nhsuk-details">
+  <summary class="nhsuk-details__summary">
+    <span class="nhsuk-details__summary-text">
+      Questionnaire answers
+    </span>
+  </summary>
+
+  <div class="nhsuk-details__text">
+    <table class="nhsuk-table">
+  <caption class="nhsuk-table__caption"><a href="/check-your-answers-2">Change answers</a></caption>
+  <thead role="rowgroup" class="nhsuk-table__head">
+    <tr role="row">
+      <th role="columnheader" class="" scope="col">
+        Questions
+      </th>
+      <th role="columnheader" class="" scope="col">
+        Your answers
+      </th>
+    </tr>
+  </thead>
+  <tbody class="nhsuk-table__body">
+    <tr role="row" class="nhsuk-table__row">
+      <td class="nhsuk-table__cell">Would you prefer to be placed in a face to face or behind the scenes role?</td>
+      <td class="nhsuk-table__cell ">Face to face role</td>
+    </tr>
+    <tr role="row" class="nhsuk-table__row">
+      <td class="nhsuk-table__cell">Do you have any disabilities or special needs?</td>
+      <td class="nhsuk-table__cell ">No</td>
+    </tr>
+    <tr role="row" class="nhsuk-table__row">
+      <td class="nhsuk-table__cell">How would you rate your digital competency?</td>
+      <td class="nhsuk-table__cell ">4/5</td>
+    </tr>
+    <tr role="row" class="nhsuk-table__row">
+      <td class="nhsuk-table__cell">Which skills do you have?</td>
+      <td class="nhsuk-table__cell ">Skill 1<br>Skill 2<br>Skill 7</td>
+    </tr>
+    <tr role="row" class="nhsuk-table__row">
+      <td class="nhsuk-table__cell">What is your postcode?</td>
+      <td class="nhsuk-table__cell ">Show me remote roles only</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+</details>
+
+<!--Start agin link-->
+<p>
+    <a href="/sprint-0/q-start-page-1">Start questionnaire again</a>
+</p>
+
+
+      <h2>
+        (0) suitable roles near MK9 2NL
+      </h2>
+
+
+{% endblock %}

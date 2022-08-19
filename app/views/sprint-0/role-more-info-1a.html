@@ -1,0 +1,79 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Content page template - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Breadcrumb -->
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/sprint-0/nhsuk-homepage-1">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/sprint-0/guidance-home-1">Guidance</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/sprint-0/role-page-2">Exploring volunteering opportunities</a></li>
+    </ol>
+  </div>
+</nav>
+
+{% endblock %}
+
+{% block content %}
+<!-- Case study videos -->
+<section class="nhsuk-section">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-one-half app-section__content">
+        <div class="nhsuk-u-reading-width">
+          <h2>Front of house roles</h2>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <ul>
+          <li>Information desk support</li>
+          <li>Meeting and greeting</li>
+          <li>Refreshment or library trolley services</li>
+          <li>Hospital shops, cafes or libraries</li>
+         </ul>
+
+         <br>
+        <div class="nhsuk-action-link">
+          <a class="nhsuk-action-link__link" href="">
+            <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
+            </svg>
+            <span class="nhsuk-action-link__text">Find a front of house role for me</span>
+          </a>
+
+        <br>  
+        <!--CTA button-->
+          <a href="/sprint-0/form-page-1" class="nhsuk-button">
+          Find a front of house role for me
+          </a>
+
+        </div>
+      </div>
+
+
+      <div class="nhsuk-grid-column-one-half app-section__content">
+        <div class="nhsuk-card  nhsuk-card--clickable  ">
+          <img class="nhsuk-card__img" src="/images/nhsuk/homepage/020720_PHE_Barrington_5426_TRL3_CL.2e16d0ba.fill-720x405.jpg" alt="">
+          <div class="nhsuk-card__content">
+            <h3 class="nhsuk-card__heading"><a class="nhsuk-card__link" href="">
+        Front of house roles - video case study</a></h3>
+            <p class="nhsuk-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </div>  
+    </div>
+
+   
+
+
+  </div>
+{% endblock %}

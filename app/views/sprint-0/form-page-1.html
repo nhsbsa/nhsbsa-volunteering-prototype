@@ -1,0 +1,129 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Blank template - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+
+<!-- Breadcrumb -->
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/sprint-0/nhsuk-homepage-1">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/level-one/?">Match me with the right role</a></li>
+    </ol>
+  </div>
+</nav>
+
+
+{% endblock %}
+
+
+{% block content %}
+        <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-two-thirds">
+
+          <form action="/sprint-0/results-list-2" method="post" class="form">
+
+            <h1>
+              Skill match form
+            </h1>
+
+            <p>blah blah blah:</p>
+
+<!-- Dropdown 1 -->
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="select-1">
+          Role types
+        </label>
+        <select class="nhsuk-select" id="select-1" name="select-1">
+          <option value="0" selected>- Select an option -</option>
+          <option value="1">Information desk support - Front of house</option>
+          <option value="2">Meeting and greeting - Front of house</option>
+          <option value="3">Refreshment or library trolley services - Front of house</option>
+          <option value="4">Hospital shops, cafes or libraries - Front of house</option>
+          <option value="5">Ambulance service volunteer - Patient and therapy support</option>
+          <option value="6">Befriender, visitor or companion for patients - Patient and therapy support</option>
+          <option value="7">Hospital/virtual research volunteer - Patient and therapy support</option>
+          <option value="8">Mealtimes volunteer - Patient and therapy support</option>
+          <option value="9">Patient transport and other driving support services - Patient and therapy support</option>
+          <option value="10">Peer support and other roles using lived experience - Patient and therapy support</option>
+          <option value="11">Pets or animals therapy - Patient and therapy support</option>
+          <option value="12">Providing support to people with dementia - Patient and therapy support</option>
+          <option value="13">Supporting clinical service delivery - Patient and therapy support</option>
+          <option value="14">Gardening - Recreational activities</option>
+          <option value="15">Hospital radio and live entertainment - Recreational activities</option>
+          <option value="16">Patient entertainment activities and exercise - Recreational activities</option>
+          <option value="17">Admin or clerical support - Admin and volunteering support</option>
+          <option value="18">Patient experience, surveys, or feedback collection - Admin and volunteering support</option>
+        </select>
+      </div>
+
+<br>
+<!--Postcode-->
+      <div class="nhsuk-form-group">
+      <label class="nhsuk-label" for="address-postcode">
+        Postcode
+      </label>
+      <input class="nhsuk-input nhsuk-input--width-10" id="address-postcode" name="address-postcode" type="text">
+    </div>
+
+<!--remote checkbox-->
+        <div class="nhsuk-checkboxes">
+
+          <div class="nhsuk-checkboxes__item">
+            <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="email">
+            <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
+              Show me remote roles only
+            </label>
+          </div>
+
+<br>
+<!-- Dropdown 2 -->
+                <div class="nhsuk-form-group">
+                  <label class="nhsuk-label" for="select-1">
+                    Maximum radius
+                  </label>
+                  <select class="nhsuk-select" id="select-1" name="select-1">
+                    <option value="0" selected>- Select a radius -</option>
+                    <option value="1">up to 1 mile</option>
+                    <option value="2">up to 2 miles</option>
+                    <option value="3">up to 5 miles</option>
+                    <option value="4">up to 10 miles</option>
+                    <option value="5">up to 15 miles</option>
+                    <option value="6">up to 20 miles</option>
+                    <option value="7">up to 25 miles</option>
+                    <option value="8">up to 30 miles</option>
+                    <option value="9">up to 40 miles</option>
+                    <option value="10">up to 50 miles</option>
+                    <option value="11">50 miles +</option>
+                  </select>
+                </div>
+
+<br>
+<!-- Dropdown 3 -->
+          <div class="nhsuk-form-group">
+              <label class="nhsuk-label" for="select-1">
+                Commitment level
+                </label>
+                <select class="nhsuk-select" id="select-1" name="select-1">
+                <option value="0" selected>- Select a commitment level -</option>
+                <option value="1">Part time (20 hours per week)</option>
+                <option value="2">Full time (20 hours per week)</option>
+                <option value="3">Flexable</option>
+                <option value="4">Less than part time (less than 20 hours)</option>
+                </select>
+                  </div>
+
+    </div>
+
+<br>
+
+    {{ button({
+    "text": "Show my matches",
+    "id": "btn_submit"
+    }) }}
+
+  </div>
+{% endblock %}

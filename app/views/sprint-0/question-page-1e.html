@@ -1,0 +1,78 @@
+{% extends 'layout.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block outerContent %}
+  {{ backLink({
+    "href": "/sprint-0/question-page-1d",
+    "text": "Back",
+    "classes": "nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <form action="/sprint-0/check-your-answers-2" method="post" class="form">
+
+  <!--Radios, conditionally reveal-->
+  <fieldset class="nhsuk-fieldset">
+    <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+      <h1 class="nhsuk-fieldset__heading">
+        What is your postcode?
+      </h1>
+    </legend>
+
+    <div class="nhsuk-hint" id="contact-hint">
+      Question 5 of 5
+    </div>
+
+    <div class="nhsuk-form-group">
+    <label class="nhsuk-label" for="address-postcode">
+      Postcode
+    </label>
+    <input class="nhsuk-input nhsuk-input--width-10" id="address-postcode" name="address-postcode" type="text">
+  </div>
+
+<!--remote checkbox-->
+      <div class="nhsuk-checkboxes">
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="email">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
+            Show me remote roles only
+          </label>
+        </div>
+        <br>
+
+<!--alt adress route-->
+  <div>
+    <a href="#" class="nhsuk-link">Enter city, town or village instead</a>
+    </div>
+    <br>
+
+
+
+
+    <div>
+      </fieldset>
+
+
+        <div>
+        {{ button({
+          "text": "Continue",
+          "id": "btn_submit"
+        }) }}
+
+
+
+
+    </div>
+  </div>
+
+{% endblock %}
