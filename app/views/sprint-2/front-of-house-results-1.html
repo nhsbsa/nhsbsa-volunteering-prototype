@@ -1,0 +1,241 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Content page template - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Breadcrumb -->
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/sprint-0/nhsuk-homepage-1">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/sprint-2/category-based-browse">Explore role categories</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/sprint-2/front-of-house-roles-b">Front of house introduction</a></li>
+    </ol>
+  </div>
+</nav>
+
+
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-full">
+
+      <h1>
+        Front of house results
+      </h1>
+
+
+<!--OPTION PLAYBACK-->
+<h3>
+  Search options
+  </h3>
+
+<!--flex container-->
+<style>
+/* (A) FLEX CONTAINER */
+.wrap-flex { display: flex; }
+
+/* (B) NOT IMPORTANT - COSMETICS */
+.wrap-flex > * {
+  width: 33%;
+  border: 1px solid black;
+  padding: 10px;
+}
+</style>
+
+<!-- (C) THE HTML -->
+<div class="wrap-flex">
+
+  <!--col 1-->
+  <div class="nhsuk-form-group">
+    <label class="nhsuk-label" for="select-1">
+      Front of house roles
+    </label>
+    <select class="nhsuk-select" id="select-1" name="select-1">
+      <option value="0">- Select an option -</option>
+      <option value="1">Information desk support - Front of house</option>
+      <option value="2">Meeting and greeting - Front of house</option>
+      <option value="3">Refreshment or library trolley services - Front of house</option>
+      <option value="4">Hospital shops, cafes or libraries - Front of house</option>
+    </select>
+  </div>
+
+    <!--col 2-->
+    <div class="nhsuk-form-group">
+    <label class="nhsuk-label" for="address-postcode">
+      Postcode
+    </label>
+    <input class="nhsuk-input nhsuk-input--width-10" id="address-postcode" name="address-postcode" type="text" value="">
+    <!--col 2a-->
+    <div class="nhsuk-checkboxes">
+      <br>
+      <div class="nhsuk-checkboxes__item">
+        <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="email">
+        <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
+          Show me remote roles only
+        </label>
+      </div>
+  </div>
+  </div>
+
+   <!--col 3-->
+   <div class="nhsuk-form-group">
+     <label class="nhsuk-label" for="select-1">
+       Maximum radius
+     </label>
+     <select class="nhsuk-select" id="select-1" name="select-1">
+       <option value="0">- Select a radius -</option>
+       <option value="1">up to 1 mile</option>
+       <option value="2">up to 2 miles</option>
+       <option value="3">up to 5 miles</option>
+       <option value="4">up to 10 miles</option>
+       <option value="5">up to 15 miles</option>
+       <option value="6">up to 20 miles</option>
+       <option value="7">up to 25 miles</option>
+       <option value="8">up to 30 miles</option>
+       <option value="9">up to 40 miles</option>
+       <option value="10">up to 50 miles</option>
+       <option value="11">50 miles +</option>
+     </select>
+   </div>
+
+   <!--col 4-->
+   <div class="nhsuk-form-group">
+       <label class="nhsuk-label" for="select-1">
+         Commitment level
+         </label>
+         <select class="nhsuk-select" id="select-1" name="select-1">
+         <option value="0">- Select a commitment level -</option>
+         <option value="1">Part time (20 hours per week)</option>
+         <option value="2">Full time (20 hours per week)</option>
+         <option value="3">Flexable</option>
+         <option value="4">Less than part time (less than 20 hours)</option>
+         </select>
+           </div>
+
+     <!--col 5-->
+     <div class="nhsuk-form-group">
+     <a href="/sprint-2/front-of-house-results-2" <button class="nhsuk-button nhsuk-button--primary" type="submit">
+  Search
+</button></a>
+
+</div>
+</div>
+
+
+<br>
+
+<!--SEARCH RESULTS-->
+      <h2>
+        (37) Front of house roles available
+      </h2>
+      <br>
+      
+<!--result 1-->
+
+      <h3> Front desk support at Ashford Hospital</h3>
+
+<!--included-->
+<ul>
+    <li> Information desk support - Front of house</li>
+    <li> Full time (40 hours per week)</li>
+    <li> Computer skills required</li>
+    <li> TW15 3AA</li>
+    <li> part of the <a href="https://www.ashfordstpeters.nhs.uk/become-a-volunteer" target="_blank">Ashford and St Peter's Hospitals NHS Foundation Trust (opens in new tab)</a></li>
+    </ul>
+
+<!--buttons-->        
+<a href="/sprint-2/job-spec-1"> <button class="nhsuk-button"> 
+  View role
+  </button></a>
+  
+  <a href="/sprint-2/role-saved-for-later" <button class="nhsuk-button nhsuk-button--secondary">
+    Save for later
+  </button></a>    
+
+
+
+<hr>
+
+<!--result 2-->
+<h3> Meeting and greeting at Bristol Royal Infirmary</h3>
+
+<!--included-->
+<ul>
+    <li> Meeting and greeting - Front of house</li>
+    <li> Part time (20 hours per week)</li>
+    <li> Computer skills required</li>
+    <li> BS2 8HW</li>
+    <li> part of the <a href="https://www.awp.nhs.uk/work-with-us/how-volunteer" target="_blank"> Avon and Wiltshire Mental Health Partnership NHS Trust (opens in new tab)</a></li>
+    </ul>
+
+<!--buttons-->        
+<a href="/sprint-2/job-spec-1"> <button class="nhsuk-button"> 
+  View role
+  </button></a>
+  
+  <a href="/" <button class="nhsuk-button nhsuk-button--secondary">
+    Save for later
+  </button></a>
+
+  <hr>
+
+ 
+<!--result 3-->
+<h3> Refreshments volunteer at Barking Hospital</h3>
+
+<!--included-->
+<ul>
+    <li> Refreshments - Front of house</li>
+    <li> Part time (20 hours per week)</li>
+    <li> Plenty of walking involved</li>
+    <li> IG11 9LX</li>
+    <li> part of the <a href="https://www.bhrhospitals.nhs.uk/volunteer" target="_blank"> Barking, Havering and Redbridge University Hospitals NHS Trust (opens in new tab)</a></li>
+    </ul>
+
+<!--buttons-->        
+<a href="/sprint-2/job-spec-1"> <button class="nhsuk-button"> 
+  View role
+  </button></a>
+  
+  <a href="/" <button class="nhsuk-button nhsuk-button--secondary">
+    Save for later
+  </button></a>
+
+  <hr> 
+
+
+<!--result 4-->
+<h3> Barrista at Birmingham Dental Hospital and School of Dentistry</h3>
+
+<!--included-->
+<ul>
+    <li> Shops, cafés and libraries - Front of house</li>
+    <li> Flexible hours</li>
+    <li> Computer skills required</li>
+    <li> B5 7EG</li>
+    <li> part of the <a href="https://www.bhamcommunity.nhs.uk/about-us/get-involved/volunteering" target="_blank"> Birmingham Community Healthcare NHS Foundation Trust (opens in new tab)</a></li>
+    </ul>
+
+<!--buttons-->        
+<a href="/sprint-2/job-spec-1"> <button class="nhsuk-button"> 
+  View role
+  </button></a>
+  
+  <a href="/" <button class="nhsuk-button nhsuk-button--secondary">
+    Save for later
+  </button></a>
+
+  <hr>
+
+
+
+
+    </div>
+
+  </div>
+{% endblock %}

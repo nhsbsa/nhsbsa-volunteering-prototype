@@ -1,0 +1,71 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Start page template - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+{{ breadcrumb({
+  href: "/",
+  text: "Home"
+}) }}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1>
+        Start application process
+      </h1>
+
+      <p>Use this service to:</p>
+
+      <ul>
+        <li>do something</li>
+        <li>update your name, address or other details</li>
+        <li>do something else</li>
+      </ul>
+
+      <p>Registering takes around 10 minutes.</p>
+
+
+  <!--Radios-->
+  <div class="nhsuk-form-group">
+
+    <fieldset class="nhsuk-fieldset">
+      <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+        <h2 class="nhsuk-heading-m">
+          Reuse previously stored personal data?
+        </h2>
+      </legend>
+  
+      <div class="nhsuk-radios">
+  
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="example-1" name="example" type="radio" value="yes">
+          <label class="nhsuk-label nhsuk-radios__label" for="example-1">
+            Yes
+          </label>
+        </div>
+  
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="no">
+          <label class="nhsuk-label nhsuk-radios__label" for="example-2">
+            No
+          </label>
+        </div>
+  
+      </div>
+    </fieldset>
+  
+  </div>
+
+      <a href="/sprint-2/application-form-1" class="nhsuk-button">
+        Start now
+      </a>
+
+    </div>
+
+  </div>
+{% endblock %}
