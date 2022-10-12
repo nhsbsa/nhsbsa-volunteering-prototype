@@ -1,0 +1,349 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Content page template - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+
+<!-- Breadcrumb -->
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/sprint-4/nhsuk-homepage-2">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/sprint-4/front-of-house-browse">Front of house roles</a></li>
+    </ol>
+  </div>
+</nav>
+
+
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-full">
+
+      <h1>
+        Search results
+      </h1>
+
+<div id="results-row" class="nhsuk-grid-row">
+<div class="nhsuk-grid-column-one-third">      
+
+
+<!--Keyword collapsable field-->  
+<details class="nhsuk-details nhsuk-expander"  nhsuk-polyfilled="true" id="nhsuk-details1">
+  <summary class="nhsuk-details__summary" role="button" aria-controls="details-content-2" aria-expanded="false" tabindex="0">
+  <span id="status-filter" class="nhsuk-details__summary-text">
+  Keyword
+  </span>
+  </summary>
+  <div class="nhsuk-details__text" id="details-content-2" aria-modal="true" aria-hidden="true">
+  <fieldset class="nhsuk-fieldset app-fieldset--custom-modifier">
+  <legend class="nhsuk-fieldset__legend nhsuk-u-visually-hidden">
+    Keyword
+  </legend>
+  
+    <div class="nhsuk-form-group">
+  
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="example">
+          Keyword
+        </label>
+        <input class="nhsuk-input" id="example" name="example" type="text">
+      </div>   
+    </details>
+
+
+
+<!--Role type collapsable filters-->     
+<details class="nhsuk-details nhsuk-expander" open="" nhsuk-polyfilled="true" id="nhsuk-details0">
+<summary class="nhsuk-details__summary" role="button" aria-controls="details-content-0" aria-expanded="true" tabindex="0">
+<span id="role-filter" class="nhsuk-details__summary-text">
+Role types
+</span>
+</summary>
+<div class="nhsuk-details__text" id="details-content-0" aria-modal="true" aria-hidden="false">
+<fieldset class="nhsuk-fieldset app-fieldset--custom-modifier">
+<legend class="nhsuk-fieldset__legend nhsuk-u-visually-hidden">
+  Role types
+</legend>
+<div class="nhsuk-checkboxes">
+  <div class="nhsuk-checkboxes__item">
+    <input class="nhsuk-checkboxes__input" id="superuser" name="roles[]" type="checkbox" value="ROLE_SUPER_USER" checked="" tabindex="-1">
+    <label class="nhsuk-label nhsuk-checkboxes__label" for="superuser">
+      Front of house roles
+    </label>
+  </div>
+  <div class="nhsuk-checkboxes__item">
+    <input class="nhsuk-checkboxes__input" id="tm" name="roles[]" type="checkbox" value="ROLE_TEAM_MANAGER" tabindex="-1">
+    <label class="nhsuk-label nhsuk-checkboxes__label" for="tm">
+      Patient and therapy support roles
+    </label>
+  </div>
+  <div class="nhsuk-checkboxes__item">
+    <input class="nhsuk-checkboxes__input" id="ra" name="roles[]" type="checkbox" value="ROLE_RECRUITMENT_ADMINISTRATOR" tabindex="-1">
+    <label class="nhsuk-label nhsuk-checkboxes__label" for="ra">
+      Recreational activities roles
+    </label>
+  </div>
+  <div class="nhsuk-checkboxes__item">
+    <input class="nhsuk-checkboxes__input" id="rm" name="roles[]" type="checkbox" value="ROLE_RECRUITING_MANAGER" tabindex="-1">
+    <label class="nhsuk-label nhsuk-checkboxes__label" for="rm">
+      Admin and volunteering support roles
+    </label>
+  </div>
+</div>
+</fieldset>
+</div>
+</details>
+
+
+<!--Location field and radios A-->
+<details class="nhsuk-details nhsuk-expander"  nhsuk-polyfilled="true" id="nhsuk-details1">
+<summary class="nhsuk-details__summary" role="button" aria-controls="details-content-2" aria-expanded="false" tabindex="0">
+<span id="status-filter" class="nhsuk-details__summary-text">
+Location A
+</span>
+</summary>
+<div class="nhsuk-details__text" id="details-content-2" aria-modal="true" aria-hidden="true">
+<fieldset class="nhsuk-fieldset app-fieldset--custom-modifier">
+<legend class="nhsuk-fieldset__legend nhsuk-u-visually-hidden">
+  Location
+</legend>
+
+  <div class="nhsuk-form-group">
+
+    <div class="nhsuk-form-group">
+      <label class="nhsuk-label" for="example">
+        Postcode
+      </label>
+      <input class="nhsuk-input" id="example" name="example" type="text">
+    </div>  
+
+    <div class="nhsuk-checkboxes__item">
+      <input class="nhsuk-checkboxes__input" id="rm" name="roles[]" type="checkbox" value="ROLE_RECRUITING_MANAGER" tabindex="-1">
+      <label class="nhsuk-label nhsuk-checkboxes__label" for="rm">
+        Remote roles only
+      </label>
+    </div>
+
+    <br>
+    <div class="nhsuk-radios">
+  
+      <div class="nhsuk-hint" id="contact-hint">
+        Maximum radius
+      </div>
+
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" id="example-hints-1" name="example-hints" type="radio" value="up-to-5-miles">
+        <label class="nhsuk-label nhsuk-radios__label" for="example-hints-1">
+          Up to 5 miles away from postcode
+        </label>
+      </div>
+
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" id="example-hints-2" name="example-hints" type="radio" value="up-to-10-miles">
+        <label class="nhsuk-label nhsuk-radios__label" for="example-hints-2">
+          Up to 10 miles away from postcode
+        </label>
+      </div>
+
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" id="example-hints-3" name="example-hints" type="radio" value="up-to-15-miles">
+        <label class="nhsuk-label nhsuk-radios__label" for="example-hints-3">
+          Up to 15 miles away from postcode
+        </label>
+      </div>
+
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" id="example-hints-3" name="example-hints" type="radio" value="up-to-20-miles">
+        <label class="nhsuk-label nhsuk-radios__label" for="example-hints-3">
+          Up to 20 miles away from postcode
+        </label>
+      </div>
+
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" id="example-hints-3" name="example-hints" type="radio" value="up-to-25-miles">
+        <label class="nhsuk-label nhsuk-radios__label" for="example-hints-3">
+          Up to 25 miles away from postcode
+        </label>
+      </div>
+
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" id="example-hints-3" name="example-hints" type="radio" value="up-to-30-miles">
+        <label class="nhsuk-label nhsuk-radios__label" for="example-hints-3">
+          Up to 30 miles away from postcode
+        </label>
+      </div>
+
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" id="example-hints-3" name="example-hints" type="radio" value="up-to-50-miles">
+        <label class="nhsuk-label nhsuk-radios__label" for="example-hints-3">
+          Up to 50 miles away from postcode
+        </label>
+      </div>
+
+    </div>
+  </div>
+</fieldset>
+</div>
+</details>
+
+<!--Location field and radios B-->
+<details class="nhsuk-details nhsuk-expander"  nhsuk-polyfilled="true" id="nhsuk-details1">
+<summary class="nhsuk-details__summary" role="button" aria-controls="details-content-2" aria-expanded="false" tabindex="0">
+<span id="status-filter" class="nhsuk-details__summary-text">
+Location B
+</span>
+</summary>
+<div class="nhsuk-details__text" id="details-content-2" aria-modal="true" aria-hidden="true">
+<fieldset class="nhsuk-fieldset app-fieldset--custom-modifier">
+<legend class="nhsuk-fieldset__legend nhsuk-u-visually-hidden">
+  Location
+</legend>
+
+  <div class="nhsuk-form-group">
+
+    <div class="nhsuk-form-group">
+      <label class="nhsuk-label" for="example">
+        Postcode
+      </label>
+      <input class="nhsuk-input" id="example" name="example" type="text">
+    </div>  
+
+    <div class="nhsuk-checkboxes__item">
+      <input class="nhsuk-checkboxes__input" id="rm" name="roles[]" type="checkbox" value="ROLE_RECRUITING_MANAGER" tabindex="-1">
+      <label class="nhsuk-label nhsuk-checkboxes__label" for="rm">
+        Remote roles only
+      </label>
+    </div>
+
+    <br>
+    <div class="nhsuk-radios">
+
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="select-1">
+          Maximum radius
+        </label>
+        <select class="nhsuk-select" id="select-1" name="select-1">
+          <option value="0">- set maximum radius -</option>
+          <option value="1">Up to 5 miles away</option>
+          <option value="2">Up to 10 miles away</option>
+          <option value="3">Up to 15 miles away</option>
+          <option value="4">Up to 20 miles away</option>
+          <option value="5">Up to 25 miles away</option>
+          <option value="6">Up to 30 miles away</option>
+          <option value="7">Up to 50 miles away</option>
+        </select>
+      </div>
+    </div>
+  </details>
+
+
+<!--Availibility-->
+<details class="nhsuk-details nhsuk-expander"  nhsuk-polyfilled="true" id="nhsuk-details1">
+  <summary class="nhsuk-details__summary" role="button" aria-controls="details-content-2" aria-expanded="false" tabindex="0">
+  <span id="status-filter" class="nhsuk-details__summary-text">
+    Availibility
+  </span>
+  </summary>
+  <div class="nhsuk-details__text" id="details-content-2" aria-modal="true" aria-hidden="true">
+  <fieldset class="nhsuk-fieldset app-fieldset--custom-modifier">
+  <legend class="nhsuk-fieldset__legend nhsuk-u-visually-hidden">
+    Availibility
+  </legend>
+
+
+        <div class="nhsuk-form-group">
+          <label class="nhsuk-label" for="select-1">
+            Working patterns
+          </label>
+          <select class="nhsuk-select" id="select-1" name="select-1">
+            <option value="0"selected>- set availibility -</option>
+            <option value="1">Flexible hours</option>
+            <option value="2">Part time (up to 20 hours)</option>
+            <option value="3">Full time (up to 40 hours)</option>
+            <option value="4">Other</option>
+          </select>
+    
+    </div>
+</fieldset>
+</details>
+
+
+
+<!--Filter buttons-->
+<div><button id="apply-filters" name="applyFilters" type="submit" class="nhsuk-button nhsuk-button--secondary" aria-label="Apply Filters" value="applyFilters">
+Apply filters
+</button>
+
+
+
+<button id="clear-filters" name="clearFilters" type="submit" class="button-link" aria-label="Clear Filters" value="clearFilters" role="link">
+Clear filters
+</button>
+
+</div>
+</div>
+
+
+<!--SEARCH RESULTS LIST-->
+
+  <div class="nhsuk-grid-column-two-thirds">
+
+<h2 id="results_count" class="nhsuk-heading-L">No results for Front of house roles</h2>
+<p>Recieve notifications when new opportunties become available</p>
+
+<div class="nhsuk-form-group">
+  <label class="nhsuk-label" for="example">
+    Email address
+  </label>
+  <input class="nhsuk-input" id="example" name="example" type="text">
+
+ <!--Email submit button--> 
+  <button class="nhsuk-button nhsuk-button--reverse" type="submit">
+    Submit email
+  </button>
+
+</div>
+
+
+<hr>
+
+
+<!--ALT OPPS SECTION-->
+
+
+
+<nav class="nhsuk-pagination" role="navigation" aria-label="Pagination">
+<ul class="nhsuk-list nhsuk-pagination__list">
+<li class="nhsuk-pagination-item--previous">
+
+</li>
+<li class="nhsuk-pagination-item--next">
+
+</li>
+</ul>
+</nav>
+
+
+
+</div>
+
+</div> 
+
+
+
+<br>
+
+
+
+
+
+
+    </div>
+
+  </div>
+{% endblock %}

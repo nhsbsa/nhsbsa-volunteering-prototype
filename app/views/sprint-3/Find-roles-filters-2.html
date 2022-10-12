@@ -10,8 +10,6 @@
   <div class="nhsuk-width-container">
     <ol class="nhsuk-breadcrumb__list">
       <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/sprint-0/nhsuk-homepage-1">Home</a></li>
-      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/sprint-2/category-based-browse">Explore role categories</a></li>
-      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/sprint-2/front-of-house-roles-b">Front of house introduction</a></li>
     </ol>
   </div>
 </nav>
@@ -25,7 +23,7 @@
     <div class="nhsuk-grid-column-full">
 
       <h1>
-        Front of house results
+        Find opportunties near me
       </h1>
 
 
@@ -42,7 +40,7 @@
 /* (B) NOT IMPORTANT - COSMETICS */
 .wrap-flex > * {
   width: 33%;
-  border: 1px solid black;
+  border: 0px solid black;
   padding: 10px;
 }
 </style>
@@ -61,6 +59,20 @@
       <option value="2">Meeting and greeting - Front of house</option>
       <option value="3">Refreshment or library trolley services - Front of house</option>
       <option value="4">Hospital shops, cafes or libraries - Front of house</option>
+      <option value="5">Ambulance service volunteer - Patient and therapy support</option>
+      <option value="6">Befriender, visitor or companion for patients - Patient and therapy support</option>
+      <option value="7">Hospital/virtual research volunteer - Patient and therapy support</option>
+      <option value="8">Mealtimes volunteer - Patient and therapy support</option>
+      <option value="9">Patient transport and other driving support services - Patient and therapy support</option>
+      <option value="10">Peer support and other roles using lived experience - Patient and therapy support</option>
+      <option value="11">Pets or animals therapy - Patient and therapy support</option>
+      <option value="12">Providing support to people with dementia - Patient and therapy support</option>
+      <option value="13">Supporting clinical service delivery - Patient and therapy support</option>
+      <option value="14">Gardening - Recreational activities</option>
+      <option value="15"selected>Hospital radio and live entertainment - Recreational activities</option>
+      <option value="16">Patient entertainment activities and exercise - Recreational activities</option>
+      <option value="17">Admin or clerical support - Admin and volunteering support</option>
+      <option value="18">Patient experience, surveys, or feedback collection - Admin and volunteering support</option>
     </select>
   </div>
 
@@ -69,16 +81,11 @@
     <label class="nhsuk-label" for="address-postcode">
       Postcode
     </label>
-    <input class="nhsuk-input nhsuk-input--width-10" id="address-postcode" name="address-postcode" type="text" value="">
+    <input class="nhsuk-input nhsuk-input--width-20" id="address-postcode" name="address-postcode" type="text" value="P0STC0D3">
     <!--col 2a-->
     <div class="nhsuk-checkboxes">
       <br>
-      <div class="nhsuk-checkboxes__item">
-        <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="email">
-        <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
-          Show me remote roles only
-        </label>
-      </div>
+      
   </div>
   </div>
 
@@ -93,7 +100,7 @@
        <option value="2">up to 2 miles</option>
        <option value="3">up to 5 miles</option>
        <option value="4">up to 10 miles</option>
-       <option value="5">up to 15 miles</option>
+       <option value="5"selected>up to 15 miles</option>
        <option value="6">up to 20 miles</option>
        <option value="7">up to 25 miles</option>
        <option value="8">up to 30 miles</option>
@@ -110,7 +117,7 @@
          </label>
          <select class="nhsuk-select" id="select-1" name="select-1">
          <option value="0">- Select a commitment level -</option>
-         <option value="1">Part time (20 hours per week)</option>
+         <option value="1"selected>Part time (20 hours per week)</option>
          <option value="2">Full time (20 hours per week)</option>
          <option value="3">Flexable</option>
          <option value="4">Less than part time (less than 20 hours)</option>
@@ -119,15 +126,80 @@
 
      <!--col 5-->
      <div class="nhsuk-form-group">
-     <a href="/sprint-2/front-of-house-results-2" <button class="nhsuk-button nhsuk-button--primary" type="submit">
+     <a href="/sprint-2/front-of-house-results-2" <button class="nhsuk-button nhsuk-button--secondary" type="submit">
   Search
 </button></a>
+     </div>
+     </div>
+
+
+
+<!--ADVANCE SEARCH OPTIONS-->
+<details class="nhsuk-details" open>
+  <summary class="nhsuk-details__summary" open>
+    <span class="nhsuk-details__summary-text" open>
+      Hide advanced search options
+    </span>
+    </summary>
+    
+<!--Keywords-->
+    <div class="nhsuk-form-group">
+      <br>
+      <label class="nhsuk-label" for="keywords">
+        <strong>Keywords</strong>
+      </label>
+      <input class="nhsuk-input nhsuk-input--width-20" id="address-postcode" name="address-postcode" type="text" value="Music">
+    </div>
+
+ <!--INCLUDE-->  
+ <form>
+
+  <div class="nhsuk-form-group">
+
+    
+
+    <label class="nhsuk-label" for="keywords">
+      <strong>Include</strong>
+    </label>
+
+      <div class="nhsuk-checkboxes">
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="contact" name="contact" type="checkbox" value="email">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="contact">
+            Plenty of walking
+          </label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="contact-2" name="contact" type="checkbox" value="phone">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-2">
+            Remote only roles
+          </label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="contact-3" name="contact" type="checkbox" value="text message" checked>
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-3">
+            Other
+          </label>
+        </div>
+
+      </div>
+    </fieldset>
+
+  </div>
+
+</form> 
+
+
+  </details>
 
 </div>
 </div>
 
 
-<br>
+<hr>
 
 <!--SEARCH RESULTS-->
       <h2>
