@@ -1,0 +1,405 @@
+{% extends 'layout.html' %}
+
+<!-- some custom css for the home page only -->
+{% set containerClasses = 'app-width-container--full' %}
+{% set mainClasses = 'app-main-wrapper--no-padding app-homepage' %}
+
+{% block pageTitle %}
+  The NHS website - NHS
+{% endblock %}
+
+{% block headCSS %}
+  <link href="/css/main.css" rel="stylesheet">
+  <link href="/css/nhsuk.css" rel="stylesheet">
+{% endblock %}
+
+<!-- NHS.UK header -->
+{% block header %}
+<header class="nhsuk-header" role="banner">
+  <div class="nhsuk-width-container nhsuk-header__container">
+    <div class="nhsuk-header__logo">
+      <a class="nhsuk-header__link" href="/" aria-label="NHS homepage">
+        <svg class="nhsuk-logo nhsuk-logo--white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 16">
+          <path fill="#fff" d="M0 0h40v16H0z"></path>
+          <path fill="#005eb8" d="M3.9 1.5h4.4l2.6 9h.1l1.8-9h3.3l-2.8 13H9l-2.7-9h-.1l-1.8 9H1.1M17.3 1.5h3.6l-1 4.9h4L25 1.5h3.5l-2.7 13h-3.5l1.1-5.6h-4.1l-1.2 5.6h-3.4M37.7 4.4c-.7-.3-1.6-.6-2.9-.6-1.4 0-2.5.2-2.5 1.3 0 1.8 5.1 1.2 5.1 5.1 0 3.6-3.3 4.5-6.4 4.5-1.3 0-2.9-.3-4-.7l.8-2.7c.7.4 2.1.7 3.2.7s2.8-.2 2.8-1.5c0-2.1-5.1-1.3-5.1-5 0-3.4 2.9-4.4 5.8-4.4 1.6 0 3.1.2 4 .6"></path>
+        </svg>
+      </a>
+    </div>
+    <div class="nhsuk-header__content" id="content-header">
+      <div class="nhsuk-header__menu">
+        <button class="nhsuk-header__menu-toggle" id="toggle-menu" aria-controls="header-navigation" aria-expanded="false">Menu</button>
+      </div>
+      <div class="nhsuk-header__search">
+        <div class="nhsuk-header__search-wrap beta-header__search-wrap js-show" id="wrap-search">
+          <form class="nhsuk-header__search-form beta-header__search-form" id="search" action="https://www.nhs.uk/search/" method="get" role="search">
+            <label class="nhsuk-u-visually-hidden" for="search-field">Search the NHS website</label>
+            <div class="autocomplete-container" id="autocomplete-container"></div>
+            <input class="nhsuk-search__input" id="search-field" name="q" type="search" placeholder="Search" autocomplete="off" >
+            <button class="nhsuk-search__submit beta-search__submit" type="submit">
+              <svg class="nhsuk-icon nhsuk-icon__search beta-icon__search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M19.71 18.29l-4.11-4.1a7 7 0 1 0-1.41 1.41l4.1 4.11a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42zM5 10a5 5 0 1 1 5 5 5 5 0 0 1-5-5z"></path>
+              </svg>
+              <span class="nhsuk-u-visually-hidden">Search</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="nhsuk-header__navigation" id="header-navigation" role="navigation" aria-label="Primary navigation" aria-labelledby="label-navigation">
+    <div class="nhsuk-width-container">
+      <p class="nhsuk-header__navigation-title"><span id="label-navigation">Menu</span>
+        <button class="nhsuk-header__navigation-close" id="close-menu">
+          <svg class="nhsuk-icon nhsuk-icon__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M13.41 12l5.3-5.29a1 1 0 1 0-1.42-1.42L12 10.59l-5.29-5.3a1 1 0 0 0-1.42 1.42l5.3 5.29-5.3 5.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l5.29-5.3 5.29 5.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z"></path>
+          </svg>
+          <span class="nhsuk-u-visually-hidden">Close menu</span>
+        </button>
+      </p>
+      <ul class="nhsuk-header__navigation-list">
+        <li class="nhsuk-header__navigation-item nhsuk-header__navigation-item--for-mobile">
+          <a class="nhsuk-header__navigation-link" href="">
+            Home
+            <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+            </svg>
+          </a>
+        </li>
+        <li class="nhsuk-header__navigation-item">
+          <a class="nhsuk-header__navigation-link" href="#?">
+            ???
+            <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+            </svg>
+          </a>
+        </li>
+        <li class="nhsuk-header__navigation-item">
+          <a class="nhsuk-header__navigation-link" href="#?">
+            ???
+            <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+            </svg>
+          </a>
+        </li>
+        <li class="nhsuk-header__navigation-item">
+          <a class="nhsuk-header__navigation-link" href="#?">
+            ???
+            <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+            </svg>
+          </a>
+        </li>
+        <li class="nhsuk-header__navigation-item">
+          <a class="nhsuk-header__navigation-link" href="#?">
+            ???
+            <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+            </svg>
+          </a>
+        </li>
+        <li class="nhsuk-header__navigation-item">
+          <a class="nhsuk-header__navigation-link" href="#?">
+            ???
+            <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+{% endblock %}
+
+{% block beforeContent %}
+
+{% endblock %}
+
+
+<!-- Homepage content -->
+{% block content %}
+
+<!-- hero image and "We're here for you" content -->
+<section class="nhsuk-hero nhsuk-hero--image nhsuk-hero--image-description">
+    <script>
+      function randomImage() {
+          var images =[
+            "/images/nhsuk/homepage/IS_0818_homepage_hero_2_831416400.width-1000.jpg",
+            "/images/nhsuk/homepage/IS_0818_homepage_hero_3_913783962.width-1000.jpg",
+            "/images/nhsuk/homepage/AS_0818_homepage_hero_4_169974765.width-1000.jpg",
+            "/images/nhsuk/homepage/A_0818_homepage_hero_5_KRK6T6.width-1000.jpg",
+            "/images/nhsuk/homepage/S_0818_homepage_hero_1_F0147446.width-1000.jpg",
+          ];
+          var size = images.length;
+          var x = Math.floor(size * Math.random());
+          var element = document.getElementsByClassName('nhsuk-hero--image');
+          if (element.length > 0) {
+              element[0].style["background-image"] = "url(" + images[x] + ")";
+          }
+      }
+      document.addEventListener("DOMContentLoaded", randomImage);
+  </script>
+  <div class="nhsuk-hero__overlay">
+    <div class="nhsuk-width-container">
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-two-thirds">
+          <div class="nhsuk-hero-content">
+            <h2 class="nhsuk-u-margin-bottom-3">In England, 78,000 people volunteer within the NHS</h2>
+            <p class="nhsuk-body-m nhsuk-u-margin-bottom-0">NHS volunteers have a huge impact on the quality of healthcare delivered by supporting staff in those areas where they would be more limited.</p>
+            <span class="nhsuk-hero__arrow" aria-hidden="true"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<br><br>
+<section class="nhsuk-section">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+    <h2>Find a role for you</h2>  
+  
+
+ <!-- Browse role types -->
+      <div class="nhsuk-grid-column-one-third app-section__content">
+        <div class="nhsuk-u-reading-width">
+          <h3>Browse role types</h3>
+          <p>There are many ways you can help. Find out what the different roles are and what they entail</p>
+        </div>
+        <ul class="app-list-signage nhsuk-list-links--one-column">
+          <li>
+            <a href="/sprint-4/front-of-house-browse">
+              <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+              </svg>
+              Front of house
+            </a>
+          </li>
+          <li>
+            <a href="/sprint-4/patient-therapy-support-browse">
+              <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+              </svg>
+              Patient and therapy support
+            </a>
+          </li>
+          <li>
+            <a href="/sprint-4/recreational-activities-browse">
+              <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+              </svg>
+              Recreational activities
+            </a>
+          </li>
+          <li>
+            <a href="/sprint-4/admin-volunteering-support-browse">
+              <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+              </svg>
+              Admin and volunteering coordination support
+            </a>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- Search using keywords -->
+      <div class="nhsuk-grid-column-one-third app-section__content">
+        <div class="nhsuk-form-group">
+        <h3>Search using keywords</h3>
+        <p>Enter keywords, trust or hospital name or anything else relevant to your search</p></div>
+        <div><input class="nhsuk-input" id="example" name="example" type="text">
+          
+          <div><a href="/sprint-4/results-page-keywords" class="nhsuk-button">
+            Search
+          </a>
+        </div>
+        </div>
+      </div>
+
+
+      <!-- Search by postcode -->
+      <section>
+        <div class="nhsuk-grid-column-one-third app-section__content">
+      <div class="nhsuk-form-group">
+        <h3>Search by postcode</h3>
+        <p>Enter a postcode and further define the search area by setting a maximum radius</p></div>
+          <div><input class="nhsuk-input" id="example" name="example" type="text">
+          
+            <select class="nhsuk-select" id="select-1" name="select-1">
+              <option value="1"selected>- set maximum radius -</option>
+              <option value="2">Up to 5 miles</option>
+              <option value="3">Up to 10 miles</option>
+              <option value="4">Up to 15 miles</option>
+              <option value="5">Up to 20 miles</option>
+              <option value="6">Up to 25 miles</option>
+              <option value="7">Up to 30 miles</option>
+            </select>
+          </div>
+          
+          <div><a href="/sprint-4/results-page-postcode" class="nhsuk-button">
+            Search
+          </a>
+        </div>
+        </div>
+      
+    
+
+<!-- NHS Services -->
+      <div class="nhsuk-grid-column-full app-section__content">
+        <div class="nhsuk-u-reading-width">
+          
+          <h3>NHS services</h3>
+          <p class="app-section__description">There are volunteering opportunities across all NHS services. Select one that you are interested in to find out what is available</p>
+        </div>
+        <ul class="app-list-signage app-list-signage--two-columns">
+          <li>
+            <a href="">
+              <svg class="nhsuk-icon nhsuk-icon__chevron-right_white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+              </svg>
+              Mental health care
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+              </svg>
+              Hospital services
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+              </svg>
+              Ambulance
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+              </svg>
+              Community care
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+              </svg>
+              Acute care
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+              </svg>
+              GP surgery
+            </a>
+          </li>
+        </ul>
+        
+        </div>
+      </div>
+    </div>
+  
+</section>
+
+
+
+<!-- Intro content -->
+<section class="nhsuk-section">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full app-section__content">
+        <div class="nhsuk-u-reading-width">
+          <h2 class="none" id="Introduction">Introduction</h2>
+          <p> Welcome and thank you for your interest in volunteering with the NHS in England.
+
+<p>Volunteering with the NHS is an excellent opportunity to help your own community. It is a rewarding way to dedicate your time to a cause you care about.</p>
+
+<p>You can use your life, work experience and knowledge to support patients and staff. Volunteering with the NHS can also give you the skills you need in your own life and career.</p>
+        </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Case study videos -->
+<section class="nhsuk-section">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-one-half app-section__content">
+        <div class="nhsuk-u-reading-width">
+          <h2>What’s it like to be an NHS Volunteer?</h2>
+        </div>
+        <p>As an NHS volunteer, you get to make a difference on the experience of patients and their families. Medical staff also very much value the contribution that volunteers can make to the delivery of high-quality care.</p>
+
+        <p>You will you be doing something really worthwhile, whilst meeting new people and gaining valuable experience.</p>
+          
+        <p>Volunteering with the NHS is more than complementing the work of staff and providing a friendly and personal atmosphere. It can improve your job prospects  and help you increase your confidence.</p>
+
+    <!--CTA-->      
+          <div><a href="/sprint-4/?" class="nhsuk-button">
+            Discover more stories
+          </a>
+        </div>
+
+<!--Media block-->        
+      </div>
+      <div class="nhsuk-grid-column-one-half app-section__content">
+        <div class="nhsuk-card  nhsuk-card--clickable  ">
+          <img class="nhsuk-card__img" src="/images/nhsuk/homepage/020720_PHE_Barrington_5426_TRL3_CL.2e16d0ba.fill-720x405.jpg" alt="">
+          <div class="nhsuk-card__content">
+            <h3 class="nhsuk-card__heading"><a class="nhsuk-card__link" href="">
+        Kickstart your volunteering</a></h3>
+            <p class="nhsuk-card__description">It&#x27;s never too late to get your health back on track. Eat well, move more and start losing weight with Better Health. Try our NHS weight loss plan to get you started.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+
+<!-- NHS.UK footer -->
+{% block footer %}
+<footer role="contentinfo">
+  <div class="nhsuk-footer" id="nhsuk-footer">
+    <div class="nhsuk-width-container">
+      <h2 class="nhsuk-u-visually-hidden">Support links</h2>
+      <ul class="nhsuk-footer__list nhsuk-footer__list--three-columns">
+        <li class="nhsuk-footer__list-item"><a href="" class="nhsuk-footer__list-item-link">NHS sites</a></li>
+        <li class="nhsuk-footer__list-item"><a href="" class="nhsuk-footer__list-item-link">NHS App</a></li>
+        <li class="nhsuk-footer__list-item"><a href="" class="nhsuk-footer__list-item-link">About us</a></li>
+        <li class="nhsuk-footer__list-item"><a href="" class="nhsuk-footer__list-item-link">Contact us</a></li>
+        <li class="nhsuk-footer__list-item"><a href="" class="nhsuk-footer__list-item-link">Profile editor login</a></li>
+        <li class="nhsuk-footer__list-item"><a href="" class="nhsuk-footer__list-item-link">Site map</a></li>
+        <li class="nhsuk-footer__list-item"><a href="" class="nhsuk-footer__list-item-link">Accessibility statement</a></li>
+        <li class="nhsuk-footer__list-item"><a href="" class="nhsuk-footer__list-item-link">Our policies</a></li>
+        <li class="nhsuk-footer__list-item"><a href="" class="nhsuk-footer__list-item-link">Cookies</a></li>
+      </ul>
+      <p class="nhsuk-footer__copyright">&copy; Crown copyright</p>
+    </div>
+  </div>
+</footer>
+{% endblock %}
+
+
+<!-- JavaScript hack to do nothing if search button or link href="" clicked -->
+{% block pageScripts %}
+<script>
+  $( document ).ready(function() {
+    $('a[href=""], button.nhsuk-search__submit').click(function(e) {
+      e.preventDefault();
+    });
+  });
+</script>
+{% endblock %}
