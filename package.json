@@ -1,7 +1,7 @@
 {
-  "name": "nhsuk-prototype-kit",
+  "name": "nhsuk-volunteering",
   "version": "4.8.0",
-  "description": "Rapidly create HTML prototypes of NHS websites and services.",
+  "description": "NHS volunteers have a huge impact on the quality of healthcare delivered by supporting staff in those areas where they would be more limited.",
   "main": "app.js",
   "scripts": {
     "build": "gulp build",

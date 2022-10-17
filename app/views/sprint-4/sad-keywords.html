@@ -11,7 +11,6 @@
   <div class="nhsuk-width-container">
     <ol class="nhsuk-breadcrumb__list">
       <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/sprint-4/nhsuk-homepage-2">Home</a></li>
-      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/sprint-4/front-of-house-browse">Front of house roles</a></li>
     </ol>
   </div>
 </nav>
@@ -33,7 +32,7 @@
 
 
 <!--Keyword collapsable field-->  
-<details class="nhsuk-details nhsuk-expander"  nhsuk-polyfilled="true" id="nhsuk-details1">
+<details class="nhsuk-details nhsuk-expander" open="" nhsuk-polyfilled="true" id="nhsuk-details1">
   <summary class="nhsuk-details__summary" role="button" aria-controls="details-content-2" aria-expanded="false" tabindex="0">
   <span id="status-filter" class="nhsuk-details__summary-text">
   Keyword
@@ -51,14 +50,14 @@
         <label class="nhsuk-label" for="example">
           Keyword
         </label>
-        <input class="nhsuk-input" id="example" name="example" type="text">
+        <input class="nhsuk-input" id="example" name="example" type="text" value="dementia">
       </div>   
     </details>
 
 
 
 <!--Role type collapsable filters-->     
-<details class="nhsuk-details nhsuk-expander" open="" nhsuk-polyfilled="true" id="nhsuk-details0">
+<details class="nhsuk-details nhsuk-expander" nhsuk-polyfilled="true" id="nhsuk-details0">
 <summary class="nhsuk-details__summary" role="button" aria-controls="details-content-0" aria-expanded="true" tabindex="0">
 <span id="role-filter" class="nhsuk-details__summary-text">
 Role types
@@ -71,7 +70,7 @@ Role types
 </legend>
 <div class="nhsuk-checkboxes">
   <div class="nhsuk-checkboxes__item">
-    <input class="nhsuk-checkboxes__input" id="superuser" name="roles[]" type="checkbox" value="ROLE_SUPER_USER" checked="" tabindex="-1">
+    <input class="nhsuk-checkboxes__input" id="superuser" name="roles[]" type="checkbox" value="ROLE_SUPER_USER" tabindex="-1">
     <label class="nhsuk-label nhsuk-checkboxes__label" for="superuser">
       Front of house roles
     </label>
@@ -101,7 +100,7 @@ Role types
 
 
 <!--Location field and radios A-->
-<details class="nhsuk-details nhsuk-expander"  nhsuk-polyfilled="true" id="nhsuk-details1">
+<details class="nhsuk-details nhsuk-expander" nhsuk-polyfilled="true" id="nhsuk-details1">
 <summary class="nhsuk-details__summary" role="button" aria-controls="details-content-2" aria-expanded="false" tabindex="0">
 <span id="status-filter" class="nhsuk-details__summary-text">
 Location A
@@ -228,7 +227,7 @@ Location B
           Maximum radius
         </label>
         <select class="nhsuk-select" id="select-1" name="select-1">
-          <option value="0"selected>- set maximum radius -</option>
+          <option value="0">- set maximum radius -</option>
           <option value="1">Up to 5 miles away</option>
           <option value="2">Up to 10 miles away</option>
           <option value="3">Up to 15 miles away</option>
@@ -272,60 +271,6 @@ Location B
 </fieldset>
 </details>
 
-<!--NHS services-->     
-<details class="nhsuk-details nhsuk-expander" nhsuk-polyfilled="true" id="nhsuk-details0">
-  <summary class="nhsuk-details__summary" role="button" aria-controls="details-content-0" aria-expanded="true" tabindex="0">
-  <span id="role-filter" class="nhsuk-details__summary-text">
-  NHS services
-  </span>
-  </summary>
-  <div class="nhsuk-details__text" id="details-content-0" aria-modal="true" aria-hidden="false">
-  <fieldset class="nhsuk-fieldset app-fieldset--custom-modifier">
-  <legend class="nhsuk-fieldset__legend nhsuk-u-visually-hidden">
-    NHS services
-  </legend>
-  <div class="nhsuk-checkboxes">
-    <div class="nhsuk-checkboxes__item">
-      <input class="nhsuk-checkboxes__input" id="superuser" name="roles[]" type="checkbox" value="Mental_health_care" tabindex="-1">
-      <label class="nhsuk-label nhsuk-checkboxes__label" for="superuser">
-        Mental health care
-      </label>
-    </div>
-    <div class="nhsuk-checkboxes__item">
-      <input class="nhsuk-checkboxes__input" id="tm" name="roles[]" type="checkbox" value="Hospital_services" tabindex="-1">
-      <label class="nhsuk-label nhsuk-checkboxes__label" for="tm">
-        Hospital services
-      </label>
-    </div>
-    <div class="nhsuk-checkboxes__item">
-      <input class="nhsuk-checkboxes__input" id="ra" name="roles[]" type="checkbox" value="Ambulance" tabindex="-1">
-      <label class="nhsuk-label nhsuk-checkboxes__label" for="ra">
-        Ambulance
-      </label>
-    </div>
-    <div class="nhsuk-checkboxes__item">
-      <input class="nhsuk-checkboxes__input" id="rm" name="roles[]" type="checkbox" value="Community_care" tabindex="-1">
-      <label class="nhsuk-label nhsuk-checkboxes__label" for="rm">
-        Community care
-      </label>
-    </div>
-    <div class="nhsuk-checkboxes__item">
-      <input class="nhsuk-checkboxes__input" id="rm" name="roles[]" type="checkbox" value="Acute_care" tabindex="-1">
-      <label class="nhsuk-label nhsuk-checkboxes__label" for="rm">
-        Acute care
-      </label>
-    </div>
-    <div class="nhsuk-checkboxes__item">
-      <input class="nhsuk-checkboxes__input" id="rm" name="roles[]" type="checkbox" value="GP_surgery" tabindex="-1">
-      <label class="nhsuk-label nhsuk-checkboxes__label" for="rm">
-        GP surgery
-      </label>
-    </div>
-  </div>
-  </fieldset>
-  </div>
-  </details>
-
 
 
 <!--Filter buttons-->
@@ -347,165 +292,26 @@ Clear filters
 
   <div class="nhsuk-grid-column-two-thirds">
 
-<h2 id="results_count" class="nhsuk-heading-m">Found 23 results for Front of house roles</h2>
-<hr>
-<noscript>
-<div class="nhsuk-form-group refresh">
-<button class="nhsuk-button nhsuk-button--secondary" type="submit" name="refresh" id="refresh">
-  Refresh
-</button>
+<h2 id="results_count" class="nhsuk-heading-L">No results for Dementia</h2>
+<p>Recieve notifications when new opportunties become available</p>
+
+<div class="nhsuk-form-group">
+  <label class="nhsuk-label" for="example">
+    Email address
+  </label>
+  <input class="nhsuk-input" id="example" name="example" type="text">
+
+ <!--Email submit button--> 
+  <button class="nhsuk-button nhsuk-button--reverse" type="submit">
+    Submit email
+  </button>
+
 </div>
-</noscript>
-
-<!--result 1-->
-<h3> Meeting and greeting at Ashford Hospital</h3>
-
-<!--included-->
-<ul>
-    <li> Meeting and greeting - Front of house</li>
-    <li> Full time (40 hours per week)</li>
-    <li> Computer skills required</li>
-    <li> P0STC0D3</li>
-    <li> part of the <a href="https://www.ashfordstpeters.nhs.uk/become-a-volunteer" target="_blank">Ashford and St Peter's Hospitals NHS Foundation Trust (opens in new tab)</a></li>
-    </ul>
-
-<!--buttons-->        
-<a href="/sprint-4/job-spec-2"> <button class="nhsuk-button"> 
-  View role
-  </button></a>
-  
-  <a href="/sprint-4/?" <button class="nhsuk-button nhsuk-button--secondary">
-    Save for later
-  </button></a>   
-
 
 
 <hr>
 
-<!--result 2-->
-<h3> Meeting and greeting at Ashford Hospital</h3>
 
-<!--included-->
-<ul>
-    <li> Meeting and greeting - Front of house</li>
-    <li> Full time (40 hours per week)</li>
-    <li> Computer skills required</li>
-    <li> P0STC0D3</li>
-    <li> part of the <a href="https://www.ashfordstpeters.nhs.uk/become-a-volunteer" target="_blank">Ashford and St Peter's Hospitals NHS Foundation Trust (opens in new tab)</a></li>
-    </ul>
-
-<!--buttons-->        
-<a href="/sprint-2/job-spec-1"> <button class="nhsuk-button"> 
-  View role
-  </button></a>
-  
-  <button class="nhsuk-button nhsuk-button--secondary" <a href="/sprint-2/saved-roles" type="submit">
-    Save for later</a>
-  </button>    
-
-
-
-<hr>
-
-<!--result 3-->
-<h3> Meeting and greeting at Ashford Hospital</h3>
-
-<!--included-->
-<ul>
-    <li> Meeting and greeting - Front of house</li>
-    <li> Full time (40 hours per week)</li>
-    <li> Computer skills required</li>
-    <li> P0STC0D3</li>
-    <li> part of the <a href="https://www.ashfordstpeters.nhs.uk/become-a-volunteer" target="_blank">Ashford and St Peter's Hospitals NHS Foundation Trust (opens in new tab)</a></li>
-    </ul>
-
-<!--buttons-->        
-<a href="/sprint-2/job-spec-1"> <button class="nhsuk-button"> 
-  View role
-  </button></a>
-  
-  <button class="nhsuk-button nhsuk-button--secondary" <a href="/sprint-2/saved-roles" type="submit">
-    Save for later</a>
-  </button>    
-
-
-
-<hr>
-
-<!--result 4-->
-<h3> Meeting and greeting at Ashford Hospital</h3>
-
-<!--included-->
-<ul>
-    <li> Meeting and greeting - Front of house</li>
-    <li> Full time (40 hours per week)</li>
-    <li> Computer skills required</li>
-    <li> P0STC0D3</li>
-    <li> part of the <a href="https://www.ashfordstpeters.nhs.uk/become-a-volunteer" target="_blank">Ashford and St Peter's Hospitals NHS Foundation Trust (opens in new tab)</a></li>
-    </ul>
-
-<!--buttons-->        
-<a href="/sprint-2/job-spec-1"> <button class="nhsuk-button"> 
-  View role
-  </button></a>
-  
-  <button class="nhsuk-button nhsuk-button--secondary" <a href="/sprint-2/saved-roles" type="submit">
-    Save for later</a>
-  </button>    
-
-
-
-<hr>
-
-<!--result 5-->
-<h3> Meeting and greeting at Ashford Hospital</h3>
-
-<!--included-->
-<ul>
-    <li> Meeting and greeting - Front of house</li>
-    <li> Full time (40 hours per week)</li>
-    <li> Computer skills required</li>
-    <li> P0STC0D3</li>
-    <li> part of the <a href="https://www.ashfordstpeters.nhs.uk/become-a-volunteer" target="_blank">Ashford and St Peter's Hospitals NHS Foundation Trust (opens in new tab)</a></li>
-    </ul>
-
-<!--buttons-->        
-<a href="/sprint-2/job-spec-1"> <button class="nhsuk-button"> 
-  View role
-  </button></a>
-  
-  <button class="nhsuk-button nhsuk-button--secondary" <a href="/sprint-2/saved-roles" type="submit">
-    Save for later</a>
-  </button>    
-
-
-
-<hr>
-
-<!--result 6-->
-<h3> Meeting and greeting at Ashford Hospital</h3>
-
-<!--included-->
-<ul>
-    <li> Meeting and greeting - Front of house</li>
-    <li> Full time (40 hours per week)</li>
-    <li> Computer skills required</li>
-    <li> P0STC0D3</li>
-    <li> part of the <a href="https://www.ashfordstpeters.nhs.uk/become-a-volunteer" target="_blank">Ashford and St Peter's Hospitals NHS Foundation Trust (opens in new tab)</a></li>
-    </ul>
-
-<!--buttons-->        
-<a href="/sprint-2/job-spec-1"> <button class="nhsuk-button"> 
-  View role
-  </button></a>
-  
-  <button class="nhsuk-button nhsuk-button--secondary" <a href="/sprint-2/saved-roles" type="submit">
-    Save for later</a>
-  </button>    
-
-
-
-<hr>
 
 
 <nav class="nhsuk-pagination" role="navigation" aria-label="Pagination">
