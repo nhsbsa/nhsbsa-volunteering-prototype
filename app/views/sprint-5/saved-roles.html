@@ -1,0 +1,78 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Start page template - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Breadcrumb -->
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/sprint-5/nhsuk-homepage-3">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/sprint-5/results-page-postcode">Search results</a></li>
+
+    </ol>
+  </div>
+</nav>
+{% endblock %}
+
+{% block content %}
+
+<!--Title left-->
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+
+<h1>
+Saved roles
+</h1>
+
+<table role="table" class="nhsuk-table-responsive">
+
+ <div class="nhsuk-hint" id="contact-hint">
+    Saved on 00 Mon 2022: 00:00
+  </div>  
+
+  <caption class="nhsuk-table__caption">Part time receptionist, Mental Health Service (Lister Hospital), Stevenage</caption>
+    <tr role="row">
+      <td role="columnheader" class="" scope="col">
+       <a href="/sprint-5/role-listing"> <button class="nhsuk-button"> 
+        View role
+        </button></a>
+      </td>
+      <td role="columnheader" class="" scope="col">
+        No longer available
+      <td role="columnheader" class="" scope="col">
+        <a href ="/"> Delete </a>
+      </td>  </tr>
+
+  
+
+      
+
+      
+
+      
+  
+</table>
+
+
+
+
+
+<br>
+
+
+
+
+
+
+
+
+</div>
+ 
+    </div>
+  </div>
+
+  </div>
+{% endblock %}

@@ -1,0 +1,90 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Start page template - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+
+      <div class="nhsuk-back-link">
+        <a class="nhsuk-back-link__link" href="/sprint-5/form-page-2">
+          <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
+            <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+          </svg>
+          Go back</a>
+      </div>   
+
+      <h2>
+        Reuse your details to apply
+      </h2>
+
+
+      <div class="nhsuk-hint" id="contact-hint">
+        Question 3 of X
+      </div>
+
+      <fieldset class="nhsuk-fieldset">
+        <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--m">
+          <h1 class="nhsuk-fieldset__heading">
+            What is your address?
+          </h1>
+        </legend>
+      
+        <div class="nhsuk-form-group">
+          <form class="form" action="/sprint-5/form-page-4" method="post">
+          <label class="nhsuk-label" for="address-line-1">
+            Building and street <span class="nhsuk-u-visually-hidden">line 1 of 2</span>
+          </label>
+          <input class="nhsuk-input" id="address-line-1" name="address-line-1" type="text" value="94 Victoria Street">
+        </div>
+      
+        <div class="nhsuk-form-group">
+          <label class="nhsuk-label" for="address-line-2">
+            <span class="nhsuk-u-visually-hidden">Building and street line 2 of 2</span>
+          </label>
+          <input class="nhsuk-input" id="address-line-2" name="address-line-2" type="text">
+        </div>
+      
+        <div class="nhsuk-form-group">
+          <label class="nhsuk-label" for="address-town">
+            Town or city
+          </label>
+          <input class="nhsuk-input nhsuk-u-width-two-thirds" id="address-town" name="address-town" type="text" value="Essex">
+        </div>
+      
+        <div class="nhsuk-form-group">
+          <label class="nhsuk-label" for="address-county">
+            County
+          </label>
+          <input class="nhsuk-input nhsuk-u-width-two-thirds" id="address-county" name="address-county" type="text" value="Southend-on-sea">
+        </div>
+      
+        <div class="nhsuk-form-group">
+          <label class="nhsuk-label" for="address-postcode">
+            Postcode
+          </label>
+          <input class="nhsuk-input nhsuk-input--width-10" id="address-postcode" name="address-postcode" type="text" value="SS25 5OC">
+        </div>
+      
+      </fieldset>
+      
+     
+      
+  
+  
+
+  <button class="nhsuk-button" type="submit">
+    Save and continue
+  </button>
+</form>
+
+
+    
+
+  </div>
+{% endblock %}
