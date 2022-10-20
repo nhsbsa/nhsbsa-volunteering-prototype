@@ -1,0 +1,78 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Confirmation page template - NHS.UK prototype kit
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+
+      <div class="nhsuk-card nhsuk-card--confirmation nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-4">
+
+        <div class="nhsuk-card__content">
+
+          <h1 class="nhsuk-card__title nhsuk-u-margin-bottom-4">
+            You have applied for Receptionist, part-time, Kent and Canterbury Hospital
+          </h1>
+
+          <p class="nhsuk-u-font-size-24">
+            Your reference number
+            <br>
+            <strong class="nhsuk-u-font-size-32">HDJ2123F</strong>
+          </p>
+          
+        </div>
+
+      </div>
+
+      <p>We have sent a confirmation email to <a href="/sprint-5/confirmation-email">example@email.com</a>.</p>
+
+      <h3>What happens next</h3>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+
+      <br>
+      <!--Save data?-->
+      <fieldset class="nhsuk-fieldset">
+        <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--s">
+          <h3 class="nhsuk-fieldset__heading">
+            Would you like to save your information?
+          </h3>
+        </legend>
+      
+      
+        <div class="nhsuk-hint">
+          If you save your information, you can reuse it during your next application
+        </div>
+      
+        <div class="nhsuk-form-group">
+          <form class="form" action="/sprint-5/?" method="post">
+      
+          <div class="nhsuk-radios">
+      
+            <div class="nhsuk-radios__item">
+              <input class="nhsuk-radios__input" id="example-hints-1" name="example-hints" type="radio" value="yes">
+              <label class="nhsuk-label nhsuk-radios__label" for="example-hints-1">
+                Yes, save my information
+              </label>
+            </div>
+      
+            <div class="nhsuk-radios__item">
+              <input class="nhsuk-radios__input" id="example-hints-2" name="example-hints" type="radio" value="no">
+              <label class="nhsuk-label nhsuk-radios__label" for="example-hints-2">
+                No, I do not want to save my information
+              </label>
+              </div>
+              </div>
+            </div>
+          </fieldset>
+
+              <!--Return CTA-->
+        <button class="nhsuk-button" type="submit">
+          Continue
+        </button>
+      </form>
+            
+{% endblock %}

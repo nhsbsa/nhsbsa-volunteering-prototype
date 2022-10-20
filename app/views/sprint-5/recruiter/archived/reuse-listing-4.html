@@ -1,0 +1,250 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Recruiter dashboard prototype
+{% endblock %}
+
+
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-full">
+
+      <!-- Add your content here -->
+
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-full">
+    
+          <div class="check-answers nhsuk-grid-column-two-thirds">
+            <h1 class="nhsuk-heading-l word-wrap" id="heading-container">
+              <span class="nhsuk-caption-l">Create a job advert</span>
+              <span id="heading">Check and save the job details</span>
+            </h1>
+      
+            <form class="form" action="/sprint-5/recruiter/reuse-listing-2-tasklist" method="post">
+              <input type="hidden" name="_csrf" value="Pit84dEQ-coek2bVgiLJiWCqXBY5FT5VBw2c">
+      
+              
+        
+          <dl class="nhsuk-summary-list">
+            <div class="nhsuk-summary-list__row">
+              <dt class="nhsuk-summary-list__key">
+                Where it's being advertised
+              </dt>
+              <dd class="nhsuk-summary-list__value" id="advertise_type">
+                Externally
+              </dd>
+              
+                <dd class="nhsuk-summary-list__actions">
+                  <a data-test="change-link" aria-label="Change link for advertise type" id="change_advertise_type" href="/vacancy/6625/vacancy-advertise-type/edit?from=eyJpdiI6ImI1N2U1MGRiNTUwYTU4NmIyYmNhMzFiNjQ3MjM4NzU3IiwiY29udGVudCI6ImQ5MjliYjNiYzZmMGZlNjQ1ZmU2MTYxNGVhNzlmOTgwZTdhYzg0MjA2OWJjOWM3MzQ2MmM0ZWNjZTUzNGQ1NmRmMDBkYzBlOGIxNTUifQ%3D%3D">Change</a>
+                </dd>
+              
+            </div>
+      
+            <div class="nhsuk-summary-list__row">
+              <dt class="nhsuk-summary-list__key">Is it COVID-19 related?</dt>
+              <dd class="nhsuk-summary-list__value" id="covid_related" data-test="covid_related">
+                No
+              </dd>
+              
+                <dd class="nhsuk-summary-list__actions" data-test="change_covid_related">
+                  <a data-test="change-link" aria-label="Change link for the is COVID-19 related indicator" id="change_covid_related" href="/vacancy/6625/covid-related/edit?from=eyJpdiI6ImI1N2U1MGRiNTUwYTU4NmIyYmNhMzFiNjQ3MjM4NzU3IiwiY29udGVudCI6ImQ5MjliYjNiYzZmMGZlNjQ1ZmU2MTYxNGVhNzlmOTgwZTdhYzg0MjA2OWJjOWM3MzQ2MmM0ZWNjZTUzNGQ1NmRmMDBkYzBlOGIxNTUifQ%3D%3D">Change</a>
+                </dd>
+              
+            </div>
+      
+            <div class="nhsuk-summary-list__row">
+              <dt class="nhsuk-summary-list__key">
+                Why it's being advertised
+              </dt>
+              <dd class="nhsuk-summary-list__value" id="reason_for_role">
+                
+                    This is a new job
+                
+              </dd>
+              
+                <dd class="nhsuk-summary-list__actions">
+                  <a data-test="change-link" aria-label="Change link for Reason for Role" id="change_reason_for_role" href="/vacancy/6625/reason-for-role/edit?from=eyJpdiI6ImI1N2U1MGRiNTUwYTU4NmIyYmNhMzFiNjQ3MjM4NzU3IiwiY29udGVudCI6ImQ5MjliYjNiYzZmMGZlNjQ1ZmU2MTYxNGVhNzlmOTgwZTdhYzg0MjA2OWJjOWM3MzQ2MmM0ZWNjZTUzNGQ1NmRmMDBkYzBlOGIxNTUifQ%3D%3D">Change</a>
+                </dd>
+              
+            </div>
+      
+            <div class="nhsuk-summary-list__row">
+              <dt class="nhsuk-summary-list__key">
+                Contract type
+              </dt>
+              <dd class="nhsuk-summary-list__value" id="contract_type">
+                Fixed-term
+              </dd>
+              
+                <dd class="nhsuk-summary-list__actions">
+                  <a data-test="change-link" aria-label="Change link for contract type" id="change_contract_type" href="/vacancy/6625/contract-type/edit?from=eyJpdiI6ImI1N2U1MGRiNTUwYTU4NmIyYmNhMzFiNjQ3MjM4NzU3IiwiY29udGVudCI6ImQ5MjliYjNiYzZmMGZlNjQ1ZmU2MTYxNGVhNzlmOTgwZTdhYzg0MjA2OWJjOWM3MzQ2MmM0ZWNjZTUzNGQ1NmRmMDBkYzBlOGIxNTUifQ%3D%3D">Change</a>
+                </dd>
+              
+            </div>
+      
+            
+              <div class="nhsuk-summary-list__row">
+                <dt class="nhsuk-summary-list__key">
+                  
+                    Contract duration
+                  
+                </dt>
+                <dd class="nhsuk-summary-list__value" id="contract_duration">
+                  18 months
+                </dd>
+                
+                  <dd class="nhsuk-summary-list__actions">
+                    <a data-test="change-link" aria-label="Change link for contract duration" id="change_contract_duration" href="/vacancy/6625/contract-duration/edit?from=eyJpdiI6ImI1N2U1MGRiNTUwYTU4NmIyYmNhMzFiNjQ3MjM4NzU3IiwiY29udGVudCI6ImQ5MjliYjNiYzZmMGZlNjQ1ZmU2MTYxNGVhNzlmOTgwZTdhYzg0MjA2OWJjOWM3MzQ2MmM0ZWNjZTUzNGQ1NmRmMDBkYzBlOGIxNTUifQ%3D%3D">Change</a>
+                  </dd>
+                
+              </div>
+            
+      
+            
+              <div class="nhsuk-summary-list__row">
+                <dt class="nhsuk-summary-list__key">
+                  Full-time equivalent (FTE)
+                </dt>
+                <dd class="nhsuk-summary-list__value" id="fte_value">
+                  3
+                </dd>
+                
+                  <dd class="nhsuk-summary-list__actions">
+                    <a data-test="change-link" aria-label="Change link for FTE" id="change_fte" href="/vacancy/6625/fte/edit?from=eyJpdiI6ImI1N2U1MGRiNTUwYTU4NmIyYmNhMzFiNjQ3MjM4NzU3IiwiY29udGVudCI6ImQ5MjliYjNiYzZmMGZlNjQ1ZmU2MTYxNGVhNzlmOTgwZTdhYzg0MjA2OWJjOWM3MzQ2MmM0ZWNjZTUzNGQ1NmRmMDBkYzBlOGIxNTUifQ%3D%3D">Change</a>
+                  </dd>
+                
+              </div>
+            
+      
+            <div class="nhsuk-summary-list__row">
+              <dt class="nhsuk-summary-list__key">
+                Working pattern
+              </dt>
+              <dd class="nhsuk-summary-list__value" id="working_pattern">Full-time, Part-time</dd>
+              
+                <dd class="nhsuk-summary-list__actions">
+                  <a data-test="change-link" aria-label="Change link for working pattern" id="change_working_pattern" href="/vacancy/6625/working-pattern/edit?from=eyJpdiI6ImI1N2U1MGRiNTUwYTU4NmIyYmNhMzFiNjQ3MjM4NzU3IiwiY29udGVudCI6ImQ5MjliYjNiYzZmMGZlNjQ1ZmU2MTYxNGVhNzlmOTgwZTdhYzg0MjA2OWJjOWM3MzQ2MmM0ZWNjZTUzNGQ1NmRmMDBkYzBlOGIxNTUifQ%3D%3D">Change</a>
+                </dd>
+              
+            </div>
+      
+            <div class="nhsuk-summary-list__row">
+              <dt class="nhsuk-summary-list__key">Payscheme</dt>
+              <dd class="nhsuk-summary-list__value" id="payscheme-type">
+                Agenda for Change
+              </dd>
+              
+                <dd class="nhsuk-summary-list__actions">
+                  
+                    <a data-test="change-link" id="change_payscheme_type" aria-label="Change link for payscheme type" href="/vacancy/6625/payscheme-type/edit?from=eyJpdiI6ImI1N2U1MGRiNTUwYTU4NmIyYmNhMzFiNjQ3MjM4NzU3IiwiY29udGVudCI6ImQ5MjliYjNiYzZmMGZlNjQ1ZmU2MTYxNGVhNzlmOTgwZTdhYzg0MjA2OWJjOWM3MzQ2MmM0ZWNjZTUzNGQ1NmRmMDBkYzBlOGIxNTUifQ%3D%3D">Change</a>
+                  
+                </dd>
+              
+            </div>
+      
+            
+              <div class="nhsuk-summary-list__row">
+                <dt class="nhsuk-summary-list__key">Band</dt>
+                <dd class="nhsuk-summary-list__value" id="payscheme-band">
+                  Band 4
+                </dd>
+                
+                  <dd class="nhsuk-summary-list__actions">
+                    
+                      <a data-test="change-link" id="change_payscheme_band" aria-label="Change link for payscheme band" href="/vacancy/6625/payscheme-band/edit?from=eyJpdiI6ImI1N2U1MGRiNTUwYTU4NmIyYmNhMzFiNjQ3MjM4NzU3IiwiY29udGVudCI6ImQ5MjliYjNiYzZmMGZlNjQ1ZmU2MTYxNGVhNzlmOTgwZTdhYzg0MjA2OWJjOWM3MzQ2MmM0ZWNjZTUzNGQ1NmRmMDBkYzBlOGIxNTUifQ%3D%3D">Change</a>
+                    
+                  </dd>
+                
+              </div>
+            
+      
+            <div class="nhsuk-summary-list__row">
+              <dt class="nhsuk-summary-list__key">Pay</dt>
+              <dd class="nhsuk-summary-list__value" id="salary">
+                
+      
+                
+                  £22549
+                  to
+                  £24882
+                  a year
+      
+                  
+                
+      
+                
+              </dd>
+              
+                <dd class="nhsuk-summary-list__actions">
+                  <a data-test="change-link" aria-label="Change link for salary type" id="change_salary" href="/vacancy/6625/salary-type/edit?from=eyJpdiI6ImI1N2U1MGRiNTUwYTU4NmIyYmNhMzFiNjQ3MjM4NzU3IiwiY29udGVudCI6ImQ5MjliYjNiYzZmMGZlNjQ1ZmU2MTYxNGVhNzlmOTgwZTdhYzg0MjA2OWJjOWM3MzQ2MmM0ZWNjZTUzNGQ1NmRmMDBkYzBlOGIxNTUifQ%3D%3D">Change</a>
+                </dd>
+              
+            </div>
+      
+            
+      
+            
+              <div class="nhsuk-summary-list__row">
+                <dt class="nhsuk-summary-list__key">
+                  Staff group
+                </dt>
+                <dd class="nhsuk-summary-list__value" id="staff_group">
+                  
+          
+              Administrative &amp; Clerical
+          
+      
+                </dd>
+                
+                  <dd class="nhsuk-summary-list__actions">
+                    <a data-test="change-link" aria-label="Change link for Staff group" id="change_staff_group" href="/vacancy/6625/staff-grouping/edit?from=eyJpdiI6ImI1N2U1MGRiNTUwYTU4NmIyYmNhMzFiNjQ3MjM4NzU3IiwiY29udGVudCI6ImQ5MjliYjNiYzZmMGZlNjQ1ZmU2MTYxNGVhNzlmOTgwZTdhYzg0MjA2OWJjOWM3MzQ2MmM0ZWNjZTUzNGQ1NmRmMDBkYzBlOGIxNTUifQ%3D%3D">Change</a>
+                  </dd>
+                
+              </div>
+            
+      
+            
+              <div class="nhsuk-summary-list__row">
+                <dt class="nhsuk-summary-list__key">
+                  Area of work
+                </dt>
+                <dd class="nhsuk-summary-list__value" id="area_of_work">
+                  Administration
+                </dd>
+                
+                  <dd class="nhsuk-summary-list__actions">
+                    <a data-test="change-link" aria-label="Change link for Area of work" id="change_area_of_work" href="/vacancy/6625/staff-grouping-area-of-work/edit?from=eyJpdiI6ImI1N2U1MGRiNTUwYTU4NmIyYmNhMzFiNjQ3MjM4NzU3IiwiY29udGVudCI6ImQ5MjliYjNiYzZmMGZlNjQ1ZmU2MTYxNGVhNzlmOTgwZTdhYzg0MjA2OWJjOWM3MzQ2MmM0ZWNjZTUzNGQ1NmRmMDBkYzBlOGIxNTUifQ%3D%3D">Change</a>
+                  </dd>
+                
+              </div>
+            
+      
+            <div class="nhsuk-summary-list__row">
+              <dt class="nhsuk-summary-list__key">
+                Application method
+              </dt>
+              <dd class="nhsuk-summary-list__value" id="application_method">
+                
+                  CV applications
+                
+              </dd>
+              
+                <dd class="nhsuk-summary-list__actions">
+                  <a data-test="change-link" aria-label="Change link for application method" href="/vacancy/6625/application-method/question/edit?from=eyJpdiI6ImI1N2U1MGRiNTUwYTU4NmIyYmNhMzFiNjQ3MjM4NzU3IiwiY29udGVudCI6ImQ5MjliYjNiYzZmMGZlNjQ1ZmU2MTYxNGVhNzlmOTgwZTdhYzg0MjA2OWJjOWM3MzQ2MmM0ZWNjZTUzNGQ1NmRmMDBkYzBlOGIxNTUifQ%3D%3D" id="change_application_method">Change</a>
+                </dd>
+              
+            </div>
+          </dl>
+        
+      
+      
+              
+                <div class="nhsuk-form-group">
+                  <input class="nhsuk-button" name="save_continue" type="submit" id="save_continue" value="Save and continue">
+                </div>
+              
+            </form>
+          </div>
+{% endblock %}

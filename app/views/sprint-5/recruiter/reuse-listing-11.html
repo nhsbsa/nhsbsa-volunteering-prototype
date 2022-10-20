@@ -1,0 +1,97 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Recruiter dashboard prototype
+{% endblock %}
+
+
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-full">
+
+      <!-- Add your content here -->
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-two-thirds">
+            <div class="nhsuk-back-link">
+  <a class="nhsuk-back-link__link" href="/vacancy/6625/task-review/job_and_pay/">
+  <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+  </svg>
+  Go back</a>
+</div>
+
+
+            
+
+            <h1 class="nhsuk-heading-l" id="heading-container">
+                <span class="nhsuk-caption-l nhsuk-caption--bottom">Reuse a role listing</span>
+                <span class="nhsuk-heading-l" id="heading">Where will you advertise this CVFlowOffline role? </span>
+            </h1>
+
+            
+                
+    
+        <p class="nhsuk-heading-s">
+            CVFlowOffline
+            <span class="status-box status-box-blue" aria-label="status for CVFlowOffline is DRAFT" id="status_DRAFT" role="status">
+                DRAFT
+            </span>
+        </p>
+    
+    
+        
+            <p id="reference_number" role="note" aria-label="Reference number: T5555-22-9759">Reference no: T5555-22-9759</p>
+        
+    
+
+            
+
+            <form class="form" action="/sprint-5/recruiter/reuse-listing-2-tasklist-2" method="post">
+                <input type="hidden" name="_csrf" value="o6PDhM5G-gTGGCjeEIODMub4gylRVajeH000">
+                <div class="nhsuk-form-group " id="">
+                    <fieldset class="nhsuk-fieldset app-fieldset--custom-modifier" id="">
+                    <legend class="nhsuk-fieldset__legend nhsuk-u-visually-hidden">
+                        Where will you advertise this CVFlowOffline role? 
+                    </legend>
+                        <div class="nhsuk-radios">
+                            
+                            <div class="nhsuk-radios__item">
+                                <input class="nhsuk-radios__input" id="advertiseType-1" type="radio" name="advertiseType" value="INTERNALLY">
+                                <label class="nhsuk-label nhsuk-radios__label" for="advertiseType-1">
+                                    Internally 
+                                </label>
+                                <span class="nhsuk-hint nhsuk-radios__hint" id="advertise-internally">
+                                    Advertised on your organisation's role board or by sharing the advert with someone. 
+                                </span>
+                            </div>
+                            <div class="nhsuk-radios__item">
+                                <input class="nhsuk-radios__input" id="advertiseType-2" type="radio" name="advertiseType" value="EXTERNALLY" checked="">
+                                <label class="nhsuk-label nhsuk-radios__label" for="advertiseType-2">
+                                    Externally 
+                                </label>
+                                <span class="nhsuk-hint nhsuk-radios__hint" id="advertise-externally">
+                                    Advertised on NHS Volunteering where anyone can apply. 
+                                </span>
+                            </div>
+                            <div class="nhsuk-radios__item">
+                                <input class="nhsuk-radios__input" id="advertiseType-3" type="radio" name="advertiseType" value="GROUP_INTERNAL">
+                                <label class="nhsuk-label nhsuk-radios__label" for="advertiseType-3">
+                                    Group internal 
+                                </label>
+                                <span class="nhsuk-hint nhsuk-radios__hint" id="advertise-groupInternal">
+                                    Advertised on your group's internal role board with other organisations. You can also share the advert or reference number with internal staff. 
+                                </span>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <br>
+                            
+                <input class="nhsuk-button" type="submit" name="save_continue" id="save_continue" value="Save and continue">
+                <input class="button-link" type="submit" id="save_come_back" name="save_come_back" value="Save and come back later">
+            </form>
+        </div>
+    </div>
+{% endblock %}

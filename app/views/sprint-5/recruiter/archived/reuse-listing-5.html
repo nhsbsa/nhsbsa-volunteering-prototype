@@ -1,0 +1,61 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Recruiter dashboard prototype
+{% endblock %}
+
+
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-full">
+
+      <!-- Add your content here -->
+      <div class="check-answers nhsuk-grid-column-two-thirds">
+        <h1 class="nhsuk-heading-l word-wrap" id="heading-container">
+          <span class="nhsuk-caption-l">Create a job advert</span>
+          <span id="heading">Check and save the location details</span>
+        </h1>
+  
+        <form class="form" action="/sprint-5/recruiter/reuse-listing-2-tasklist" method="post">
+          <input type="hidden" name="_csrf" value="1S3JwzJU-bcWLZsbsLYyWB_LaSawvBzpVcBQ">
+  
+          
+    
+      
+        <a aria-label="Change link for Employer Details" href="/vacancy/6625/job-locations-review?from=eyJpdiI6ImI1N2U1MGRiNTUwYTU4NmIyYmNhMzFiNjQ3MjM4NzU3IiwiY29udGVudCI6ImQ5MjliYjNiYzZmMGZlNjQ1ZmU2MTYxNGVhNzlmOTgwZTdhYzg0MjA2OWJjOWM3MzQ2MmM0OGNjZTQwYWMwNmFmYjNjOWYifQ%3D%3D" class="review-link" id="change_location_details">Change</a>
+      
+      <dl class="nhsuk-summary-list">
+        <div class="nhsuk-summary-list__row">
+          <dt class="nhsuk-summary-list__key">
+            Job location
+          </dt>
+          <dd class="nhsuk-summary-list__value" id="employer_address">
+            
+              Nhs B S A<br>
+            
+            Goldcrest Way<br>
+            
+            Newcastle Upon Tyne<br>
+            
+            NE15 8NY
+          </dd>
+          <dd class="nhsuk-summary-list__actions">
+          </dd>
+        </div>
+  
+        
+      </dl>
+    
+  
+  
+          
+            <div class="nhsuk-form-group">
+              <input class="nhsuk-button" name="save_continue" type="submit" id="save_continue" value="Save and continue">
+            </div>
+          
+        </form>
+      </div>
+      
+{% endblock %}
