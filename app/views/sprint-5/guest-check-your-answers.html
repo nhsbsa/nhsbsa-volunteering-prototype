@@ -1,0 +1,182 @@
+{% extends 'layout.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+  Check your answers template - NHS.UK prototype kit
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-back-link">
+      <a class="nhsuk-back-link__link" href="/sprint-5/empty-form-page-6">
+        <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
+          <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+        </svg>
+        Go back</a>
+    </div> 
+
+    
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+
+      <h1 class="nhsuk-u-margin-top-4">
+        Check your answers before sending your application
+      </h1>
+
+      <h2>
+        Personal details
+      </h2>
+
+      {{ summaryList({
+        rows: [
+          {
+            key: {
+              text: "What is your name?"
+            },
+            value: {
+              text: "Jon Doe"
+            },
+            actions: {
+              items: [
+                {
+                  href: "/sprint-5/form-page-1",
+                  text: "Change",
+                  visuallyHiddenText: "name"
+                }
+              ]
+            }
+          },
+        
+          {
+            key: {
+              text: "What is your date of birth?"
+            },
+            value: {
+              html: "10 October 1990"
+            },
+            actions: {
+              items: [
+                {
+                  href: "/sprint-5/form-page-2",
+                  text: "Change",
+                  visuallyHiddenText: "date of birth"
+                }
+              ]
+            }
+          },
+          
+          {
+            key: {
+              text: "What is your address?"
+            },
+            value: {
+              html: '94 Victoria Street<br>Essex<br>Southend-on-sea<br>SS25 5OC'
+            },
+            actions: {
+              items: [
+                {
+                  href: "/sprint-5/form-page-3",
+                  text: "Change",
+                  visuallyHiddenText: "home address"
+                }
+              ]
+            }
+            },
+        
+          {
+            key: {
+              text: "What is your contact information?"
+            },
+            value: {
+              html: '<strong>Telephone number</strong><br>00000000000<br><br><strong>Email address</strong><br>example.email@gmail.com<br><br><strong>Contact preference<br></strong>Contact me by email'
+            },
+            actions: {
+              items: [
+                {
+                  href: "/sprint-5/form-page-4",
+                  text: "Change",
+                  visuallyHiddenText: "contact information"
+                }
+                ]
+              }
+            }
+          ]
+        }) }}
+  
+
+      <h2>
+        Availability
+      </h2>
+
+      {{ summaryList({
+        rows: [
+          {
+          key: {
+            text: "What is your availability?"
+          },
+          value: {
+            html: '<strong>Mondays</strong><br>From 9am to 4pm<br><br><strong>Tuesdays</strong><br>From 8am to 10am'
+          },
+          actions: {
+            items: [
+              {
+                href: "/sprint-5/form-page-5b-add-another",
+                text: "Change",
+                visuallyHiddenText: "availability"
+              }
+              ]
+            }
+          }
+        ]
+      }) }}
+        
+
+      <h2>
+      Previous experiences and related skills 
+      </h2>
+
+      {{ summaryList({
+        rows: [
+          {
+            key: {
+              text: "What are your previous experiences and skills related to this role?"
+            },
+            value: {
+              text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>ç
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            },
+            actions: {
+              items: [
+                {
+                  href: "/sprint-5/form-page-6",
+                  text: "Change",
+                  visuallyHiddenText: "previous experiences"
+                }
+                ]
+              }
+            }
+          ]
+        }) }}
+
+      <h2>
+        Now send your application
+      </h2>
+
+      <p>
+        By submitting this notification you are confirming that, to the best of your knowledge, the details you are providing are correct.
+      </p>
+
+      <p>
+        Your details with be sent to [Rose Medical Practice] to begin your registration.
+      </p>
+
+      <a href="/sprint-5/confirmation-page-guest" class="nhsuk-button">
+        Accept and send registration
+      </a>
+
+    </div>
+  </div>
+{% endblock %}
