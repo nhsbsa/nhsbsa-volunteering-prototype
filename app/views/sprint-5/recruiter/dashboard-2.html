@@ -1,0 +1,673 @@
+{% extends 'layout.html' %}
+
+<!-- some custom css for the home page only -->
+{% set containerClasses = 'app-width-container--full' %}
+{% set mainClasses = 'app-main-wrapper--no-padding app-homepage' %}
+
+{% block pageTitle %}
+  The NHS website - NHS
+{% endblock %}
+
+{% block headCSS %}
+  <link href="/css/main.css" rel="stylesheet">
+  <link href="/css/nhsuk.css" rel="stylesheet">
+{% endblock %}
+
+<!-- NHS.UK header -->
+{% block header %}
+<header class="nhsuk-header" role="banner">
+  <div class="nhsuk-width-container nhsuk-header__container">
+    <div class="nhsuk-header__logo">
+      <a class="nhsuk-header__link" href="/" aria-label="NHS homepage">
+        <svg class="nhsuk-logo nhsuk-logo--white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 16">
+          <path fill="#fff" d="M0 0h40v16H0z"></path>
+          <path fill="#005eb8" d="M3.9 1.5h4.4l2.6 9h.1l1.8-9h3.3l-2.8 13H9l-2.7-9h-.1l-1.8 9H1.1M17.3 1.5h3.6l-1 4.9h4L25 1.5h3.5l-2.7 13h-3.5l1.1-5.6h-4.1l-1.2 5.6h-3.4M37.7 4.4c-.7-.3-1.6-.6-2.9-.6-1.4 0-2.5.2-2.5 1.3 0 1.8 5.1 1.2 5.1 5.1 0 3.6-3.3 4.5-6.4 4.5-1.3 0-2.9-.3-4-.7l.8-2.7c.7.4 2.1.7 3.2.7s2.8-.2 2.8-1.5c0-2.1-5.1-1.3-5.1-5 0-3.4 2.9-4.4 5.8-4.4 1.6 0 3.1.2 4 .6"></path>
+        </svg>
+      </a>
+    </div>
+    <div class="nhsuk-header__content" id="content-header">
+      <div class="nhsuk-header__menu">
+        <button class="nhsuk-header__menu-toggle" id="toggle-menu" aria-controls="header-navigation" aria-expanded="false">Menu</button>
+      </div>
+      <div class="nhsuk-header__search">
+        <div class="nhsuk-header__search-wrap beta-header__search-wrap js-show" id="wrap-search">
+          <form class="nhsuk-header__search-form beta-header__search-form" id="search" action="https://www.nhs.uk/search/" method="get" role="search">
+            <label class="nhsuk-u-visually-hidden" for="search-field">Search the NHS website</label>
+            <div class="autocomplete-container" id="autocomplete-container"></div>
+            <input class="nhsuk-search__input" id="search-field" name="q" type="search" placeholder="Search" autocomplete="off" >
+            <button class="nhsuk-search__submit beta-search__submit" type="submit">
+              <svg class="nhsuk-icon nhsuk-icon__search beta-icon__search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M19.71 18.29l-4.11-4.1a7 7 0 1 0-1.41 1.41l4.1 4.11a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42zM5 10a5 5 0 1 1 5 5 5 5 0 0 1-5-5z"></path>
+              </svg>
+              <span class="nhsuk-u-visually-hidden">Search</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="nhsuk-header__navigation" id="header-navigation" role="navigation" aria-label="Primary navigation" aria-labelledby="label-navigation">
+    <div class="nhsuk-width-container">
+      
+      
+          <a href="/">Signed in as Janet Does</a> 
+          <br>
+          <a href="/">Sign out</a> 
+            
+</header>
+{% endblock %}
+
+{% block beforeContent %}
+
+{% endblock %}
+
+
+<!-- Homepage content -->
+{% block content %}
+
+      <!-- Add your content here -->
+
+      <div class="nhsuk-width-container ">
+        <main class="nhsuk-main-wrapper " id="maincontent" role="main">
+            
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-two-thirds">
+          
+      <h1 class="nhsuk-heading-l" id="heading-container">
+        <span class="nhsuk-caption-l nhsuk-caption--bottom" id="flow-heading">User Acceptance Testing (UAT)</span>
+        <span class="nhsuk-heading-l" id="heading">Dashboard</span>
+      </h1> 
+      
+    
+    
+          <div class="tabs" data-js="tabs">
+            <div class="tabs-nav">
+      
+        <ul class="tabs-list" role="tablist" style="display: block;">
+          <li role="presentation">
+            <a class="tabs-toggle" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true" tabindex="0">
+              Role listings
+            </a>
+          </li>
+          <li role="presentation">
+            <a class="tabs-toggle" href="#tab-2" role="tab" aria-controls="tab-2" tabindex="-1" aria-selected="false">
+              Data monitoring
+            </a>
+          </li>
+        </ul>
+      
+    
+      <noscript>
+        <form class="form" method="post">
+          <input type="hidden" name="_csrf" value="EGzIzRlG-wj1tMGsUZgURcPJ70p_CYiwKPRI">
+          <ul class="tabs-list" role="tablist">
+            <li role="presentation">
+              <input type="submit" class="tabs-toggle" role="tab" aria-controls="tab-1" aria-selected="true" tabindex="0" name="tasksByStageTab" value="Tasks by stage" />
+            </li>
+            
+              <li role="presentation">
+                <input type="submit" class="tabs-toggle" role="tab" aria-controls="tab-2" aria-selected="false" tabindex="-1" name="listingsByUserTab" value="Listings by user" />
+              </li>
+            
+          </ul>
+        </form>
+      </noscript>  
+    </div>
+    
+            <div class="tabs-content">
+              <div class="tabs-panel" id="tab-1" role="tabpanel" aria-hidden="false" data-id="tab-1">
+                <div class="tabs-panel-inner" tabindex="0">
+                  
+                    <form method="post" autocomplete="off" class="nhsuk-u-clear">
+      <input type="hidden" name="_csrf" value="EGzIzRlG-wj1tMGsUZgURcPJ70p_CYiwKPRI">
+    
+      <div style="float: left" class="nhsuk-form-group">
+        <label class="nhsuk-label" for="select-user">
+        Showing tasks for
+        </label>
+    
+        
+          <select onchange="window.document.location.href='/work/' + this.options[this.selectedIndex].value;" class="nhsuk-select" id="select-user" name="filterId">
+            <optgroup label="Departments">
+              
+                <option value="ZGVwYXJ0bWVudGlkXzE1NA==">Administration</option>
+              
+                <option value="ZGVwYXJ0bWVudGlkXzg4">Medical</option>
+              
+                <option value="ZGVwYXJ0bWVudGlkXzE5NA==">Work Experience</option>
+              
+                <option value="unassigned_department">Unassigned department</option>
+              
+            </optgroup>
+            <optgroup label="Users">
+              
+                <option value="" selected="">All users</option>
+              
+                <option value="unassigned">Unassigned</option>
+              
+                <option value="dXNlcmlkXzk5Mg==">Anna Jones</option>
+              
+                <option value="dXNlcmlkXzc3Ng==">Ashleigh McFadyen</option>
+              
+                <option value="dXNlcmlkXzE4MTc=">Francesca Scavone</option>
+              
+                <option value="dXNlcmlkXzEyMjE=">Geoff Baston</option>
+              
+                <option value="dXNlcmlkXzI5Mg==">Jennifer Prince</option>
+              
+                <option value="dXNlcmlkXzE1NDE=">Lisa Rae</option>
+              
+                <option value="dXNlcmlkXzE4MTg=">Naomi Grant</option>
+              
+                <option value="dXNlcmlkXzE0MjY=">Naveen Veerabomma</option>
+              
+                <option value="dXNlcmlkXzY5NA==">Vasudev Ganesan</option>
+              
+            </optgroup>
+          </select>
+        
+      </div>
+    
+      <noscript>
+        <div style="float: left; padding-left: 10px; padding-top: 13px;" class="nhsuk-form-group">
+          <button class="nhsuk-button nhsuk-button--secondary" type="submit" name="refresh" id="refresh">
+            Refresh
+          </button>
+        </div>
+      </noscript>
+    </form>
+                  
+            
+                  <dl class="nhsuk-summary-list" style="padding-top: 10px;">
+      
+        <div class="nhsuk-summary-list__row">
+          <dt class="nhsuk-summary-list__key">
+            <h2 class="nhsuk-heading-s">
+              
+                <a id="DRAFT_URL" href="/work/stage/draft/all/">Draft</a>
+              
+            </h2>
+          </dt>
+          <dd class="nhsuk-summary-list__value">
+            <p>
+              <span id="DRAFT_counter" class="single-number-strong" style="font-size: 1.5rem">29</span>
+              
+                <span>  
+                  - on track 16, overdue 13
+                </span>
+              
+            </p>
+    
+            <div class="bar-chart-bar">
+                <div class="bar bar-green" style="width: 16%"></div>
+                <div class="bar bar-amber" style="width: 0%"></div>
+                <div class="bar bar-red" style="width: 13%"></div>
+            </div>
+          </dd>
+        </div>
+      
+        <div class="nhsuk-summary-list__row">
+          <dt class="nhsuk-summary-list__key">
+            <h2 class="nhsuk-heading-s">
+              
+                <a id="APPROVALS_URL" href="/work/stage/approvals/all/">Approvals</a>
+              
+            </h2>
+          </dt>
+          <dd class="nhsuk-summary-list__value">
+            <p>
+              <span id="APPROVALS_counter" class="single-number-strong" style="font-size: 1.5rem">7</span>
+              
+                <span>  
+                  - on track 0, due 1, overdue 6
+                </span>
+              
+            </p>
+    
+            <div class="bar-chart-bar">
+                <div class="bar bar-green" style="width: 0%"></div>
+                <div class="bar bar-amber" style="width: 1%"></div>
+                <div class="bar bar-red" style="width: 6%"></div>
+            </div>
+          </dd>
+        </div>
+      
+        <div class="nhsuk-summary-list__row">
+          <dt class="nhsuk-summary-list__key">
+            <h2 class="nhsuk-heading-s">
+              
+                <a id="PUBLISHED_URL" href="/work/stage/published/all/">Published</a>
+              
+            </h2>
+          </dt>
+          <dd class="nhsuk-summary-list__value">
+            <p>
+              <span id="PUBLISHED_counter" class="single-number-strong" style="font-size: 1.5rem">2</span>
+              
+            </p>
+    
+            <div class="bar-chart-bar">
+                <div class="bar bar-green" style="width: 2%"></div>
+                <div class="bar bar-amber" style="width: 0%"></div>
+                <div class="bar bar-red" style="width: 0%"></div>
+            </div>
+          </dd>
+        </div>
+      
+        <div class="nhsuk-summary-list__row">
+          <dt class="nhsuk-summary-list__key">
+            <h2 class="nhsuk-heading-s">
+              
+                <a id="SHORTLISTING_URL" href="/work/stage/shortlisting/all/">Shortlisting</a>
+              
+            </h2>
+          </dt>
+          <dd class="nhsuk-summary-list__value">
+            <p>
+              <span id="SHORTLISTING_counter" class="single-number-strong" style="font-size: 1.5rem">19</span>
+              
+                <span>  
+                  - on track 1, overdue 18
+                </span>
+              
+            </p>
+    
+            <div class="bar-chart-bar">
+                <div class="bar bar-green" style="width: 1%"></div>
+                <div class="bar bar-amber" style="width: 0%"></div>
+                <div class="bar bar-red" style="width: 18%"></div>
+            </div>
+          </dd>
+        </div>
+      
+        <div class="nhsuk-summary-list__row">
+          <dt class="nhsuk-summary-list__key">
+            <h2 class="nhsuk-heading-s">
+              
+                <a id="INTERVIEWS_URL" href="/work/stage/interviews/all/">Interviews</a>
+              
+            </h2>
+          </dt>
+          <dd class="nhsuk-summary-list__value">
+            <p>
+              <span id="INTERVIEWS_counter" class="single-number-strong" style="font-size: 1.5rem">7</span>
+              
+                <span>  
+                  - on track 0, overdue 7
+                </span>
+              
+            </p>
+    
+            <div class="bar-chart-bar">
+                <div class="bar bar-green" style="width: 0%"></div>
+                <div class="bar bar-amber" style="width: 0%"></div>
+                <div class="bar bar-red" style="width: 7%"></div>
+            </div>
+          </dd>
+        </div>
+      
+        <div class="nhsuk-summary-list__row">
+          <dt class="nhsuk-summary-list__key">
+            <h2 class="nhsuk-heading-s">
+              
+                <a id="READY_TO_OFFER_URL" href="/work/stage/ready_to_offer/all/">Ready to offer</a>
+              
+            </h2>
+          </dt>
+          <dd class="nhsuk-summary-list__value">
+            <p>
+              <span id="READY_TO_OFFER_counter" class="single-number-strong" style="font-size: 1.5rem">4</span>
+              
+                <span>  
+                  - on track 0, overdue 4
+                </span>
+              
+            </p>
+    
+            <div class="bar-chart-bar">
+                <div class="bar bar-green" style="width: 0%"></div>
+                <div class="bar bar-amber" style="width: 0%"></div>
+                <div class="bar bar-red" style="width: 4%"></div>
+            </div>
+          </dd>
+        </div>
+      
+        <div class="nhsuk-summary-list__row">
+          <dt class="nhsuk-summary-list__key">
+            <h2 class="nhsuk-heading-s">
+              
+                <a id="CONDITIONAL_OFFERS_URL" href="/work/stage/conditional_offers/all/">Conditional offers</a>
+              
+            </h2>
+          </dt>
+          <dd class="nhsuk-summary-list__value">
+            <p>
+              <span id="CONDITIONAL_OFFERS_counter" class="single-number-strong" style="font-size: 1.5rem">7</span>
+              
+                <span>  
+                  - on track 0, overdue 7
+                </span>
+              
+            </p>
+    
+            <div class="bar-chart-bar">
+                <div class="bar bar-green" style="width: 0%"></div>
+                <div class="bar bar-amber" style="width: 0%"></div>
+                <div class="bar bar-red" style="width: 7%"></div>
+            </div>
+          </dd>
+        </div>
+      
+        <div class="nhsuk-summary-list__row">
+          <dt class="nhsuk-summary-list__key">
+            <h2 class="nhsuk-heading-s">
+              
+                Pre-employment checks
+              
+            </h2>
+          </dt>
+          <dd class="nhsuk-summary-list__value">
+            <p>
+              <span id="PRE_EMPLOYMENT_CHECKS_counter" class="single-number-strong" style="font-size: 1.5rem">0</span>
+              
+            </p>
+    
+            <div class="bar-chart-bar">
+                <div class="bar bar-green" style="width: 0%"></div>
+                <div class="bar bar-amber" style="width: 0%"></div>
+                <div class="bar bar-red" style="width: 0%"></div>
+            </div>
+          </dd>
+        </div>
+      
+        <div class="nhsuk-summary-list__row">
+          <dt class="nhsuk-summary-list__key">
+            <h2 class="nhsuk-heading-s">
+              
+                <a id="CONTRACTS_URL" href="/work/stage/contracts/all/">Contracts</a>
+              
+            </h2>
+          </dt>
+          <dd class="nhsuk-summary-list__value">
+            <p>
+              <span id="CONTRACTS_counter" class="single-number-strong" style="font-size: 1.5rem">2</span>
+              
+                <span>  
+                  - on track 0, overdue 2
+                </span>
+              
+            </p>
+    
+            <div class="bar-chart-bar">
+                <div class="bar bar-green" style="width: 0%"></div>
+                <div class="bar bar-amber" style="width: 0%"></div>
+                <div class="bar bar-red" style="width: 2%"></div>
+            </div>
+          </dd>
+        </div>
+      
+        <div class="nhsuk-summary-list__row">
+          <dt class="nhsuk-summary-list__key">
+            <h2 class="nhsuk-heading-s">
+              
+                <a id="READY_TO_END_RECRUITMENT_URL" href="/work/stage/ready_to_end_recruitment/all/">End recruitment</a>
+              
+            </h2>
+          </dt>
+          <dd class="nhsuk-summary-list__value">
+            <p>
+              <span id="READY_TO_END_RECRUITMENT_counter" class="single-number-strong" style="font-size: 1.5rem">1</span>
+              
+                <span>  
+                  - on track 0, overdue 1
+                </span>
+              
+            </p>
+    
+            <div class="bar-chart-bar">
+                <div class="bar bar-green" style="width: 0%"></div>
+                <div class="bar bar-amber" style="width: 0%"></div>
+                <div class="bar bar-red" style="width: 1%"></div>
+            </div>
+          </dd>
+        </div>
+      
+    </dl>
+                </div>
+              </div>
+            </div>
+    
+            
+              <div class="tabs-content">
+                <div class="tabs-panel nhsuk-u-visually-hidden" id="tab-2" role="tabpanel" aria-hidden="true" data-id="tab-2">
+                  <div class="tabs-panel-inner" tabindex="0">
+                    
+      <form method="post" autocomplete="off" class="nhsuk-u-clear">
+        <input type="hidden" name="_csrf" value="EGzIzRlG-wj1tMGsUZgURcPJ70p_CYiwKPRI">
+    
+        <div style="float: left" class="nhsuk-form-group">
+          <label class="nhsuk-label" for="select-department">Showing listings for</label>    
+          <select onchange="window.document.location.href='/work/' + this.options[this.selectedIndex].value + '#tab-2';" class="nhsuk-select" id="select-department" name="workloadFilterId">
+            <optgroup label="Departments">
+              
+                <option value="" selected="">All departments</option>
+              
+                <option value="d29ya2xvYWRfZGVwYXJ0bWVudGlkXzE1NA==">Administration</option>
+              
+                <option value="d29ya2xvYWRfZGVwYXJ0bWVudGlkXzg4">Medical</option>
+              
+                <option value="d29ya2xvYWRfZGVwYXJ0bWVudGlkXzE5NA==">Work Experience</option>
+              
+                <option value="workload_unassigned_department">Unassigned department</option>
+              
+            </optgroup>
+          </select>
+        </div>
+    
+        <noscript>
+          <div style="float: left; padding-left: 10px; padding-top: 13px;" class="nhsuk-form-group">
+            <button class="nhsuk-button nhsuk-button--secondary" type="submit" name="refresh" id="refresh">
+              Refresh
+            </button>
+          </div>
+        </noscript>
+      </form>
+    
+    
+                    
+      
+        <dl class="nhsuk-summary-list" id="unassigned-user-list" style="padding-top: 10px;">
+          <div class="nhsuk-summary-list__row">
+            <dt class="nhsuk-summary-list__key">
+              
+                <h2 class="nhsuk-heading-s">
+                  <a id="listings_by_unassigned" href="/work/workload-tasks/unassigned">Unassigned user</a>
+                </h2>
+              
+            </dt>
+            <dd class="nhsuk-summary-list__value">
+              <p>
+                <span id="unassigned_counter" class="single-number-strong" style="font-size: 1.5rem">65</span>
+                
+                  <span>  
+                    - on track 19, due 1, overdue 45
+                  </span>
+                
+              </p>
+    
+              <div class="bar-chart-bar">
+                <div class="bar bar-green" style="width: 19%"></div>
+                <div class="bar bar-amber" style="width: 1%"></div>
+                <div class="bar bar-red" style="width: 45%"></div>
+              </div>
+            </dd>
+          </div>
+        </dl>
+        <br>
+      
+    
+      
+    
+      
+    
+    
+    <dl class="nhsuk-summary-list" id="assigned-user-list" style="padding-top: 10px;">
+      
+        
+      
+        
+          <div class="nhsuk-summary-list__row">
+            <dt class="nhsuk-summary-list__key">
+              
+                <h2 class="nhsuk-heading-s">
+                  <a id="listings_by_Nzc2" href="/work/workload-tasks/Nzc2">Ashleigh McFadyen</a>
+                </h2>
+              
+            </dt>
+            <dd class="nhsuk-summary-list__value">
+              <p>
+                <span id="Nzc2_counter" class="single-number-strong" style="font-size: 1.5rem">3</span>
+                
+                  <span>  
+                    - on track 0, overdue 3
+                  </span>
+                
+              </p>
+    
+              <div class="bar-chart-bar">
+                <div class="bar bar-green" style="width: 0%"></div>
+                <div class="bar bar-amber" style="width: 0%"></div>
+                <div class="bar bar-red" style="width: 3%"></div>
+              </div>
+            </dd>
+          </div>
+        
+      
+        
+          <div class="nhsuk-summary-list__row">
+            <dt class="nhsuk-summary-list__key">
+              
+                <h2 class="nhsuk-heading-s">
+                  <a id="listings_by_Mjky" href="/work/workload-tasks/Mjky">Jennifer Prince</a>
+                </h2>
+              
+            </dt>
+            <dd class="nhsuk-summary-list__value">
+              <p>
+                <span id="Mjky_counter" class="single-number-strong" style="font-size: 1.5rem">1</span>
+                
+                  <span>  
+                    - on track 0, overdue 1
+                  </span>
+                
+              </p>
+    
+              <div class="bar-chart-bar">
+                <div class="bar bar-green" style="width: 0%"></div>
+                <div class="bar bar-amber" style="width: 0%"></div>
+                <div class="bar bar-red" style="width: 1%"></div>
+              </div>
+            </dd>
+          </div>
+        
+      
+    </dl>
+                  </div>
+                </div>
+              </div>
+            
+          </div>
+        </div>
+        <div class="nhsuk-grid-column-one-third">
+          <div class="action-block">
+      <h2 class="nhsuk-heading-m">What you can do</h2>
+      
+        <a class="nhsuk-button" href="/sprint-5/recruiter/create-or-reuse" role="button" draggable="false" id="create_job">
+          Create a role listing
+        </a>
+      
+      <a class="nhsuk-button nhsuk-button--secondary" href="/search/listing" role="button" draggable="false" id="search_for_a_listing">
+        Manage my account
+      </a>
+      
+      
+    </div>
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    
+    
+            
+                
+    <noscript>
+        </br>
+        <p id="timeout_message">For your security we'll sign you out if you do not move from this page by
+            12:53 pm BST.</p>
+    </noscript>
+    
+    <div id="timeout-modal" class="modal" style="display: none;">
+        <div id="timeout-model-content" class="modal-content" style="display: none;">
+            <h1 class="nhsuk-heading-l">Your session will time out soon</h1>
+            <p>For your security we'll sign you out if you do not respond in <span id="timeleft">89</span> minutes.</p>
+    
+            <a class="nhsuk-button" href="#" role="button" draggable="false" onclick="window.location.reload();">
+                Get more time
+            </a>
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+    
+      let secondsLeft = 5399.1;
+      const warningSecondsLeftThreshold = 300; //5 minutes
+      const timeOut = new Date().getTime()/1000 + secondsLeft;
+      const updateIntervalMilliseconds = 5000;
+    
+      function showTimeoutWarning() {
+        document.getElementById('timeout-modal').style.display = 'block';
+        document.getElementById('timeout-model-content').style.display = 'block';
+      }
+    
+      function hideTimeoutWarning() {
+        document.getElementById('timeout-modal').style.display = 'none';
+        document.getElementById('timeout-model-content').style.display = 'none';
+      }
+    
+      function updateTimeRemaining() {
+        secondsLeft = timeOut - new Date().getTime()/1000;
+        document.getElementById('timeleft').innerHTML = secondsLeft <= 0 ? 0 : Math.ceil(secondsLeft / 60);
+      }
+    
+      function updateTimeout() {
+        if (secondsLeft <= 0) {
+          document.location.href='../timed-out';
+        }
+    
+        if (secondsLeft < warningSecondsLeftThreshold) {
+          showTimeoutWarning();
+        } else {
+          hideTimeoutWarning();
+        }
+    
+        updateTimeRemaining();
+      }
+    
+      setTimeout(function runTimeout() {
+        updateTimeout();
+        setTimeout(runTimeout, updateIntervalMilliseconds);
+      }, updateIntervalMilliseconds);
+    
+    </script>
+    
+            
+        </main>
+    </div>
+{% endblock %}
