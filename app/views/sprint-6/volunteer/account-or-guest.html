@@ -1,0 +1,76 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Start page template - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+
+      <div class="nhsuk-back-link">
+        <a class="nhsuk-back-link__link" href="/sprint-6/volunteer">
+          <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
+            <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+          </svg>
+          Go back</a>
+      </div>   
+
+      <h2>
+        Sign in
+      </h2>
+
+      <p>Sign in or <a href="/sprint-6/volunteer">create an account</a> to get started.</p>
+      
+      <form class="form" action="/sprint-5/volunteer" method="post">
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="input-width-20">
+          Email address
+        </label>
+        <input class="nhsuk-input nhsuk-input--width-20" id="example" name="test-width-20" type="text" value="example.email@gmail.com">
+      </div>
+      <p><a href="" class="nhsuk-link">I have forgotten my email address</a></p>
+
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="input-width-20">
+          Password
+        </label>
+        <input class="nhsuk-input nhsuk-input--width-20" id="example" name="test-width-20" type="text" value="••••••••••">
+        
+      </div>
+      <p><a href="" class="nhsuk-link">I have forgotten my password</a></p>
+
+      <div class="nhsuk-hint" id="contact-hint">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+      </div>
+  
+  </div>
+  </div>
+
+  <button class="nhsuk-button" type="submit">
+    Continue
+  </button>
+</form>
+
+<hr>
+
+<h2>
+  Apply without an account
+</h2>
+<form class="form" action="/sprint-5/application-start-2" method="post">
+<p> You can use this option to apply without creating or having an account</p>
+
+<!--CTA button-->
+<button class="nhsuk-button nhsuk-button--secondary" type="submit">
+  Continue as guest
+</button>
+    </div>
+  </form>
+
+    
+
+  </div>
+{% endblock %}

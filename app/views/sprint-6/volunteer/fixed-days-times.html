@@ -1,0 +1,758 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Start page template - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+
+      <div class="nhsuk-back-link">
+        <a class="nhsuk-back-link__link" href="/sprint-6/volunteer">
+          <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
+            <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+          </svg>
+          Go back</a>
+      </div>   
+
+      <h2>
+        What days and times are you available?
+      </h2>
+
+
+      <div class="nhsuk-hint" id="contact-hint">
+        Question X of X
+      </div>
+
+
+        <div class="nhsuk-form-group">
+        
+      
+            <div class="nhsuk-hint" id="contact-hint">
+              Select all options that are relevant to you.
+            </div>
+      
+            <div class="nhsuk-checkboxes">
+      
+
+              <!--Mondays-->
+              <form class="form" action="/sprint-5/form-page-5b-add-another" method="post">
+              <div class="nhsuk-checkboxes__item">
+                <input class="nhsuk-checkboxes__input" id="contact" name="contact" type="checkbox" value="email">
+                <label class="nhsuk-label nhsuk-checkboxes__label" for="contact">
+                  Mondays
+                </label>
+              </div>
+
+              <br>
+
+                <!--side by side select-->
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <div class="nhsuk-grid-row">
+
+          <div class="nhsuk-grid-column-one-third">
+            <div class="nhsuk-form-group">
+              <label class="nhsuk-label" for="select-1">
+                Start time
+              </label>
+              <select class="nhsuk-select" id="select-1" name="select-1">
+                <option value="1"selected>- select start hour -</option>
+                <option value="2">12am</option>
+                <option value="3">1am</option>
+                <option value="4">2am</option>
+                <option value="5">3am</option>
+                <option value="6">4am</option>
+                <option value="7">5am</option>
+                <option value="8">6am</option>
+                <option value="9">7am</option>
+                <option value="10">8am</option>
+                <option value="11">9am</option>
+                <option value="12">10am</option>
+                <option value="13">11am</option>
+                <option value="14">12pm</option>
+                <option value="15">1pm</option>
+                <option value="16">2pm</option>
+                <option value="17">3pm</option>
+                <option value="18">4pm</option>
+                <option value="19">5pm</option>
+                <option value="20">6pm</option>
+                <option value="21">7pm</option>
+                <option value="22">8pm</option>
+                <option value="23">9pm</option>
+                <option value="24">10pm</option>
+                <option value="25">11pm</option>
+              </select>
+            </div>
+            
+          </div>
+
+          <div class="nhsuk-grid-column-one-third">
+            <div class="nhsuk-form-group">
+              <label class="nhsuk-label" for="select-1">
+                End time
+              </label>
+              <select class="nhsuk-select" id="select-1" name="select-1">
+                <option value="1"selected>- select start hour -</option>
+                <option value="2">12am</option>
+                <option value="3">1am</option>
+                <option value="4">2am</option>
+                <option value="5">3am</option>
+                <option value="6">4am</option>
+                <option value="7">5am</option>
+                <option value="8">6am</option>
+                <option value="9">7am</option>
+                <option value="10">8am</option>
+                <option value="11">9am</option>
+                <option value="12">10am</option>
+                <option value="13">11am</option>
+                <option value="14">12pm</option>
+                <option value="15">1pm</option>
+                <option value="16">2pm</option>
+                <option value="17">3pm</option>
+                <option value="18">4pm</option>
+                <option value="19">5pm</option>
+                <option value="20">6pm</option>
+                <option value="21">7pm</option>
+                <option value="22">8pm</option>
+                <option value="23">9pm</option>
+                <option value="24">10pm</option>
+                <option value="25">11pm</option>
+              </select>
+            </div>
+            </div>
+          </div>
+        
+
+          <br>
+
+          <button class="nhsuk-button nhsuk-button--reverse" <a hef="/sprint-5/form-page-5b-add-another" type="submit">
+            Add another</a> 
+          </button>
+        </form>
+
+        <hr>
+
+
+        <!--Tuesdays-->
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="contact" name="contact" type="checkbox" value="email">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="contact">
+            Tuesdays
+          </label>
+        </div>
+
+        <br>
+
+          <!--side by side select--> 
+<form action="/sprint-5/form-page-5b-add-another" method="post" class="form">
+
+<div class="nhsuk-grid-row">
+<div class="nhsuk-grid-column-full">
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-one-third">
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="select-1">
+          Start time
+        </label>
+        <select class="nhsuk-select" id="select-1" name="select-1">
+          <option value="1"selected>- select start hour -</option>
+          <option value="2">12am</option>
+          <option value="3">1am</option>
+          <option value="4">2am</option>
+          <option value="5">3am</option>
+          <option value="6">4am</option>
+          <option value="7">5am</option>
+          <option value="8">6am</option>
+          <option value="9">7am</option>
+          <option value="10">8am</option>
+          <option value="11">9am</option>
+          <option value="12">10am</option>
+          <option value="13">11am</option>
+          <option value="14">12pm</option>
+          <option value="15">1pm</option>
+          <option value="16">2pm</option>
+          <option value="17">3pm</option>
+          <option value="18">4pm</option>
+          <option value="19">5pm</option>
+          <option value="20">6pm</option>
+          <option value="21">7pm</option>
+          <option value="22">8pm</option>
+          <option value="23">9pm</option>
+          <option value="24">10pm</option>
+          <option value="25">11pm</option>
+        </select>
+      </div>
+      
+    </div>
+
+    <div class="nhsuk-grid-column-one-third">
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="select-1">
+          End time
+        </label>
+        <select class="nhsuk-select" id="select-1" name="select-1">
+          <option value="1"selected>- select start hour -</option>
+          <option value="2">12am</option>
+          <option value="3">1am</option>
+          <option value="4">2am</option>
+          <option value="5">3am</option>
+          <option value="6">4am</option>
+          <option value="7">5am</option>
+          <option value="8">6am</option>
+          <option value="9">7am</option>
+          <option value="10">8am</option>
+          <option value="11">9am</option>
+          <option value="12">10am</option>
+          <option value="13">11am</option>
+          <option value="14">12pm</option>
+          <option value="15">1pm</option>
+          <option value="16">2pm</option>
+          <option value="17">3pm</option>
+          <option value="18">4pm</option>
+          <option value="19">5pm</option>
+          <option value="20">6pm</option>
+          <option value="21">7pm</option>
+          <option value="22">8pm</option>
+          <option value="23">9pm</option>
+          <option value="24">10pm</option>
+          <option value="25">11pm</option>
+        </select>
+      </div>
+      </div>
+    </div>
+
+    <br>
+
+    <button class="nhsuk-button nhsuk-button--reverse" type="submit">
+      Add another
+    </button>
+  </form>
+
+
+  <hr>
+
+
+        <!--Wednesdays-->
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="contact" name="contact" type="checkbox" value="email">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="contact">
+            Wednesdays
+          </label>
+        </div>
+
+        <br>
+
+          <!--side by side select--> 
+<form action="/sprint-5/form-page-5b-add-another" method="post" class="form">
+
+<div class="nhsuk-grid-row">
+<div class="nhsuk-grid-column-full">
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-one-third">
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="select-1">
+          Start time
+        </label>
+        <select class="nhsuk-select" id="select-1" name="select-1">
+          <option value="1"selected>- select start hour -</option>
+          <option value="2">12am</option>
+          <option value="3">1am</option>
+          <option value="4">2am</option>
+          <option value="5">3am</option>
+          <option value="6">4am</option>
+          <option value="7">5am</option>
+          <option value="8">6am</option>
+          <option value="9">7am</option>
+          <option value="10">8am</option>
+          <option value="11">9am</option>
+          <option value="12">10am</option>
+          <option value="13">11am</option>
+          <option value="14">12pm</option>
+          <option value="15">1pm</option>
+          <option value="16">2pm</option>
+          <option value="17">3pm</option>
+          <option value="18">4pm</option>
+          <option value="19">5pm</option>
+          <option value="20">6pm</option>
+          <option value="21">7pm</option>
+          <option value="22">8pm</option>
+          <option value="23">9pm</option>
+          <option value="24">10pm</option>
+          <option value="25">11pm</option>
+        </select>
+      </div>
+      
+    </div>
+
+    <div class="nhsuk-grid-column-one-third">
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="select-1">
+          End time
+        </label>
+        <select class="nhsuk-select" id="select-1" name="select-1">
+          <option value="1"selected>- select start hour -</option>
+          <option value="2">12am</option>
+          <option value="3">1am</option>
+          <option value="4">2am</option>
+          <option value="5">3am</option>
+          <option value="6">4am</option>
+          <option value="7">5am</option>
+          <option value="8">6am</option>
+          <option value="9">7am</option>
+          <option value="10">8am</option>
+          <option value="11">9am</option>
+          <option value="12">10am</option>
+          <option value="13">11am</option>
+          <option value="14">12pm</option>
+          <option value="15">1pm</option>
+          <option value="16">2pm</option>
+          <option value="17">3pm</option>
+          <option value="18">4pm</option>
+          <option value="19">5pm</option>
+          <option value="20">6pm</option>
+          <option value="21">7pm</option>
+          <option value="22">8pm</option>
+          <option value="23">9pm</option>
+          <option value="24">10pm</option>
+          <option value="25">11pm</option>
+        </select>
+      </div>
+      </div>
+    </div>
+
+    <br>
+
+    <button class="nhsuk-button nhsuk-button--reverse" type="submit">
+      Add another
+    </button>
+  </form>
+
+  <hr>
+
+
+        <!--Thursdays-->
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="contact" name="contact" type="checkbox" value="email">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="contact">
+            Thursdays
+          </label>
+        </div>
+
+        <br>
+
+          <!--side by side select--> 
+<form action="/sprint-5/form-page-5b-add-another" method="post" class="form">
+
+<div class="nhsuk-grid-row">
+<div class="nhsuk-grid-column-full">
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-one-third">
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="select-1">
+          Start time
+        </label>
+        <select class="nhsuk-select" id="select-1" name="select-1">
+          <option value="1"selected>- select start hour -</option>
+          <option value="2">12am</option>
+          <option value="3">1am</option>
+          <option value="4">2am</option>
+          <option value="5">3am</option>
+          <option value="6">4am</option>
+          <option value="7">5am</option>
+          <option value="8">6am</option>
+          <option value="9">7am</option>
+          <option value="10">8am</option>
+          <option value="11">9am</option>
+          <option value="12">10am</option>
+          <option value="13">11am</option>
+          <option value="14">12pm</option>
+          <option value="15">1pm</option>
+          <option value="16">2pm</option>
+          <option value="17">3pm</option>
+          <option value="18">4pm</option>
+          <option value="19">5pm</option>
+          <option value="20">6pm</option>
+          <option value="21">7pm</option>
+          <option value="22">8pm</option>
+          <option value="23">9pm</option>
+          <option value="24">10pm</option>
+          <option value="25">11pm</option>
+        </select>
+      </div>
+      
+    </div>
+
+    <div class="nhsuk-grid-column-one-third">
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="select-1">
+          End time
+        </label>
+        <select class="nhsuk-select" id="select-1" name="select-1">
+          <option value="1"selected>- select start hour -</option>
+          <option value="2">12am</option>
+          <option value="3">1am</option>
+          <option value="4">2am</option>
+          <option value="5">3am</option>
+          <option value="6">4am</option>
+          <option value="7">5am</option>
+          <option value="8">6am</option>
+          <option value="9">7am</option>
+          <option value="10">8am</option>
+          <option value="11">9am</option>
+          <option value="12">10am</option>
+          <option value="13">11am</option>
+          <option value="14">12pm</option>
+          <option value="15">1pm</option>
+          <option value="16">2pm</option>
+          <option value="17">3pm</option>
+          <option value="18">4pm</option>
+          <option value="19">5pm</option>
+          <option value="20">6pm</option>
+          <option value="21">7pm</option>
+          <option value="22">8pm</option>
+          <option value="23">9pm</option>
+          <option value="24">10pm</option>
+          <option value="25">11pm</option>
+        </select>
+      </div>
+      </div>
+    </div>
+
+    <br>
+
+    <button class="nhsuk-button nhsuk-button--reverse" type="submit">
+      Add another
+    </button>
+  </form>
+
+
+  <hr>
+
+
+        <!--Fridays-->
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="contact" name="contact" type="checkbox" value="email">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="contact">
+            Fridays
+          </label>
+        </div>
+
+        <br>
+
+          <!--side by side select--> 
+<form action="/sprint-5/form-page-5b-add-another" method="post" class="form">
+
+<div class="nhsuk-grid-row">
+<div class="nhsuk-grid-column-full">
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-one-third">
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="select-1">
+          Start time
+        </label>
+        <select class="nhsuk-select" id="select-1" name="select-1">
+          <option value="1"selected>- select start hour -</option>
+          <option value="2">12am</option>
+          <option value="3">1am</option>
+          <option value="4">2am</option>
+          <option value="5">3am</option>
+          <option value="6">4am</option>
+          <option value="7">5am</option>
+          <option value="8">6am</option>
+          <option value="9">7am</option>
+          <option value="10">8am</option>
+          <option value="11">9am</option>
+          <option value="12">10am</option>
+          <option value="13">11am</option>
+          <option value="14">12pm</option>
+          <option value="15">1pm</option>
+          <option value="16">2pm</option>
+          <option value="17">3pm</option>
+          <option value="18">4pm</option>
+          <option value="19">5pm</option>
+          <option value="20">6pm</option>
+          <option value="21">7pm</option>
+          <option value="22">8pm</option>
+          <option value="23">9pm</option>
+          <option value="24">10pm</option>
+          <option value="25">11pm</option>
+        </select>
+      </div>
+      
+    </div>
+
+    <div class="nhsuk-grid-column-one-third">
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="select-1">
+          End time
+        </label>
+        <select class="nhsuk-select" id="select-1" name="select-1">
+          <option value="1"selected>- select start hour -</option>
+          <option value="2">12am</option>
+          <option value="3">1am</option>
+          <option value="4">2am</option>
+          <option value="5">3am</option>
+          <option value="6">4am</option>
+          <option value="7">5am</option>
+          <option value="8">6am</option>
+          <option value="9">7am</option>
+          <option value="10">8am</option>
+          <option value="11">9am</option>
+          <option value="12">10am</option>
+          <option value="13">11am</option>
+          <option value="14">12pm</option>
+          <option value="15">1pm</option>
+          <option value="16">2pm</option>
+          <option value="17">3pm</option>
+          <option value="18">4pm</option>
+          <option value="19">5pm</option>
+          <option value="20">6pm</option>
+          <option value="21">7pm</option>
+          <option value="22">8pm</option>
+          <option value="23">9pm</option>
+          <option value="24">10pm</option>
+          <option value="25">11pm</option>
+        </select>
+      </div>
+      </div>
+    </div>
+
+    <br>
+
+    <button class="nhsuk-button nhsuk-button--reverse" type="submit">
+      Add another
+    </button>
+  </form>
+
+
+  <hr>
+
+
+        <!--Saturdays-->
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="contact" name="contact" type="checkbox" value="email">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="contact">
+            Saturdays
+          </label>
+        </div>
+
+        <br>
+
+          <!--side by side select--> 
+<form action="/sprint-5/form-page-5b-add-another" method="post" class="form">
+
+<div class="nhsuk-grid-row">
+<div class="nhsuk-grid-column-full">
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-one-third">
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="select-1">
+          Start time
+        </label>
+        <select class="nhsuk-select" id="select-1" name="select-1">
+          <option value="1"selected>- select start hour -</option>
+          <option value="2">12am</option>
+          <option value="3">1am</option>
+          <option value="4">2am</option>
+          <option value="5">3am</option>
+          <option value="6">4am</option>
+          <option value="7">5am</option>
+          <option value="8">6am</option>
+          <option value="9">7am</option>
+          <option value="10">8am</option>
+          <option value="11">9am</option>
+          <option value="12">10am</option>
+          <option value="13">11am</option>
+          <option value="14">12pm</option>
+          <option value="15">1pm</option>
+          <option value="16">2pm</option>
+          <option value="17">3pm</option>
+          <option value="18">4pm</option>
+          <option value="19">5pm</option>
+          <option value="20">6pm</option>
+          <option value="21">7pm</option>
+          <option value="22">8pm</option>
+          <option value="23">9pm</option>
+          <option value="24">10pm</option>
+          <option value="25">11pm</option>
+        </select>
+      </div>
+      
+    </div>
+
+    <div class="nhsuk-grid-column-one-third">
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="select-1">
+          End time
+        </label>
+        <select class="nhsuk-select" id="select-1" name="select-1">
+          <option value="1"selected>- select start hour -</option>
+          <option value="2">12am</option>
+          <option value="3">1am</option>
+          <option value="4">2am</option>
+          <option value="5">3am</option>
+          <option value="6">4am</option>
+          <option value="7">5am</option>
+          <option value="8">6am</option>
+          <option value="9">7am</option>
+          <option value="10">8am</option>
+          <option value="11">9am</option>
+          <option value="12">10am</option>
+          <option value="13">11am</option>
+          <option value="14">12pm</option>
+          <option value="15">1pm</option>
+          <option value="16">2pm</option>
+          <option value="17">3pm</option>
+          <option value="18">4pm</option>
+          <option value="19">5pm</option>
+          <option value="20">6pm</option>
+          <option value="21">7pm</option>
+          <option value="22">8pm</option>
+          <option value="23">9pm</option>
+          <option value="24">10pm</option>
+          <option value="25">11pm</option>
+        </select>
+      </div>
+      </div>
+    </div>
+
+    <br>
+
+    <button class="nhsuk-button nhsuk-button--reverse" type="submit">
+      Add another
+    </button>
+  </form>
+
+  <hr>
+
+
+        <!--Sundays-->
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="contact" name="contact" type="checkbox" value="email">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="contact">
+            Sundays
+          </label>
+        </div>
+
+        <br>
+
+          <!--side by side select--> 
+<form action="/sprint-5/form-page-5b-add-another" method="post" class="form">
+
+<div class="nhsuk-grid-row">
+<div class="nhsuk-grid-column-full">
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-one-third">
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="select-1">
+          Start time
+        </label>
+        <select class="nhsuk-select" id="select-1" name="select-1">
+          <option value="1"selected>- select start hour -</option>
+          <option value="2">12am</option>
+          <option value="3">1am</option>
+          <option value="4">2am</option>
+          <option value="5">3am</option>
+          <option value="6">4am</option>
+          <option value="7">5am</option>
+          <option value="8">6am</option>
+          <option value="9">7am</option>
+          <option value="10">8am</option>
+          <option value="11">9am</option>
+          <option value="12">10am</option>
+          <option value="13">11am</option>
+          <option value="14">12pm</option>
+          <option value="15">1pm</option>
+          <option value="16">2pm</option>
+          <option value="17">3pm</option>
+          <option value="18">4pm</option>
+          <option value="19">5pm</option>
+          <option value="20">6pm</option>
+          <option value="21">7pm</option>
+          <option value="22">8pm</option>
+          <option value="23">9pm</option>
+          <option value="24">10pm</option>
+          <option value="25">11pm</option>
+        </select>
+      </div>
+      
+    </div>
+
+    <div class="nhsuk-grid-column-one-third">
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="select-1">
+          End time
+        </label>
+        <select class="nhsuk-select" id="select-1" name="select-1">
+          <option value="1"selected>- select start hour -</option>
+          <option value="2">12am</option>
+          <option value="3">1am</option>
+          <option value="4">2am</option>
+          <option value="5">3am</option>
+          <option value="6">4am</option>
+          <option value="7">5am</option>
+          <option value="8">6am</option>
+          <option value="9">7am</option>
+          <option value="10">8am</option>
+          <option value="11">9am</option>
+          <option value="12">10am</option>
+          <option value="13">11am</option>
+          <option value="14">12pm</option>
+          <option value="15">1pm</option>
+          <option value="16">2pm</option>
+          <option value="17">3pm</option>
+          <option value="18">4pm</option>
+          <option value="19">5pm</option>
+          <option value="20">6pm</option>
+          <option value="21">7pm</option>
+          <option value="22">8pm</option>
+          <option value="23">9pm</option>
+          <option value="24">10pm</option>
+          <option value="25">11pm</option>
+        </select>
+      </div>
+      </div>
+    </div>
+
+    <br>
+
+    <button class="nhsuk-button nhsuk-button--reverse" type="submit">
+      Add another
+    </button>
+  </form>
+
+
+
+        </div>
+        </div>
+      </div>
+    </div>
+   </form>
+
+
+
+
+
+
+              
+
+          <!--buttons-->        
+          <button class="nhsuk-button" type="submit"> 
+          Save and continue
+          </button>
+        </form>
+          
+        <br><a href="/sprint-5/saved-roles" class="nhsuk-link--no-visited-state">Save for later</a>   
+        
+{% endblock %}
