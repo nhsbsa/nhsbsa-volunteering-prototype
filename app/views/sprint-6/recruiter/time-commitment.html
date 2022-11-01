@@ -1,0 +1,128 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Recruiter dashboard prototype
+{% endblock %}
+
+
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-full">
+
+      <!-- Add your content here -->
+
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-two-thirds">
+            <div class="nhsuk-back-link">
+  <a class="nhsuk-back-link__link" href="/sprint-6/recruiter/tasklist-3">
+  <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+  </svg>
+  Go back</a>
+</div>
+
+
+            
+                <h1 class="nhsuk-heading-l" id="heading-container">
+                    <span class="nhsuk-caption-l nhsuk-caption--bottom">Create a new role listing</span>
+                    <span class="nhsuk-heading-l" id="heading">What is the minimum commitment required? </span>
+                </h1>
+            
+
+          
+        <p class="nhsuk-heading-s">
+            Walk and Talk volunteer
+            <span class="status-box status-box-blue" aria-label="status for Walk and Talk volunteer is DRAFT" id="status_DRAFT" role="status">
+                DRAFT
+            </span>
+        </p>
+    
+    
+        
+            <p id="reference_number" role="note" aria-label="Reference number: T5555-22-9757">Reference no: T5555-22-9757</p>
+        
+    
+
+                
+            
+
+            <form class="form" action="/sprint-6/recruiter/CYA-time" method="post">
+                <input type="hidden" name="_csrf">
+                
+
+    
+
+    
+        <div class="nhsuk-form-group ">
+    
+        <fieldset class="nhsuk-fieldset app-fieldset--custom-modifier ">
+            <legend class="nhsuk-fieldset__legend nhsuk-u-visually-hidden" id="">
+                What is the minimum commitment required?
+            </legend>
+            
+            
+            
+            
+                
+                
+                            <div class="nhsuk-radios__item">
+                                <input class="nhsuk-radios__input" id="decision_option_1" type="radio" name="decision" value="YES">
+                                <label id="YES_label" class="nhsuk-radios__label" for="decision_option_1">
+                                    1 regular session per week for 6 months
+                                </label>
+                                
+                            </div>
+               
+                            
+                            <div class="nhsuk-radios__item">
+                                <input class="nhsuk-radios__input" id="decision_option_2" type="radio" name="decision" value="NO">
+                                <label id="NO_label" class="nhsuk-radios__label" for="decision_option_2">
+                                    Twice a month for 6 months
+                                </label>
+                                
+                            </div>
+
+                            
+                            <div class="nhsuk-radios__item">
+                                <input class="nhsuk-radios__input" id="decision_option_2" type="radio" name="decision" value="NO">
+                                <label id="NO_label" class="nhsuk-radios__label" for="decision_option_2">
+                                    A minimum period of 26 weeks
+                                </label>
+                                
+                            </div>
+
+                            <div class="nhsuk-radios__item">
+                                <input class="nhsuk-radios__input" id="contact-3" name="contact" type="radio" value="text" aria-controls="conditional-contact-1" aria-expanded="false">
+                                <label class="nhsuk-label nhsuk-radios__label" for="contact-1">
+                                  Other
+                                </label>
+                              </div>
+                        
+                              <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-contact-1">
+                        
+                                <div class="nhsuk-form-group">
+                                  <label class="nhsuk-label" for="mobile">
+                                    Enter custom time commitment
+                                  </label>
+                                  <input class="nhsuk-input nhsuk-u-width-two-thirds" id="mobile" name="mobile" type="text" value="At least one shift per week, for a minimum period of six months or 30 hours">
+                                </div>
+                                </div>
+                                </div>
+                        
+                              </div>
+                        
+            </div>
+        </fieldset>
+    
+        </div>
+    
+
+             
+                <input class="nhsuk-button" type="submit" name="continue" id="continue" value="Continue">
+
+            </form>
+        </div>
+    </div>
+{% endblock %}

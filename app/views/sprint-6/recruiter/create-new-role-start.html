@@ -1,0 +1,77 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Recruiter dashboard prototype
+{% endblock %}
+
+
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-full">
+
+      <!-- Add your content here -->
+
+            
+    
+    
+        <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-two-thirds">
+                
+        
+        
+            
+                
+            
+        
+        <div class="nhsuk-back-link">
+      <a class="nhsuk-back-link__link" href="/sprint-6/recruiter/create-or-reuse" id="back-link">
+      <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+      </svg>
+      Go back</a>
+    </div>
+    
+    
+                <h1 class="nhsuk-heading-l" id="heading-container">
+                    <span class="nhsuk-heading-xl" id="heading">Create a new role listing</span>
+                </h1>
+    
+                <p class="nhsuk-body-l">Use this service to create a role listing and publish the role advert</p>
+                <p class="nhsuk-body">To create the listing, you'll enter details about the job, such as:</p>
+    
+                <ul class="nhsuk-list nhsuk-list--bullet">
+                    <li>the role title</li>
+                    <li>the role summary</li>
+                    <li>any required qualifications and training</li>
+                    <li>the required time commitment</li>
+                    <li>any criminal records checks requirements</li>
+                    <li>where the role will be based</li>
+                    <li>contact details of the person or the department responsible for the recruitment of this role</li>
+                </ul>
+    
+                <p class="nhsuk-body">
+                    You should have the relevant information with you as you create the listing. You’ll also be able to view the advert and make any changes you need to, before you publish it.
+                </p>
+    
+                <form class="form" action="/sprint-6/recruiter/role-title" method="post">
+                    <input type="hidden" name="_csrf" value="3S6y4an6--6_KEQWkSKYE8FtMZser9JMvYo4">
+                    <input class="nhsuk-button" type="submit" id="save_continue" name="continueButton" value="Start">
+                </form>
+            </div>
+        </div>
+    
+        
+    
+    
+    
+            
+                
+    
+    </script>
+    
+            
+        </main>
+    </div>
+{% endblock %}

@@ -32,61 +32,7 @@
       
     </div>
   </div>
-  <nav class="nhsuk-header__navigation" id="header-navigation" role="navigation" aria-label="Primary navigation" aria-labelledby="label-navigation">
-    <div class="nhsuk-width-container">
-      <p class="nhsuk-header__navigation-title"><span id="label-navigation">Menu</span>
-        <button class="nhsuk-header__navigation-close" id="close-menu">
-          <svg class="nhsuk-icon nhsuk-icon__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <path d="M13.41 12l5.3-5.29a1 1 0 1 0-1.42-1.42L12 10.59l-5.29-5.3a1 1 0 0 0-1.42 1.42l5.3 5.29-5.3 5.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l5.29-5.3 5.29 5.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z"></path>
-          </svg>
-          <span class="nhsuk-u-visually-hidden">Close menu</span>
-        </button>
-      </p>
-      <ul class="nhsuk-header__navigation-list">
-        <li class="nhsuk-header__navigation-item nhsuk-header__navigation-item--for-mobile">
-          <a class="nhsuk-header__navigation-link" href="/sprint-5/nhsuk-homepage-4">
-            Home
-            <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
-            </svg>
-          </a>
-        </li>
-        <li class="nhsuk-header__navigation-item">
-          <a class="nhsuk-header__navigation-link" href="#?">
-            Find an opportunity
-            <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
-            </svg>
-          </a>
-        </li>
-        <li class="nhsuk-header__navigation-item">
-          <a class="nhsuk-header__navigation-link" href="#?">
-            Browse NHS volunteering roles
-            <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
-            </svg>
-          </a>
-        </li>
-        <li class="nhsuk-header__navigation-item">
-          <a class="nhsuk-header__navigation-link" href="#?">
-            NHS services
-            <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
-            </svg>
-          </a>
-        </li>
-        <li class="nhsuk-header__navigation-item">
-          <a class="nhsuk-header__navigation-link" href="#?">
-            What’s it like to be an NHS volunteer?
-            <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
-            </svg>
-          </a>
-        </li>
-        
-      </ul>
-    </div>
-  </nav>
+  
 </header>
 {% endblock %}
 
@@ -124,7 +70,7 @@
         <div class="nhsuk-grid-column-two-thirds">
           <div class="nhsuk-hero-content">
             <h2 class="nhsuk-u-margin-bottom-3">Welcome to NHS volunteering!</h2>
-            <p class="nhsuk-body-m nhsuk-u-margin-bottom-0">This is where your journey to becoming part of the NHS family start.</p>
+            <p class="nhsuk-body-m nhsuk-u-margin-bottom-0">This is where your journey to becoming part of the NHS family starts.</p><br>
             <p class="nhsuk-body-m nhsuk-u-margin-bottom-0">Discover the many ways you can have an impact on the experience of patients, their families and medical staff.</p>
             <span class="nhsuk-hero__arrow" aria-hidden="true"></span>
           </div>
@@ -144,7 +90,7 @@
 
 
    <!--Postcode and radius--> 
-   <form action="/sprint-6" method="post" class="form">
+   <form action="/sprint-6/volunteer/results-page-postcode" method="post" class="form">
 
     <div class="nhsuk-grid-row">
       <div class="nhsuk-grid-column-full">
@@ -155,7 +101,6 @@
             <strong>Postcode</strong>
             </label>
             <input class="nhsuk-input" id="example" name="example" type="text">
-            
           </div>
 
           <div class="nhsuk-grid-column-one-third">
@@ -173,16 +118,19 @@
               </select>
             </div>
           </div>
+        
 
-          <div class="nhsuk-grid-column-one-third">
-          <button class="nhsuk-button" type="submit" >
-            Search
-          </button>
+        <div class="nhsuk-grid-column-one-half">
+          <div class="form-inline">
+        <button class="nhsuk-button" type="submit">
+          Search
+        </button>
+        </div>
         </div>
         </div>
       </div>
     </div>
-    
+     
    </form>
       </section>
 
@@ -203,7 +151,7 @@
             <div class="nhsuk-card nhsuk-card--clickable">
               <div class="nhsuk-card__content">
                 <h2 class="nhsuk-card__heading nhsuk-heading-m">
-                  <a class="nhsuk-card__link" href="/sprint-6/volunteer/patient-facing-results-1">Meeting and greeting</a>
+                  <a class="nhsuk-card__link" href="/sprint-6/volunteer/landing-page#Browse NHS volunteering roles">Meeting and greeting</a>
                 </h2>
                 <p class="nhsuk-card__description">Ensure patients and visitors have a good experience as they walk through the door.</p>
               </div>
@@ -215,7 +163,7 @@
             <div class="nhsuk-card nhsuk-card--clickable">
               <div class="nhsuk-card__content">
                 <h2 class="nhsuk-card__heading nhsuk-heading-m">
-                  <a class="nhsuk-card__link" href="/sprint-6/volunteer/patient-facing-results-1">Patient-facing support</a>
+                  <a class="nhsuk-card__link" href="/sprint-6/volunteer/patient-facing-support-browse-2">Patient-facing support</a>
                 </h2>
                 <p class="nhsuk-card__description">Enhance the quality and comfort of patients by interacting with them.</p>
               </div>
@@ -227,7 +175,7 @@
             <div class="nhsuk-card nhsuk-card--clickable">
               <div class="nhsuk-card__content">
                 <h2 class="nhsuk-card__heading nhsuk-heading-m">
-                  <a class="nhsuk-card__link" href="/sprint-6/volunteer/patient-facing-results-1">Recreational activities</a>
+                  <a class="nhsuk-card__link" href="/sprint-6/volunteer/landing-page#Browse NHS volunteering roles">Recreational activities</a>
                 </h2>
                 <p class="nhsuk-card__description">Lift patients' spirit through a range of creative activities.</p>
               </div>
@@ -239,7 +187,7 @@
             <div class="nhsuk-card nhsuk-card--clickable">
               <div class="nhsuk-card__content">
                 <h2 class="nhsuk-card__heading nhsuk-heading-m">
-                  <a class="nhsuk-card__link" href="/sprint-6/volunteer/patient-facing-results-1">Volunteering coordination support</a>
+                  <a class="nhsuk-card__link" href="/sprint-6/volunteer/landing-page#Browse NHS volunteering roles">Volunteering coordination support</a>
                 </h2>
                 <p class="nhsuk-card__description">Assist staff with general clerical duties.</p>
               </div>
@@ -252,9 +200,9 @@
           <div class="nhsuk-card nhsuk-card--clickable">
             <div class="nhsuk-card__content">
               <h2 class="nhsuk-card__heading nhsuk-heading-m">
-                <a class="nhsuk-card__link" href="/sprint-6/volunteer/patient-facing-results-1">Young volunteers (16-18)</a>
+                <a class="nhsuk-card__link" href="/sprint-6/volunteer/landing-page#Browse NHS volunteering roles">Opportunties for young volunteers (16-18)</a>
               </h2>
-              <p class="nhsuk-card__description">A range of tailored roles for young people (16 to 18) wishing to kick start their volunteering.</p>
+              <p class="nhsuk-card__description">A range of roles tailored to young people (16 to 18) wishing to kick start their volunteering.</p>
             </div>
           </div>
         </li>
@@ -265,7 +213,7 @@
         <div class="nhsuk-card nhsuk-card--clickable">
           <div class="nhsuk-card__content">
             <h2 class="nhsuk-card__heading nhsuk-heading-m">
-              <a class="nhsuk-card__link" href="/sprint-6/volunteer/">Remote roles</a>
+              <a class="nhsuk-card__link" href="/sprint-6/volunteer/results-page-remote">Remote roles</a>
             </h2>
             <p class="nhsuk-card__description">Using technology to make a difference to your community. All you need is a phone or a computer.</p>
           </div>
@@ -275,27 +223,17 @@
   
 <!-- NHS Services -->
 
-      <div class="nhsuk-grid-column-full app-section__content">
-        <div class="nhsuk-u-reading-width">
+<section class="nhsuk-section">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-full app-section__content">
+
           
           <h3>NHS services</h3>
-          <p class="app-section__description">There are volunteering opportunities across all NHS services. Select one that you are interested in to find out what is available</p>
-          
-          <ul>
-            <li>Mental health care</li>
-            <li>Hospital services</li>
-            <li>Ambulance</li>
-            <li>Community care</li>
-            <li>Acute care</li>
-            <li>GP surgery</li>
-          </ul>
-       
-        </div>
-
-
+          <p class="app-section__description">You can search for opportunities at specific NHS services. Type the one you are interested in to see what is available.</p>
 
         <!--Keyword--> 
-   <form action="/sprint-6/volunteer/" method="post" class="form">
+   <form action="/sprint-6/volunteer/landing-page#NHS services" method="post" class="form">
 
     <div class="nhsuk-grid-row">
       <div class="nhsuk-grid-column-full">
@@ -309,6 +247,7 @@
           </div>
 
           <div class="nhsuk-grid-column-one-half">
+            <div class="form-inline">
           <button class="nhsuk-button" type="submit" >
             Search
           </button>
@@ -316,6 +255,7 @@
         </div>
       </div>
     </div>
+  </div>
     
    </form>
       </section>
@@ -334,16 +274,20 @@
     <div class="nhsuk-grid-row">
       <div class="nhsuk-grid-column-one-half app-section__content">
         <div class="nhsuk-u-reading-width">
-          <h2>What’s it like to be an NHS volunteer?</h2>
+          <h2>What is it like to be an NHS volunteer</h2>
         </div>
-        <p>As an NHS volunteer, you get to make a difference on the experience of patients and their families. Medical staff also very much value the contribution that volunteers can make to the delivery of high-quality care.</p>
+        <p>As an NHS volunteer, you get to make a positive contribution to the experience of patients and their families. </p>
 
-        <p>You will you be doing something really worthwhile, whilst meeting new people and gaining valuable experience.</p>
+        <p>There are many reasons why you may decide to volunteer within the NHS volunteer. </p>
           
-        <p>Volunteering within the NHS is more than complementing the work of staff and providing a friendly and personal atmosphere. It can improve your job prospects  and help you increase your confidence.</p>
+        <p>You may find it rewarding to do something for the benefit of your local community. It might give you a sense of accomplishment and a positive outlook on life.
+          You will be doing something worthwhile and meaningful to you. </p>
+
+          <p>Volunteering can help you make a decision on your future goals. Whether you are studying or reconsidering your career, volunteering gives you the skills, experience and confidence you need. </p>
+          <p>Whatever your motivation, you will get support from a dedicated team who celebrates all ethnicities, genders, abilities, religions and sexual orientations.</p>
 
     <!--CTA-->      
-          <div><a href="/sprint-5/nhsuk-homepage-4#What’s it like to be an NHS volunteer?" class="nhsuk-button">
+          <div><a href="/sprint-6/volunteer/landing-page#What is it like to be an NHS volunteer" class="nhsuk-button">
             Discover more volunteering stories
           </a>
         </div>
@@ -356,9 +300,9 @@
           <div class="nhsuk-card__content">
             <h3 class="nhsuk-card__heading"><a class="nhsuk-card__link" href="">
               Hear it from our volunteers</a></h3>
-            <p class="nhsuk-card__description">Watch a group of current NHS volunteers talk about the highs and lows of being a volunteer.
+            <p class="nhsuk-card__description">Watch a group of current NHS volunteers talk about the highs and lows of being a volunteer.<br><br>
 
-              You can hear directly from medical staff and patients about the value volunteers can bring.
+              We have asked medical staff and patients about the value volunteers can bring.
               
               </p>
           </div>

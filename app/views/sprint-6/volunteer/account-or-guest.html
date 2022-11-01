@@ -12,7 +12,7 @@
     <div class="nhsuk-grid-column-full">
 
       <div class="nhsuk-back-link">
-        <a class="nhsuk-back-link__link" href="/sprint-6/volunteer">
+        <a class="nhsuk-back-link__link" href="/sprint-6/volunteer/role-listing">
           <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
             <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
           </svg>
@@ -23,16 +23,17 @@
         Sign in
       </h2>
 
-      <p>Sign in or <a href="/sprint-6/volunteer">create an account</a> to get started.</p>
+      <p>Sign in or <a href="/sprint-6/volunteer/account-or-guest#Sign in">create an account</a> to apply.</p>
+
+
       
-      <form class="form" action="/sprint-5/volunteer" method="post">
+      <form class="form" action="/sprint-6/volunteer/empty-form-page-1" method="post">
       <div class="nhsuk-form-group">
         <label class="nhsuk-label" for="input-width-20">
           Email address
         </label>
         <input class="nhsuk-input nhsuk-input--width-20" id="example" name="test-width-20" type="text" value="example.email@gmail.com">
       </div>
-      <p><a href="" class="nhsuk-link">I have forgotten my email address</a></p>
 
       <div class="nhsuk-form-group">
         <label class="nhsuk-label" for="input-width-20">
@@ -43,15 +44,35 @@
       </div>
       <p><a href="" class="nhsuk-link">I have forgotten my password</a></p>
 
-      <div class="nhsuk-hint" id="contact-hint">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-      </div>
+      
+      <!--Details-->
+      <details class="nhsuk-details">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Why create an account?
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <p>Use your personal account to make it easier to apply now and in the future.</p>
+          <p>You can:</p>
+          <ul>
+            <li>save opportunities as your favourite and review them later</li>
+            <li>save your application and continue when it suits you</li>
+            <li>review your past applications</li>
+            
+          </ul>
+          
+      
+        </div>
+      </details>
+
+
   
   </div>
   </div>
 
   <button class="nhsuk-button" type="submit">
-    Continue
+    Sign in and continue
   </button>
 </form>
 

@@ -1,0 +1,57 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Recruiter dashboard prototype
+{% endblock %}
+
+
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-full">
+
+      <!-- Add your content here -->
+
+      <div class="nhsuk-grid-column-two-thirds">
+        <div class="nhsuk-back-link">
+<a class="nhsuk-back-link__link" href="/sprint-6/recruiter/create-new-role-start">
+<svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+<path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+</svg>
+Go back</a>
+</div>
+
+
+        
+<h1 class="nhsuk-heading-l" id="heading-container">
+<span class="nhsuk-caption-l nhsuk-caption--bottom" id="flow-heading">Create a new role listing</span>
+<span class="nhsuk-heading-l" id="heading">What is the role title?</span>
+</h1> 
+
+
+        
+            
+
+
+
+        
+
+<form class="form" action="/sprint-6/recruiter/reuse-ref-no" method="post">
+  
+            <input type="hidden" name="_csrf" value="i2hHaHUG-M7L-7oO3QhqcA-OK3VNxQEtj6-c">
+            <div class="nhsuk-form-group ">
+                <label class="nhsuk-label nhsuk-u-visually-hidden" for="jobTitle" id="error_jobTitle">
+                    Job title
+                </label>
+                
+                <input aria-describedby="heading" class="nhsuk-input nhsuk-input--width-20 " id="jobTitle" type="text" name="jobTitle" value="">
+            </div>
+            
+                <input class="nhsuk-button" type="submit" id="save_continue" value="Save and continue">
+                <br>
+                <a href="/sprint-5/recruiter/dashboard-2" class="nhsuk-link--no-visited-state">Save and come back later</a>   
+            
+        </form>
+    </div>
+{% endblock %}
