@@ -22,7 +22,7 @@
       <fieldset class="nhsuk-fieldset">
         <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
           <h1 class="nhsuk-fieldset__heading">
-            Would you like to specify your availability?
+            What is your availability?
           </h1>
         </legend>
 
@@ -33,34 +33,38 @@
         </div>
 
         <div class="nhsuk-hint">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+          The volunteering service manager has specified that this volunteering opportunity requires your availability at specific dates and times. You can confirm your availability below. You can discuss with the manager which date and time, out of the ones required, you can make.
         </div>
       
         <form class="form" action="/sprint-6/volunteer/" method="post"></form>
         <div class="nhsuk-form-group">
+
+          
+          <!--Times-->
+          <div class="nhsuk-inset-text">
+            <span class="nhsuk-u-visually-hidden">Information: </span>
+            <p>Three hours, any day Monday to Friday<br>
+              10am - 1pm (morning shift)<br>
+              2pm - 5pm (afternoon shift)</p>
+          </div>
       
           <div class="nhsuk-radios">
       
             <div class="nhsuk-radios__item">
               <input class="nhsuk-radios__input" id="example-hints-1" name="example-hints" type="radio" value="yes">
               <label class="nhsuk-label nhsuk-radios__label" for="example-hints-1">
-                Yes, I will be available on fixed days
+                I am available at any of the indicated times and dates
               </label>
             </div>
       
             <div class="nhsuk-radios__item">
               <input class="nhsuk-radios__input" id="example-hints-2" name="example-hints" type="radio" value="no">
               <label class="nhsuk-label nhsuk-radios__label" for="example-hints-2">
-                No, I'm fully flexable
+                I want to select the days and time I can make
               </label>
             </div>
       
-            <div class="nhsuk-radios__item">
-              <input class="nhsuk-radios__input" id="example-hints-3" name="example-hints" type="radio" value="not sure">
-              <label class="nhsuk-label nhsuk-radios__label" for="example-hints-3">
-                I&#39;m not sure
-              </label>
-            </div>
+
       
           </div>
         </div>
@@ -78,8 +82,8 @@
 
   &nbsp;
   
-  <a href="/sprint-6/volunteer/empty-form-page-5" <button class="nhsuk-button nhsuk-button--secondary">
-    Sign in and save for later
+  <a href="/sprint-6/volunteer/saved-applications" <button class="nhsuk-button nhsuk-button--secondary">
+    Save for later
   </button></a>   
   
 

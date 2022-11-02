@@ -1,0 +1,58 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Start page template - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Breadcrumb -->
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/sprint-6/volunteers/landing-page">Home</a></li>
+
+    </ol>
+  </div>
+</nav>
+{% endblock %}
+
+{% block content %}
+
+<!--Title left-->
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+
+<h1>
+Saved Applications
+</h1>
+
+<table role="table" class="nhsuk-table-responsive">
+
+  <div class="nhsuk-hint" id="contact-hint">
+     Application started on 00 Mon 2022, 00:00
+   </div>  
+ 
+   <caption class="nhsuk-table__caption">Part time receptionist, Mental Health Service (Lister Hospital), Stevenage</caption>
+     <tr role="row">
+       <td role="columnheader" class="" scope="col">
+        <a href="/sprint-6/volunteer/saved-applications"> <button class="nhsuk-button"> 
+         Continue application
+         </button></a>
+       </td>
+       <td role="columnheader" class="" scope="col">
+         <strong>Closes:</strong> 00 Month 2022, 00:00
+       <td role="columnheader" class="" scope="col">
+         <a href ="/sprint-6/volunteer/saved-applications"> Delete </a>
+       </td>  </tr>
+ 
+   </table>
+
+   
+
+</div>
+ 
+    </div>
+  </div>
+
+  </div>
+{% endblock %}
