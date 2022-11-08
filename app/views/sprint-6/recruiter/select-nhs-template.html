@@ -1,0 +1,143 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Content page template - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+  
+{% endblock %}
+
+{% block content %}
+
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-full">
+
+    <!-- Add your content here -->
+
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-two-thirds">
+          <div class="nhsuk-back-link">
+<a class="nhsuk-back-link__link" href="/sprint-6/recruiter/create-or-reuse">
+<svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+</svg>
+Go back</a>
+</div>
+
+              <h1 class="nhsuk-heading-l" id="heading-container">
+                  <span class="nhsuk-heading-l" id="create-new" value="create-new"> Select an NHS template</span>
+              </h1>
+
+              <p>Select one option from one dropdown</p>
+
+    </div>  
+    </div>
+
+    <!--Meeting and greet-->
+    <div class="nhsuk-form-group">
+      <label class="nhsuk-label" for="select-1">
+        Meeting and greeting
+      </label>
+      <select class="nhsuk-select" id="select-1" name="select-1">
+        <option value="1"selected>- Select a template - </option>
+        <option value="2">Role title</option>
+        <option value="3">Role title</option>
+        <option value="4">Role title</option>
+        <option value="5">Role title</option>
+        <option value="6">Role title</option>
+        <option value="7">Role title</option>
+      </select>
+    </div>
+
+    <!--Patient-facing support-->
+    <div class="nhsuk-form-group">
+      <label class="nhsuk-label" for="select-1">
+        Patient-facing support
+      </label>
+      <select class="nhsuk-select" id="select-1" name="select-1">
+        <option value="1"selected>- Select a template - </option>
+        <option value="2">Walk and talk volunteer (Some quick details)</option>
+        <option value="3">Lived experience practitioner (Some quick details)</option>
+        <option value="4">Community first responder (CFR) (Some quick details) </option>
+        <option value="5">Role title</option>
+        <option value="6">Role title</option>
+        <option value="7">Role title</option>
+      </select>
+    </div>
+
+    <!--Recreational activities-->
+    <div class="nhsuk-form-group">
+      <label class="nhsuk-label" for="select-1">
+        Recreational activities
+      </label>
+      <select class="nhsuk-select" id="select-1" name="select-1">
+        <option value="1"selected>- Select a template - </option>
+        <option value="2">Role title</option>
+        <option value="3">Role title</option>
+        <option value="4">Role title</option>
+        <option value="5">Role title</option>
+        <option value="6">Role title</option>
+        <option value="7">Role title</option>
+      </select>
+    </div>
+
+    <!--Volunteering coordination support-->
+    <div class="nhsuk-form-group">
+      <label class="nhsuk-label" for="select-1">
+        Volunteering coordination support
+      </label>
+      <select class="nhsuk-select" id="select-1" name="select-1">
+        <option value="1"selected>- Select a template - </option>
+        <option value="2">Role title</option>
+        <option value="3">Role title</option>
+        <option value="4">Role title</option>
+        <option value="5">Role title</option>
+        <option value="6">Role title</option>
+        <option value="7">Role title</option>
+      </select>
+    </div>
+
+    <!--Opportunties for young volunteers (16-18)-->
+    <div class="nhsuk-form-group">
+      <label class="nhsuk-label" for="select-1">
+        Opportunties for young volunteers (16-18)
+      </label>
+      <select class="nhsuk-select" id="select-1" name="select-1">
+        <option value="1"selected>- Select a template - </option>
+        <option value="2">Role title</option>
+        <option value="3">Role title</option>
+        <option value="4">Role title</option>
+        <option value="5">Role title</option>
+        <option value="6">Role title</option>
+        <option value="7">Role title</option>
+      </select>
+    </div>
+
+     <!--Remote opportunities-->
+     <div class="nhsuk-form-group">
+      <label class="nhsuk-label" for="select-1">
+        Remote opportunities
+      </label>
+      <select class="nhsuk-select" id="select-1" name="select-1">
+        <option value="1"selected>- Select a template - </option>
+        <option value="2">Calls with care volunteer, England-wide</option>
+        <option value="3">Telephone befriender, England-wide</option>
+        <option value="4">Hospice call befriender, England-wide</option>
+        <option value="5">Role title</option>
+        <option value="6">Role title</option>
+        <option value="7">Role title</option>
+      </select>
+    </div>
+
+
+    <!--buttons-->  
+    <form class="form" action="/sprint-6/recruiter/select-existing-listing#Published role listings" method="post"></form>      
+    <button class="nhsuk-button" type="submit"> 
+      Save and continue
+      </button>
+    </form>
+
+  </div>
+{% endblock %}
