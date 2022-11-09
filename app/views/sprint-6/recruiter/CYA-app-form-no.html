@@ -1,0 +1,68 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Recruiter dashboard prototype
+{% endblock %}
+
+
+
+{% block content %}
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-full">
+
+    <!-- Add your content here -->
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-two-thirds">
+          
+<h1 class="nhsuk-heading-l" id="heading-container">
+  <span class="nhsuk-caption-l nhsuk-caption--bottom" id="flow-heading">Create a new role listing</span>
+  <span class="nhsuk-heading-l" id="heading">Check and save the application form details</span>
+</h1> 
+      
+            <form class="form" action="/sprint-6/recruiter/tasklist-6-no" method="post">
+              <input type="hidden" name="_csrf" value="uH3sTtpz-lva5Bhk42MOXVWn0byrjyg5M6d0">
+      
+              
+        
+              <dl class="nhsuk-summary-list">
+                <div class="nhsuk-summary-list__row">
+                  <dt class="nhsuk-summary-list__key">
+                    Do you want to receive applications through this service?
+                  </dt>
+                  <dd class="nhsuk-summary-list__value" id="job_title">
+                    No, link to an application form on a different system
+                  </dd>
+                  
+                    <dd class="nhsuk-summary-list__actions">
+                      <a data-test="change-link" aria-label="Change link for job title" id="change_job_title" href="/sprint-6/recruiter/application-form-options">Change</a>
+                    </dd>
+                  
+                </div>
+          
+                <div class="nhsuk-summary-list__row">
+                  <dt class="nhsuk-summary-list__key">What application form link?</dt>
+                  <dd class="nhsuk-summary-list__value" id="reference_number">
+                    assemble.com/role6393739383-273974
+                  </dd>
+                  
+                    <dd class="nhsuk-summary-list__actions">
+                      <a data-test="change-link" aria-label="Change link for reference number" id="change_reference_number" href="/sprint-6/recruiter/application-form-options">Change</a>
+                    </dd>
+                  
+                </div>
+              </dl>
+        
+      
+      
+              
+                <div class="nhsuk-form-group">
+                  <input class="nhsuk-button" name="save_continue" type="submit" id="save_continue" value="Save and continue">
+                </div>
+              
+            </form>
+          </div>
+          </div>
+          </div>
+          </div>
+{% endblock %}
