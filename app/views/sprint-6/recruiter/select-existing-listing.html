@@ -27,29 +27,66 @@ Go back</a>
 </div>
 
               <h1 class="nhsuk-heading-l" id="heading-container">
-                  <span class="nhsuk-heading-l" id="create-new" value="create-new"> Select an existing listing to reuse</span>
+                  <span class="nhsuk-heading-l" id="create-new" value="create-new">Select an existing role listing to reuse</span>
               </h1>
 
     </div>  
     </div>
 
-    <p>Select one option from one dropdown</p>
+    <p>Select one option from the dropdown list</p>
 
+
+    <!--Radios-->
     <div class="nhsuk-form-group">
-      <label class="nhsuk-label" for="select-1">
-        Published role listings
-      </label>
-      <select class="nhsuk-select" id="select-1" name="select-1">
-        <option value="1"selected>- Select a role - </option>
-        <option value="2">Walk and talk volunteer (created on 00/00/2022 at 00:00)</option>
-        <option value="3">Lived experience practitioner (created on 00/00/2022 at 00:00)</option>
-        <option value="4">Community first responder (CFR) (created on 00/00/2022 at 00:00)</option>
-        <option value="5">Calls with care volunteer, England-wide (created on 00/00/2022 at 00:00)</option>
-        <option value="6">Telephone befriender, England-wide (created on 00/00/2022 at 00:00)</option>
-        <option value="7">Hospice call befriender, England-wide (created on 00/00/2022 at 00:00)</option>
-      </select>
-    </div>
 
+      <div class="nhsuk-radios">
+
+        <p>Recent role listings</p>
+  
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="example-hints-1" name="example-hints" type="radio" value="walk-talk-role">
+          <label class="nhsuk-label nhsuk-radios__label" for="example-hints-1">
+            Walk and talk volunteer (created on 00/00/2022 at 00:00)
+          </label>
+        </div>
+  
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="example-hints-2" name="example-hints" type="radio" value="lived-exp">
+          <label class="nhsuk-label nhsuk-radios__label" for="example-hints-2">
+            Lived experience practitioner (created on 00/00/2022 at 00:00)
+          </label>
+        </div>
+  
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="example-hints-3" name="example-hints" type="radio" value="community-responder">
+          <label class="nhsuk-label nhsuk-radios__label" for="example-hints-3">
+            Community first responder (CFR) (created on 00/00/2022 at 00:00)
+          </label>
+        </div>
+
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="example-hints-3" name="example-hints" type="radio" value="calls">
+          <label class="nhsuk-label nhsuk-radios__label" for="example-hints-3">
+            Calls with care volunteer, England-wide (created on 00/00/2022 at 00:00)
+          </label>
+        </div>
+
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="example-hints-3" name="example-hints" type="radio" value="befriender">
+          <label class="nhsuk-label nhsuk-radios__label" for="example-hints-3">
+            Telephone befriender, England-wide (created on 00/00/2022 at 00:00)
+          </label>
+        </div>
+
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="example-hints-3" name="example-hints" type="radio" value="hospice-befriender">
+          <label class="nhsuk-label nhsuk-radios__label" for="example-hints-3">
+            Hospice call befriender, England-wide (created on 00/00/2022 at 00:00)
+          </label>
+        </div>
+  
+      </div>
+    </div>
 
     <!--buttons-->  
     <form class="form" action="/sprint-6/recruiter/select-existing-listing#Published role listings" method="post"></form>      
