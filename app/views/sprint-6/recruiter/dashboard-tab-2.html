@@ -17,8 +17,6 @@
 
       <!-- Add your content here -->
 
-      <div class="nhsuk-width-container ">
-        <main class="nhsuk-main-wrapper " id="maincontent" role="main">
 
             
       <div class="nhsuk-grid-row">
@@ -28,6 +26,17 @@
         <span class="nhsuk-caption-l nhsuk-caption--bottom" id="flow-heading">NHS Volunteering</span>
         <span class="nhsuk-heading-l" id="heading">Dashboard</span>
       </h1> 
+
+      <p>From your dashboard, you can:</p>
+
+      <ul>
+        <li>view and edit your current and past role listings</li>
+        <li>create a new role listing</li>
+        <li>decide how you want to promote your role and receive applications</li>
+        <li>review received applications </li>
+        <li>monitor the performance of role listings.</li>
+      </ul>
+      
       
     
           <div class="tabs" data-js="tabs">
@@ -55,208 +64,18 @@
               <div class="tabs-panel" id="tab-1" role="tabpanel" aria-hidden="false" data-id="tab-1">
                 <div class="tabs-panel-inner" tabindex="0">
                   
-                    
-        
-      
-    
-      <noscript>
-        <div style="float: left; padding-left: 10px; padding-top: 13px;" class="nhsuk-form-group">
-          <button class="nhsuk-button nhsuk-button--secondary" type="submit" name="refresh" id="refresh">
-            Refresh
-          </button>
-        </div>
-      </noscript>
-    </form>
-                  
-            
-                  <dl class="nhsuk-summary-list" style="padding-top: 10px;">
-      
-        <div class="nhsuk-summary-list__row">
-          <dt class="nhsuk-summary-list__key">
-            <h2 class="nhsuk-heading-s">
-              
-                <a id="DRAFT_URL" href="/sprint-6/recruiter/dashboard-tab-2#Data monitoring" class="nhsuk-link nhsuk-link--no-visited-state">Number of views per role</a>
-              
-            </h2>
-          </dt>
-          <dd class="nhsuk-summary-list__value">
-            <p>
-              
-                
-              
-            </p>
-    
-            
-          </dd>
-        </div>
-      
-        <div class="nhsuk-summary-list__row">
-          <dt class="nhsuk-summary-list__key">
-            <h2 class="nhsuk-heading-s">
-              
-                <a id="APPROVALS_URL" href="/sprint-6/recruiter/dashboard-tab-2#Data monitoring" class="nhsuk-link nhsuk-link--no-visited-state">Number of applications received per role</a>
-              
-            </h2>
-          </dt>
-          <dd class="nhsuk-summary-list__value">
-            <p>
-              
-                
-              
-            </p>
-    
-            
-          </dd>
-        </div>
-      
-        
-      
-        
-      
-    </dl>
-                </div>
-              </div>
-            </div>
 
-            
-    
-            <!--DELETE!! TAB 2???-->
-            
-              <div class="tabs-content">
-                <div class="tabs-panel nhsuk-u-visually-hidden" id="tab-2" role="tabpanel" aria-hidden="true" data-id="tab-2">
-                  <div class="tabs-panel-inner" tabindex="0">
+                  <!--Page links-->
+
+                 <p class="nhsuk-body-l"> <a href="/sprint-6/recruiter/dashboard-tab-2#Data monitoring" class="nhsuk-link nhsuk-link--no-visited-state">View number of views per role</a></p>
+
+                 <p class="nhsuk-body-l"> <a href="/sprint-6/recruiter/dashboard-tab-2#Data monitoring" class="nhsuk-link nhsuk-link--no-visited-state">View number of applications received per role</a></p>
+
                     
-      <form method="post" autocomplete="off" class="nhsuk-u-clear">
-        <input type="hidden" name="_csrf" value="EGzIzRlG-wj1tMGsUZgURcPJ70p_CYiwKPRI">
-    
-        <div style="float: left" class="nhsuk-form-group">
-          <label class="nhsuk-label" for="select-department">Showing listings for</label>    
-          <select onchange="window.document.location.href='/work/' + this.options[this.selectedIndex].value + '#tab-2';" class="nhsuk-select" id="select-department" name="workloadFilterId">
-            <optgroup label="Departments">
-              
-                <option value="" selected="">All departments</option>
-              
-                <option value="d29ya2xvYWRfZGVwYXJ0bWVudGlkXzE1NA==">Administration</option>
-              
-                <option value="d29ya2xvYWRfZGVwYXJ0bWVudGlkXzg4">Medical</option>
-              
-                <option value="d29ya2xvYWRfZGVwYXJ0bWVudGlkXzE5NA==">Work Experience</option>
-              
-                <option value="workload_unassigned_department">Unassigned department</option>
-              
-            </optgroup>
-          </select>
-        </div>
-    
-        <noscript>
-          <div style="float: left; padding-left: 10px; padding-top: 13px;" class="nhsuk-form-group">
-            <button class="nhsuk-button nhsuk-button--secondary" type="submit" name="refresh" id="refresh">
-              Refresh
-            </button>
-          </div>
-        </noscript>
-      </form>
-    
-    
-                    
-      
-        <dl class="nhsuk-summary-list" id="unassigned-user-list" style="padding-top: 10px;">
-          <div class="nhsuk-summary-list__row">
-            <dt class="nhsuk-summary-list__key">
-              
-                <h2 class="nhsuk-heading-s">
-                  <a id="listings_by_unassigned" href="/work/workload-tasks/unassigned">Unassigned user</a>
-                </h2>
-              
-            </dt>
-            <dd class="nhsuk-summary-list__value">
-              <p>
-                <span id="unassigned_counter" class="single-number-strong" style="font-size: 1.5rem">65</span>
-                
-                  <span>  
-                    - on track 19, due 1, overdue 45
-                  </span>
-                
-              </p>
-    
-              <div class="bar-chart-bar">
-                <div class="bar bar-green" style="width: 19%"></div>
-                <div class="bar bar-amber" style="width: 1%"></div>
-                <div class="bar bar-red" style="width: 45%"></div>
-              </div>
-            </dd>
-          </div>
-        </dl>
-        <br>
-      
-    
-      
-    
-      
-    
-    
-    <dl class="nhsuk-summary-list" id="assigned-user-list" style="padding-top: 10px;">
-      
         
       
-        
-          <div class="nhsuk-summary-list__row">
-            <dt class="nhsuk-summary-list__key">
-              
-                <h2 class="nhsuk-heading-s">
-                  <a id="listings_by_Nzc2" href="/work/workload-tasks/Nzc2">Ashleigh McFadyen</a>
-                </h2>
-              
-            </dt>
-            <dd class="nhsuk-summary-list__value">
-              <p>
-                <span id="Nzc2_counter" class="single-number-strong" style="font-size: 1.5rem">3</span>
-                
-                  <span>  
-                    - on track 0, overdue 3
-                  </span>
-                
-              </p>
     
-              <div class="bar-chart-bar">
-                <div class="bar bar-green" style="width: 0%"></div>
-                <div class="bar bar-amber" style="width: 0%"></div>
-                <div class="bar bar-red" style="width: 3%"></div>
-              </div>
-            </dd>
-          </div>
-        
-      
-        
-          <div class="nhsuk-summary-list__row">
-            <dt class="nhsuk-summary-list__key">
-              
-                <h2 class="nhsuk-heading-s">
-                  <a id="listings_by_Mjky" href="/work/workload-tasks/Mjky">Jennifer Prince</a>
-                </h2>
-              
-            </dt>
-            <dd class="nhsuk-summary-list__value">
-              <p>
-                <span id="Mjky_counter" class="single-number-strong" style="font-size: 1.5rem">1</span>
-                
-                  <span>  
-                    - on track 0, overdue 1
-                  </span>
-                
-              </p>
-    
-              <div class="bar-chart-bar">
-                <div class="bar bar-green" style="width: 0%"></div>
-                <div class="bar bar-amber" style="width: 0%"></div>
-                <div class="bar bar-red" style="width: 1%"></div>
-              </div>
-            </dd>
-          </div>
-        
-      
-    </dl>
-                  </div>
+           </div>
                 </div>
               </div>
             

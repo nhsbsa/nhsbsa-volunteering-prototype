@@ -1,0 +1,69 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Recruiter dashboard prototype
+{% endblock %}
+
+
+
+{% block content %}
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-full">
+
+    <!-- Add your content here -->
+
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        
+
+
+          
+              <h1 class="nhsuk-heading-l" id="heading-container">
+                  <span class="nhsuk-caption-l nhsuk-caption--bottom">Create a new role listing</span>
+                  <span class="nhsuk-heading-l" id="heading">Check and save the location details</span>
+              </h1>
+      
+            <form class="form" action="/sprint-6/recruiter/tasklist-2" method="post">
+              <input type="hidden" name="_csrf" value="uH3sTtpz-lva5Bhk42MOXVWn0byrjyg5M6d0">
+      
+              
+        
+          <dl class="nhsuk-summary-list">
+            <div class="nhsuk-summary-list__row">
+              <dt class="nhsuk-summary-list__key">
+                Where is this role based?
+              </dt>
+              <dd class="nhsuk-summary-list__value" id="job_title">
+                Home based
+              </dd>
+              
+                <dd class="nhsuk-summary-list__actions">
+                  <a data-test="change-link" aria-label="Change link for job title" id="change_job_title" href="/sprint-6/recruiter/role-location-1">Change</a>
+                </dd>
+              
+            </div>
+      
+            
+
+            
+                                </div>
+                              </div>
+                
+              
+            </div>
+          </dl>
+        
+      
+      
+              
+                <div class="nhsuk-form-group">
+                  <input class="nhsuk-button" name="save_continue" type="submit" id="save_continue" value="Save and continue">
+                </div>
+              
+            </form>
+          </div>
+          </div>
+          </div>
+          </div>
+{% endblock %}
