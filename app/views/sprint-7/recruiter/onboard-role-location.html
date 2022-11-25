@@ -1,0 +1,133 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Recruiter dashboard prototype
+{% endblock %}
+
+
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-full">
+
+      <!-- Add your content here -->
+
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-two-thirds">
+            <div class="nhsuk-back-link">
+  <a class="nhsuk-back-link__link" href="/sprint-7/recruiter/onboard-primary-contact">
+  <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+  </svg>
+  Go back</a>
+</div>
+
+
+            
+                <h1 class="nhsuk-heading-l" id="heading-container">
+                    <span class="nhsuk-heading-l" id="heading">Your role locations</span>
+                </h1>
+            
+
+          
+        <p class="nhsuk-heading-s">
+            Walk and Talk volunteer
+            <span class="status-box status-box-blue" aria-label="status for Walk and Talk volunteer is DRAFT" id="status_DRAFT" role="status">
+                DRAFT
+            </span>
+        </p>
+    
+    
+        
+            <p id="reference_number" role="note" aria-label="Reference number: T5555-22-9757">Reference no: T5555-22-9757</p>
+        
+    
+                
+            
+
+            <form class="form" action="/sprint-7/recruiter/onboard-role-location#Do you want to add another location for this role?" method="post">
+                <input type="hidden" name="_csrf">
+                
+
+    
+
+                <div class="nhsuk-form-group">
+                  <label class="nhsuk-label" for="address-line-1">
+                    Hospital name
+                  </label>
+                  <input class="nhsuk-input" id="address-line-1" name="address-line-1" type="text">
+                </div>
+                
+                
+                  <div class="nhsuk-form-group">
+                    <label class="nhsuk-label" for="address-line-1">
+                      Building and street <span class="nhsuk-u-visually-hidden">line 1 of 2</span>
+                    </label>
+                    <input class="nhsuk-input" id="address-line-1" name="address-line-1" type="text">
+                  </div>
+                
+                
+                  <div class="nhsuk-form-group">
+                    <label class="nhsuk-label" for="address-town">
+                      Town or city
+                    </label>
+                    <input class="nhsuk-input nhsuk-u-width-two-thirds" id="address-town" name="address-town" type="text">
+                  </div>
+                
+                  <div class="nhsuk-form-group">
+                    <label class="nhsuk-label" for="address-county">
+                      County
+                    </label>
+                    <input class="nhsuk-input nhsuk-u-width-two-thirds" id="address-county" name="address-county" type="text">
+                  </div>
+                
+                  <div class="nhsuk-form-group">
+                    <label class="nhsuk-label" for="address-postcode">
+                      Postcode
+                    </label>
+                    <input class="nhsuk-input nhsuk-input--width-10" id="address-postcode" name="address-postcode" type="text">
+                  </div>
+                
+                </fieldset>
+              </div>
+          
+          </div>
+
+          <!--Add another-->
+          <br>
+        <div class="nhsuk-form-group">
+
+          <fieldset class="nhsuk-fieldset">
+            <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--s">
+              <h1 class="nhsuk-fieldset__heading">
+                  Do you want to add another location for this role?
+              </h1>
+            </legend>
+        
+            <div class="nhsuk-radios nhsuk-radios--inline">
+        
+              <div class="nhsuk-radios__item">
+                <input class="nhsuk-radios__input" id="example-inline-1" name="example-inline" type="radio" value="yes~/sprint-7/recruiter/onboard-role-location#Do you want to add another location for this role?">
+                <label class="nhsuk-label nhsuk-radios__label" for="example-inline-1">
+                  Yes
+                </label>
+              </div>
+        
+              <div class="nhsuk-radios__item">
+                <input class="nhsuk-radios__input" id="example-inline-2" name="example-inline" type="radio" value="no~/sprint-7/recruiter/onboard-about-us">
+                <label class="nhsuk-label nhsuk-radios__label" for="example-inline-2">
+                  No
+                </label>
+              </div>
+            </div>
+            <br>
+    
+
+             
+                <input class="nhsuk-button" type="submit" name="continue" id="continue" value="Save and continue">
+
+            </form>
+        </div>
+    </div>
+{% endblock %}
