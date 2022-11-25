@@ -1,0 +1,78 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Start page template - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+
+       
+
+      <h2>
+        Sign in
+      </h2>
+
+      <p>Sign in or <a href="/sprint-7/recruiter/login#Sign in" class="nhsuk-link nhsuk-link--no-visited-state">register as a volunteering recruiter</a></p>
+      
+      <form class="form" action="/sprint-7/recruiter/dashboard" method="post">
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="input-width-20">
+          Email address
+        </label>
+        <input class="nhsuk-input nhsuk-input--width-20" id="example" name="test-width-20" type="text" value="name.surname@nhs.net.com">
+      </div>
+      
+
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="input-width-20">
+          Password
+        </label>
+        <input class="nhsuk-input nhsuk-input--width-20" id="example" name="test-width-20" type="text" value="••••••••••">
+        
+      </div>
+
+  
+  </div>
+  </div>
+
+  <button class="nhsuk-button" type="submit">
+    Sign in
+  </button>
+</form>
+
+
+<!--Details-->
+<details class="nhsuk-details">
+  <summary class="nhsuk-details__summary">
+    <span class="nhsuk-details__summary-text">
+      Why register as a volunteering recruiter
+    </span>
+  </summary>
+  <div class="nhsuk-details__text">
+    <p>Create an NHS Volunteering account for the volunteering service team at your organisation to promote volunteering opportunities.</p>
+    <p>You can:</p>
+    <ul>
+      <li>create new role listings or reuse any existing ones</li>
+      <li>decide how to receive application forms</li>
+      <li>access data on active or closed applications</li>
+      <li>manage integration with third-party recruitment systems.</li>
+      
+    </ul>
+    
+
+  </div>
+</details>
+
+<p><a href="" class="nhsuk-link">I have forgotten my password</a></p>
+
+
+
+    
+
+  </div>
+{% endblock %}

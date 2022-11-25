@@ -1,0 +1,136 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Recruiter dashboard prototype
+{% endblock %}
+
+
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-full">
+
+      <!-- Add your content here -->
+
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-two-thirds">
+            <div class="nhsuk-back-link">
+  <a class="nhsuk-back-link__link" href="/sprint-7/recruiter/tasklist-2">
+  <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+  </svg>
+  Go back</a>
+</div>
+
+
+            
+                <h1 class="nhsuk-heading-l" id="heading-container">
+                    <span class="nhsuk-caption-l nhsuk-caption--bottom">Create a new role listing</span>
+                    <span class="nhsuk-heading-l" id="heading">Who do you want to add as a recruitment administrator?</span>
+                </h1>
+            
+
+          
+        <p class="nhsuk-heading-s">
+            Walk and Talk volunteer
+            <span class="status-box status-box-blue" aria-label="status for Walk and Talk volunteer is DRAFT" id="status_DRAFT" role="status">
+                DRAFT
+            </span>
+        </p>
+    
+    
+        
+            <p id="reference_number" role="note" aria-label="Reference number: T5555-22-9757">Reference no: T5555-22-9757</p>
+        
+    
+        <p>You can give members of your team editing access to this service. They will be able to create, edit and publish role listings.</p>
+                
+            
+
+            <form class="form" action="/sprint-7/recruiter/primary-contact# Do you want to add another contact for this role?" method="post">
+                <input type="hidden" name="_csrf">
+                
+
+    
+
+    
+        <div class="nhsuk-form-group ">
+    
+        <fieldset class="nhsuk-fieldset app-fieldset--custom-modifier ">
+            <legend class="nhsuk-fieldset__legend nhsuk-u-visually-hidden" id="">
+                Who do you want to add as a recruitment administrator?
+            </legend>
+            
+            
+            <div class="nhsuk-form-group">
+                <label class="nhsuk-label" for="example">
+                    Full name
+                </label>
+                <input class="nhsuk-input nhsuk-input--width-20" id="input-width-20" name="test-width-20" type="text" value="Michelle Obama">
+            </div>
+
+              <div class="nhsuk-form-group">
+                <label class="nhsuk-label" for="example">
+                    Job title
+                </label>
+                <input class="nhsuk-input nhsuk-input--width-20" id="input-width-20" name="test-width-20" type="text" value="Ward Administrator">
+            </div>
+
+              <div class="nhsuk-form-group">
+                <label class="nhsuk-label" for="example">
+                    Email address
+                </label>
+                <input class="nhsuk-input nhsuk-input--width-20" id="input-width-20" name="test-width-20" type="text" value="michelle.obama@nhs.net">
+            </div>
+                            </div>
+                        
+                    
+                
+            </div>
+        </fieldset>
+    
+        </div>
+
+        <br>
+
+        <!--Add another-->
+        <div class="nhsuk-form-group">
+
+            <fieldset class="nhsuk-fieldset">
+              <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--s">
+                <h1 class="nhsuk-fieldset__heading">
+                    Do you want to add another contact for this role?
+                </h1>
+              </legend>
+          
+              <div class="nhsuk-radios nhsuk-radios--inline">
+          
+                <div class="nhsuk-radios__item">
+                  <input class="nhsuk-radios__input" id="example-inline-1" name="example-inline" type="radio" value="yes~/sprint-7/recruiter/primary-contact#Do you want to add another contact for this role?">
+                  <label class="nhsuk-label nhsuk-radios__label" for="example-inline-1">
+                    Yes
+                  </label>
+                </div>
+          
+                <div class="nhsuk-radios__item">
+                  <input class="nhsuk-radios__input" id="example-inline-2" name="example-inline" type="radio" value="no~/sprint-7/recruiter/role-location">
+                  <label class="nhsuk-label nhsuk-radios__label" for="example-inline-2">
+                    No
+                  </label>
+                </div>
+          
+              </div>
+            </fieldset>
+          
+          </div>
+    
+
+             
+                <input class="nhsuk-button" type="submit" name="continue" id="continue" value="Save and continue">
+                <p><a id="save_come_back" href="/sprint-7/recruiter/dashboard" class="nhsuk-link--no-visited-state">Save and come back later</a></p>
+
+            </form>
+        </div>
+    </div>
+{% endblock %}

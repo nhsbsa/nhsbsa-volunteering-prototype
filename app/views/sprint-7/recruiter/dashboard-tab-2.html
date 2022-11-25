@@ -1,0 +1,169 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Recruiter dashboard prototype
+{% endblock %}
+
+
+
+{% block content %}
+<div class="nhsuk-back-link">
+  <a class="nhsuk-back-link__link" href="/sprint-7/recruiter/login">
+    <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
+      <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+    </svg>
+    Sign out</a>
+</div>  
+
+      <!-- Add your content here -->
+
+
+            
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-two-thirds">
+          
+      <h1 class="nhsuk-heading-l" id="heading-container">
+        <span class="nhsuk-caption-l nhsuk-caption--bottom" id="flow-heading">NHS Volunteering</span>
+        <span class="nhsuk-heading-l" id="heading">Dashboard</span>
+      </h1> 
+
+    
+      
+      
+    
+          <div class="tabs" data-js="tabs">
+            <div class="tabs-nav">
+      
+        <ul class="tabs-list" role="tablist" style="display: block;">
+          <li role="presentation">
+            <a class="tabs-toggle" href="/sprint-7/recruiter/dashboard" role="tab" aria-controls="tab-1" aria-selected="false" tabindex="0">
+              Role listings
+            </a>
+          </li>
+          <li role="presentation">
+            <a class="tabs-toggle" href="/sprint-7/recruiter/dashboard-tab-2#Dashboard" role="tab" aria-controls="tab-2" tabindex="-1" aria-selected="true">
+              Data monitoring
+            </a>
+          </li>
+        </ul>
+      
+    
+    </div>
+
+    <!--TAB 1-->
+    
+            <div class="tabs-content">
+              <div class="tabs-panel" id="tab-1" role="tabpanel" aria-hidden="false" data-id="tab-1">
+                <div class="tabs-panel-inner" tabindex="0">
+                  
+
+                  <!--Page links-->
+
+                 <p class="nhsuk-body-l"> <a href="/sprint-7/recruiter/dashboard-tab-2#Data monitoring" class="nhsuk-link nhsuk-link--no-visited-state">View number of views per role</a></p>
+
+                 <p class="nhsuk-body-l"> <a href="/sprint-7/recruiter/dashboard-tab-2#Data monitoring" class="nhsuk-link nhsuk-link--no-visited-state">View number of applications received per role</a></p>
+
+                    
+        
+      
+    
+           </div>
+                </div>
+              </div>
+            
+          </div>
+        </div>
+
+
+        <!--ACTION PANEL-->
+        <div class="nhsuk-grid-column-one-third">
+          <div class="action-block">
+      <h2 class="nhsuk-heading-m">What you can do</h2>
+      
+        <a class="nhsuk-button" href="/sprint-7/recruiter/create-or-reuse" role="button" draggable="false" id="create_role">
+          Create a role listing
+        </a>
+      
+      <a class="nhsuk-button nhsuk-button--secondary" href="/sprint-7/recruiter/dashboard#Manage my account" role="button" draggable="false" id="manage_listing">
+        Manage settings
+      </a>
+      
+      
+    </div>
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    
+            
+                
+    <noscript>
+        </br>
+        <p id="timeout_message">For your security we'll sign you out if you do not move from this page by
+            12:53 pm BST.</p>
+    </noscript>
+    
+    <div id="timeout-modal" class="modal" style="display: none;">
+        <div id="timeout-model-content" class="modal-content" style="display: none;">
+            <h1 class="nhsuk-heading-l">Your session will time out soon</h1>
+            <p>For your security we'll sign you out if you do not respond in <span id="timeleft">89</span> minutes.</p>
+    
+            <a class="nhsuk-button" href="#" role="button" draggable="false" onclick="window.location.reload();">
+                Get more time
+            </a>
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+    
+      let secondsLeft = 5399.1;
+      const warningSecondsLeftThreshold = 300; //5 minutes
+      const timeOut = new Date().getTime()/1000 + secondsLeft;
+      const updateIntervalMilliseconds = 5000;
+    
+      function showTimeoutWarning() {
+        document.getElementById('timeout-modal').style.display = 'block';
+        document.getElementById('timeout-model-content').style.display = 'block';
+      }
+    
+      function hideTimeoutWarning() {
+        document.getElementById('timeout-modal').style.display = 'none';
+        document.getElementById('timeout-model-content').style.display = 'none';
+      }
+    
+      function updateTimeRemaining() {
+        secondsLeft = timeOut - new Date().getTime()/1000;
+        document.getElementById('timeleft').innerHTML = secondsLeft <= 0 ? 0 : Math.ceil(secondsLeft / 60);
+      }
+    
+      function updateTimeout() {
+        if (secondsLeft <= 0) {
+          document.location.href='../timed-out';
+        }
+    
+        if (secondsLeft < warningSecondsLeftThreshold) {
+          showTimeoutWarning();
+        } else {
+          hideTimeoutWarning();
+        }
+    
+        updateTimeRemaining();
+      }
+    
+      setTimeout(function runTimeout() {
+        updateTimeout();
+        setTimeout(runTimeout, updateIntervalMilliseconds);
+      }, updateIntervalMilliseconds);
+    
+    </script>
+    
+            
+        </main>
+    </div>
+{% endblock %}
