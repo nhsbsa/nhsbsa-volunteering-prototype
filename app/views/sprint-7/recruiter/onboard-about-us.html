@@ -27,6 +27,7 @@
 
             
   <h1 class="nhsuk-heading-l" id="heading-container">
+    <span class="nhsuk-caption-l nhsuk-caption--bottom">Confirm default organisation settings</span>
     <span class="nhsuk-heading-l" id="heading">Add information on your organisation</span>
   </h1> 
 
@@ -37,28 +38,26 @@
             <form class="form" action="/sprint-7/recruiter/onboard-primary-contact" method="post">
 
 
-                <input type="hidden" name="_csrf" value="Ght2mB1x-EWmh83QMheZ8fsHCDfSh0HLA8ak">
-                <fieldset class="nhsuk-fieldset" id="">
-                    <legend class="nhsuk-fieldset__legend nhsuk-u-visually-hidden">
-                        Give an overview of your organisation
-                    </legend>
-                    <div tabindex="0" class="nhsuk-form-group ">
-                        <h2 class="nhsuk-heading-m">Give an overview of your organisation</h2>
 
     
         <div class="nhsuk-form-group ">
 
             <div class="nhsuk-form-group">
+
+              <div class="nhsuk-inset-text">
+                <span class="nhsuk-u-visually-hidden">Information: </span>
+                <p>This information will feature in all the role listings you and your team create. You can change them at any time in the 'Manage your account' section.</p>
+              </div>
+          
                 <div class="nhsuk-form-group">
                     <label class="nhsuk-label" for="example">
                         Introduce the volunteering service team, the atmosphere and the benefits of volunteering at your organisation. 
                     </label>
                     
-                    <br>
+                   
+
+                   
                 
-                <div class="nhsuk-hint" id="example-hint">
-                    This information will feature in all the role listings you and your team create. You can change them at any time in the 'Manage your account' section.
-                </div>
                 <textarea class="nhsuk-textarea" id="example" name="example" rows="12" aria-describedby="example-hint">
                 </textarea>
                 
@@ -84,12 +83,11 @@
             <!--upload & URL-->
 
             <div class="nhsuk-form-group ">
-                <h2 class="nhsuk-heading-m">Upload images</h2>
+                <h2 class="nhsuk-heading-m">Add your organisation logo</h2>
 
                 <div class="nhsuk-form-group">
                     <label class="nhsuk-label" for="example">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    </label>
+                      You can add the logo of your organisation to the role listing.</label>
                     <br>
 
                   <label class="nhsuk-label " for="supportingDoc" id="">
@@ -109,12 +107,12 @@
                     <div class="nhsuk-form-group">
                     <h2 class="nhsuk-heading-m">Add website address</h2>
                     <label class="nhsuk-label" for="example">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                      Use this to link from the role listings to the volunteering webpage of your NHS organisation. 
                     </label>
                     <br>
 
                     <label class="nhsuk-label" for="example">
-                      Volunteering website address
+                      Volunteering webpage address
                     </label>
                     <input class="nhsuk-input" id="example" name="example" type="text">
                   </div>
