@@ -27,7 +27,7 @@
             
                 <h1 class="nhsuk-heading-l" id="heading-container">
                     <span class="nhsuk-caption-l nhsuk-caption--bottom">Create a new role listing</span>
-                    <span class="nhsuk-heading-l" id="heading">Where do you want to set as your role location?</span>
+                    <span class="nhsuk-heading-l" id="heading">Select the location address for this role</span>
                 </h1>
             
 
@@ -48,50 +48,20 @@
             
 
             <form class="form" action="/sprint-7/recruiter/role-location#Do you want to add another location for this role?" method="post">
-                <input type="hidden" name="_csrf">
                 
 
-    
-
-                <div class="nhsuk-form-group">
-                  <label class="nhsuk-label" for="address-line-1">
-                    Hospital name
-                  </label>
-                  <input class="nhsuk-input" id="address-line-1" name="address-line-1" type="text" value="Birch Hill Hospital">
-                </div>
-                
-                
-                  <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="address-line-1">
-                      Building and street <span class="nhsuk-u-visually-hidden">line 1 of 2</span>
-                    </label>
-                    <input class="nhsuk-input" id="address-line-1" name="address-line-1" type="text" value="Mental Health Services, Union Road">
-                  </div>
-                
-                
-                  <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="address-town">
-                      Town or city
-                    </label>
-                    <input class="nhsuk-input nhsuk-u-width-two-thirds" id="address-town" name="address-town" type="text" value="Rochdale">
-                  </div>
-                
-                  <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="address-county">
-                      County
-                    </label>
-                    <input class="nhsuk-input nhsuk-u-width-two-thirds" id="address-county" name="address-county" type="text" value="Lancashire">
-                  </div>
-                
-                  <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="address-postcode">
-                      Postcode
-                    </label>
-                    <input class="nhsuk-input nhsuk-input--width-10" id="address-postcode" name="address-postcode" type="text" value="OL12 9QB">
-                  </div>
-                
-                </fieldset>
+              <div class="nhsuk-form-group">
+                <label class="nhsuk-label" for="select-1">
+                  Select location address
+                </label>
+                <select class="nhsuk-select" id="select-1" name="select-1">
+                  <option value="1">- select address -</option>
+                  <option value="2"selected>Birch Hill Hospital, Mental Health Services, Union Road, Rochdale, Lancashire, OL12 9QB </option>
+                </select>
               </div>
+
+
+            </div>
           
           </div>
 

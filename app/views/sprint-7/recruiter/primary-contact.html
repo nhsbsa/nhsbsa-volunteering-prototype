@@ -27,7 +27,7 @@
             
                 <h1 class="nhsuk-heading-l" id="heading-container">
                     <span class="nhsuk-caption-l nhsuk-caption--bottom">Create a new role listing</span>
-                    <span class="nhsuk-heading-l" id="heading">Who do you want to add as a recruitment administrator?</span>
+                    <span class="nhsuk-heading-l" id="heading">Select the primary contact for this role</span>
                 </h1>
             
 
@@ -42,14 +42,10 @@
     
         
             <p id="reference_number" role="note" aria-label="Reference number: T5555-22-9757">Reference no: T5555-22-9757</p>
-        
-    
-        <p>You can give members of your team editing access to this service. They will be able to create, edit and publish role listings.</p>
-                
+                      
             
 
-            <form class="form" action="/sprint-7/recruiter/primary-contact# Do you want to add another contact for this role?" method="post">
-                <input type="hidden" name="_csrf">
+            <form class="form" action="/sprint-7/recruiter/role-location" method="post">
                 
 
     
@@ -59,55 +55,34 @@
     
         <fieldset class="nhsuk-fieldset app-fieldset--custom-modifier ">
             <legend class="nhsuk-fieldset__legend nhsuk-u-visually-hidden" id="">
-                Who do you want to add as a recruitment administrator?
+                Who do you want to add as the recruitment administrator?
             </legend>
-            
-            
+
             <div class="nhsuk-form-group">
-                <label class="nhsuk-label" for="example">
-                    Full name
-                </label>
-                <input class="nhsuk-input nhsuk-input--width-20" id="input-width-20" name="test-width-20" type="text" value="Michelle Obama">
+              <label class="nhsuk-label" for="select-1">
+                Select primary contact
+              </label>
+              <select class="nhsuk-select" id="select-1" name="select-1">
+                <option value="1">- select contact -</option>
+                <option value="2"selected>Michelle Obama (Ward Administrator, michelle.obama@nhs.net, 0141 496 0395)</option>
+              </select>
             </div>
 
-              <div class="nhsuk-form-group">
-                <label class="nhsuk-label" for="example">
-                    Job title
-                </label>
-                <input class="nhsuk-input nhsuk-input--width-20" id="input-width-20" name="test-width-20" type="text" value="Ward Administrator">
-            </div>
-
-              <div class="nhsuk-form-group">
-                <label class="nhsuk-label" for="example">
-                    Email address
-                </label>
-                <input class="nhsuk-input nhsuk-input--width-20" id="input-width-20" name="test-width-20" type="text" value="michelle.obama@nhs.net">
-            </div>
-                            </div>
-                        
-                    
-                
-            </div>
-        </fieldset>
-    
-        </div>
-
-        <br>
-
-        <!--Add another-->
-        <div class="nhsuk-form-group">
-
+            <!--Add another-->
+          <br>
+          <div class="nhsuk-form-group">
+  
             <fieldset class="nhsuk-fieldset">
               <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--s">
                 <h1 class="nhsuk-fieldset__heading">
-                    Do you want to add another contact for this role?
+                    Do you want to add a different contact for this role?
                 </h1>
               </legend>
           
               <div class="nhsuk-radios nhsuk-radios--inline">
           
                 <div class="nhsuk-radios__item">
-                  <input class="nhsuk-radios__input" id="example-inline-1" name="example-inline" type="radio" value="yes~/sprint-7/recruiter/primary-contact#Do you want to add another contact for this role?">
+                  <input class="nhsuk-radios__input" id="example-inline-1" name="example-inline" type="radio" value="yes~/sprint-7/recruiter/primary-contact#Do you want to add a different contact for this role?">
                   <label class="nhsuk-label nhsuk-radios__label" for="example-inline-1">
                     Yes
                   </label>
@@ -119,11 +94,20 @@
                     No
                   </label>
                 </div>
-          
               </div>
-            </fieldset>
-          
-          </div>
+            
+            </div>
+                            </div>
+                        
+                    
+                
+            </div>
+        </fieldset>
+    
+        </div>
+
+        
+        
     
 
              
