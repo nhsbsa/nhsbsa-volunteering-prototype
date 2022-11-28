@@ -11,7 +11,7 @@
   <div class="nhsuk-grid-column-full">
 
     <div class="nhsuk-back-link">
-      <a class="nhsuk-back-link__link" href="/sprint-7/recruiter/onboard-logo-url">
+      <a class="nhsuk-back-link__link" href="/sprint-7/recruiter/onboard-application-form">
         <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
           <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
         </svg>
@@ -26,168 +26,6 @@
         Check your answers before saving account settings
       </h1>
 
-      <h2>
-        Add role details
-      </h2>
-
-      {{ summaryList({
-        rows: [
-          {
-            key: {
-              text: "What is the role title?"
-            },
-            value: {
-              text: "Walk and talk volunteer"
-            },
-            actions: {
-              items: [
-                {
-                  href: "/sprint-7/recruiter/role-title",
-                  text: "Change",
-                  visuallyHiddenText: "title"
-                }
-              ]
-            }
-          },
-        
-          {
-            key: {
-              text: "Would you like to change the reference number?"
-            },
-            value: {
-              text: "No"
-            },
-            actions: {
-              items: [
-                {
-                  href: "/sprint-7/recruiter/reuse-ref-no",
-                  text: "Change",
-                  visuallyHiddenText: "use reference"
-                }
-              ]
-            }
-          },
-
-          {
-            key: {
-              text: "Reference no"
-            },
-            value: {
-              text: "T5555-22-9757"
-            },
-            actions: {
-              items: [
-                {
-                  href: "/sprint-7/recruiter/reuse-ref-no",
-                  text: "Change",
-                  visuallyHiddenText: "reference no"
-                }
-              ]
-            }
-          },
-          
-          {
-            key: {
-              text: "Role summary"
-            },
-            value: {
-              html: 'This is a rewarding volunteering opportunity within our mental health services for people with memory problems or dementia and their carers. You will support our therapy team with the running of this activity with the aim of maintaining and improving their well-being.
-
-              <br><br>This role will suits someone friendly, approachable and enthusiastic. Whether you want to gain experience, improve your career prospects or just want to give some of your time to help others, this role could be for you!'
-            },
-            actions: {
-              items: [
-                {
-                  href: "/sprint-7/recruiter/empty-role-fields",
-                  text: "Change",
-                  visuallyHiddenText: "role summary"
-                }
-              ]
-            }
-            },
-
-            {
-              key: {
-                text: "Main duties and responsibilities of the role"
-              },
-              value: {
-                html: '<ul>
-                  <li>To encourage and support service users to participate in this therapeutic and social activity</li>
-                <li>To meet and greet service users as they arrive</li>
-              <li>To encourage people to participate and help them to feel good about themselves</li>
-            <li>To direct walkers along the designated route</li>
-              </ul>'
-              },
-              actions: {
-                items: [
-                  {
-                    href: "/sprint-7/recruiter/empty-role-fields",
-                    text: "Change",
-                    visuallyHiddenText: "main duties"
-                  }
-                ]
-              }
-              },
-              {
-                key: {
-                  text: "Do you require a minimum time commitment?"
-                },
-                value: {
-                  text: 'Yes'
-                },
-                actions: {
-                  items: [
-                    {
-                      href: "/sprint-7/recruiter/time-commitment-1",
-                      text: "Change",
-                      visuallyHiddenText: "time commitment"
-                    }
-                  ]
-                }
-                },
-
-                {
-                  key: {
-                    text: "Enter a minimum time commitment"
-                  },
-                  value: {
-                    html: 'Minimum number of shifts per week: 2<br> Minimum number of weeks: 8 <br> Minimum number of hours per week: 10'
-                  },
-                  actions: {
-                    items: [
-                      {
-                        href: "/sprint-7/recruiter/time-commitment-2",
-                        text: "Change",
-                        visuallyHiddenText: "time commitment"
-                      }
-                    ]
-                  }
-                  },
-        
-          {
-            key: {
-              text: "What are the specific days and times required for this role?"
-            },
-            value: {
-              html: 'Mondays: 7am - 12pm <br> Tuesdays: 4pm - 9pm <br> Fridays: 12pm - 5pm'
-            },
-            actions: {
-              items: [
-                {
-                  href: "/sprint-7/recruiter/empty-role-fields",
-                  text: "Change",
-                  visuallyHiddenText: "availability"
-                }
-                ]
-              }
-            }
-          ]
-        }) }}
-  
-
-      <h2>
-        Confirm default organisation settings
-      </h2>
 
       {{ summaryList({
         rows: [
@@ -196,37 +34,35 @@
               text: "Who do you want to add as a recruitment administrator?"
             },
             value: {
-              html: 'Michelle Obama<br>
-              Ward Administrator<br>
-              michelle.obama@nhs.net<br>'
-            },
-            actions: {
-              items: [
-              {
-                href: "/sprint-7/recruiter/primary-contact",
-                text: "Change",
-                visuallyHiddenText: "primary contact"
-              }
-                
-              ]
-            }
-          },
-
-          {
-            key: {
-              text: "Where do you want to set as your role location?"
-            },
-            value: {
-              html: 'Birch Hill Hospital <br> Mental Health Services, Union Road <br> Rochdale <br> Lancashire <br> OL12 9QB'
+              html: "<p><strong>Full name</strong> <br> Michelle Obama</p>  
+                <p><strong>Job title</strong> <br> Role coordinator</p>
+                  <p><strong>Email address</strong> <br> michelle.obama@nhs.net</p>"
             },
             actions: {
               items: [
                 {
-                  href: "/sprint-7/recruiter/role-location",
+                  href: "/sprint-7/recruiter/onboard-add-team",
                   text: "Change",
-                  visuallyHiddenText: "role address"
+                  visuallyHiddenText: "team creds"
                 }
-                
+              ]
+            }
+          },
+        
+          {
+            key: {
+              text: "Your role locations"
+            },
+            value: {
+              html: "Burch Hill hospital <br> CMHT Older People <br> Stockport <br> SK2 5EQ"
+            },
+            actions: {
+              items: [
+                {
+                  href: "/sprint-7/recruiter/onboard-role-location",
+                  text: "Change",
+                  visuallyHiddenText: "location"
+                }
               ]
             }
           },
@@ -236,150 +72,106 @@
               text: "Give an overview of your organisation"
             },
             value: {
-              html: 'At XX, we have a team of brilliant, active and highly valued team of volunteers who give their time to make a difference for patients and medical staff every week.<br>
+              html: "<p>At XX, we have a team of brilliant, active and highly valued team of volunteers who give their time to make a difference for patients and medical staff every week.</p>
 
-              Our volunteers have non-clinical roles that make a positive impact and improve the experience of patients using the hospital.<br>
+            <p>Our volunteers have non-clinical roles that make a positive impact and improve the experience of patients using the hospital.</p>
               
-              We have a dedicated team of staff who supports our volunteers from the start and provides comprehensive induction and on-going training opportunities. We can ensure you feel welcome and part of the team.<br>
+              <p>We have a dedicated team of staff who supports our volunteers from the start and provides comprehensive induction and on-going training opportunities. We can ensure you feel welcome and part of the team.</p>
               
-              We welcome applications from all sections of the community and are keen to diversify our volunteer workforce.'
-            },
-            actions: {
-              items: [
-              {
-                href: "/sprint-7/recruiter/about-us",
-                text: "Change",
-                visuallyHiddenText: "about us"
-              }
-                
-              ]
-            }
-          },
-
-          {
-            key: {
-              text: "Do you want to receive applications through this service?"
-            },
-            value: {
-              text: 'No, link to an application form on a different system'
-            },
-            actions: {
-              items: [
-              {
-                href: "/sprint-7/recruiter/application-form-options",
-                text: "Change",
-                visuallyHiddenText: "application options"
-              }
-                
-              ]
-            }
-          },
-
-          {
-            key: {
-              text: "Enter the application form link"
-            },
-            value: {
-              html: 'assemble.com/role6393739383-273974'
-            },
-            actions: {
-              items: [
-              {
-                href: "/sprint-7/recruiter/application-form-options",
-                text: "Change",
-                visuallyHiddenText: "application link"
-              }
-                
-              ]
-            }
-          },
-          {
-            key: {
-              text: "Uploaded images"
-            },
-            value: {
-              html: '<a href=""> pennine-trust-logo.png (PNG, 20 KB)</a>'
-            },
-            actions: {
-              items: [
-              {
-                href: "/sprint-7/recruiter/logo-url",
-                text: "Change",
-                visuallyHiddenText: "uploaded imgs"
-              }
-                
-              ]
-            }
-          },
-        
-        {
-          key: {
-            text: "Volunteering website address"
-          },
-          value: {
-            html: '<a href="" >https://www.nhsbsa.nhs.uk/</a>'
-          },
-          actions: {
-            items: [
-              {
-                href: "/sprint-7/recruiter/logo-url",
-                text: "Change",
-                visuallyHiddenText: "url"
-              }
-              
-              ]
-            }
-          }
-        ]
-      }) }}
-
-      <h2>
-        Add push settings
-      </h2>
-
-      {{ summaryList({
-        rows: [
-          {
-            key: {
-              text: "How would you like to control the visibility of this role?"
-            },
-            value: {
-              html: 'Publish once role listing is complete<br> Set a closing date <br>Set an applicant limit'
+              <p>We welcome applications from all sections of the community and are keen to diversify our volunteer workforce."
             },
             actions: {
               items: [
                 {
-                  href: "/sprint-7/recruiter/role-visibility",
+                  href: "/sprint-7/recruiter/onboard-about-us",
                   text: "Change",
-                  visuallyHiddenText: "visibility"
+                  visuallyHiddenText: "about us summary"
                 }
               ]
             }
           },
+          
           {
             key: {
-              text: "How would you like to promote this role?"
+              text: "Upload images"
             },
             value: {
-              html: "Create a link to share role listing on social media or via email <br> Promote opportunity on this provider's website"
+              html: '<a href="">trust_logo.png</a>'
             },
             actions: {
               items: [
                 {
-                  href: "/sprint-7/recruiter/role-promotion",
+                  href: "/sprint-7/recruiter/onboard-about-us",
                   text: "Change",
-                  visuallyHiddenText: "prommotion"
+                  visuallyHiddenText: "about us upload"
+                }
+              ]
+            }
+            },
+
+            {
+              key: {
+                text: "Volunteering website address"
+              },
+              value: {
+                html: '<a href="">https://www.nhsbsa.nhs.uk/</a>'
+              },
+              actions: {
+                items: [
+                  {
+                    href: "/sprint-7/recruiter/onboard-about-us",
+                    text: "Change",
+                    visuallyHiddenText: "about us url"
+                  }
+                ]
+              }
+              },
+              {
+                key: {
+                  text: "Who do you want to add as the primary point of contact for volunteers?"
+                },
+                value: {
+                  html: "<p><strong>Full name</strong> <br> Jane Doe</p>  
+                <p><strong>Job title</strong> <br> Ward Administrator</p>
+                  <p><strong>Email address</strong> <br> jane.doe@nhs.net</p>"
+                },
+                actions: {
+                  items: [
+                    {
+                      href: "/sprint-7/recruiter/onboard-primary-contact",
+                      text: "Change",
+                      visuallyHiddenText: "primary contact"
+                    }
+                  ]
+                }
+                },
+
+                {
+                  key: {
+                    text: "Do you want to receive applications through this service?"
+                  },
+                  value: {
+                    html: '<p><strong>No, link to an application form on a different system</strong></p>
+                    <p><a href="">assemble.com/role6393739383-273974</a></p>'
+                  },
+                  actions: {
+                    items: [
+                      {
+                        href: "/sprint-7/recruiter/onboard-application-form",
+                        text: "Change",
+                        visuallyHiddenText: "application options"
+                      
                 }
                 ]
               }
             }
           ]
         }) }}
+  
 
-
-
+      
       <h2>
-        Now complete your role listing
+        Now confirm your account settings
       </h2>
 
       <p>
@@ -388,7 +180,7 @@
 
     
 
-      <a href="/sprint-7/recruiter/tasklist-publish" class="nhsuk-button">
+      <a href="/sprint-7/recruiter/onboard-confirmation" class="nhsuk-button">
         Continue
       </a>
 

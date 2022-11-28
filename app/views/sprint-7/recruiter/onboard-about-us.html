@@ -31,23 +31,10 @@
   </h1> 
 
 
-            
-                
-    
-        <p class="nhsuk-heading-s">
-            Walk and Talk volunteer
-            <span class="status-box status-box-blue" aria-label="status for CVFlowOffline is DRAFT" id="status_DRAFT" role="status">
-                DRAFT
-            </span>
-        </p>
-    
-    
-        
-            <p id="reference_number" role="note" aria-label="Reference number: T5555-22-9759">Reference no: T5555-22-9759</p>
         
 
             <!--Give an overview of your organisation-->
-            <form class="form" action="/sprint-7/recruiter/onboard-application-form" method="post">
+            <form class="form" action="/sprint-7/recruiter/onboard-primary-contact" method="post">
 
 
                 <input type="hidden" name="_csrf" value="Ght2mB1x-EWmh83QMheZ8fsHCDfSh0HLA8ak">
@@ -66,17 +53,19 @@
                     <label class="nhsuk-label" for="example">
                         Introduce the volunteering service team, the atmosphere and the benefits of volunteering at your organisation. 
                     </label>
+                    
+                    <br>
                 
                 <div class="nhsuk-hint" id="example-hint">
-                    This information will feature in the role listing.
+                    This information will feature in all the role listings you and your team create. You can change them at any time in the 'Manage your account' section.
                 </div>
-                <textarea class="nhsuk-textarea" id="example" name="example" rows="15" aria-describedby="example-hint">
+                <textarea class="nhsuk-textarea" id="example" name="example" rows="12" aria-describedby="example-hint">
                 </textarea>
                 
               </div>
               <input type="hidden" id="jobOverview-character-count" name="jobOverview-character-count" value="219">
             <p class="nhsuk-hint nhsuk-hint-character-count nhsuk-hint-character-count-remaining">
-                You have <span class="nhsuk-character-count-remaining">99</span> characters remaining
+                You have <span class="nhsuk-character-count-remaining">600</span> characters remaining
             </p>
             <p class="nhsuk-hint nhsuk-hint-character-count nhsuk-hint-character-count-toomany nhsuk-error-message" style="display: none;">
                 You have <span class="nhsuk-character-count-toomany"></span> characters too many
@@ -89,6 +78,50 @@
                     .nhsuk-hint-character-count { display:none; }
                 </style>
             </noscript>
+
+            <hr>
+
+            <!--upload & URL-->
+
+            <div class="nhsuk-form-group ">
+                <h2 class="nhsuk-heading-m">Upload images</h2>
+
+                <div class="nhsuk-form-group">
+                    <label class="nhsuk-label" for="example">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    </label>
+                    <br>
+
+                  <label class="nhsuk-label " for="supportingDoc" id="">
+                      Upload a file
+                  </label>
+                  
+                  <input class="active-input_yellow-black-border" id="supportingDoc" name="supportingDoc" type="file" accept=".doc,.docx,.pdf">
+              
+                </div>
+      
+                    <button class="nhsuk-button nhsuk-button--secondary" type="submit">
+                      Upload file
+                    </button>
+      
+      <hr>
+          
+                    <div class="nhsuk-form-group">
+                    <h2 class="nhsuk-heading-m">Add website address</h2>
+                    <label class="nhsuk-label" for="example">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    </label>
+                    <br>
+
+                    <label class="nhsuk-label" for="example">
+                      Volunteering website address
+                    </label>
+                    <input class="nhsuk-input" id="example" name="example" type="text">
+                  </div>
+      
+                    
+                   
+                  </div>
             </fieldset>
         </div>
 
