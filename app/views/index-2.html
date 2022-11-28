@@ -1,0 +1,209 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  NHS Volunteering Alpha prototypes
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+
+      <!-- Change the page title here -->
+      <h1>
+        NHSBSA's NHS Volunteering Alpha prototype</h1>
+
+      <!-- Add your content here -->
+      <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
+
+
+        <p>For further information, please contact: <a href="mailto:naomi.grant@tpximpact.com">naomi.grant@tpximpact.com</a></p>
+        
+        <p>For archived pages <a href="/archived-pages">click here ></a></p>
+
+
+      <hr>
+
+      <!---UR start here-->
+      <form class="form" action="/sprint-7/participant-start-page" method="post">
+          
+        <button class="nhsuk-button" type="submit">
+          Start UR session here
+        </button>
+        </form>
+
+
+      <br>
+
+      
+      <!--TABS-->
+      <div class="tabs" data-js="tabs">
+        <div class="tabs-nav">
+  
+    <ul class="tabs-list" role="tablist" style="display: block;">
+      <li role="presentation">
+        <a class="tabs-toggle" href="/index" role="tab" aria-controls="tab-1" aria-selected="false" tabindex="0">
+          Volunteer journey
+        </a>
+      </li>
+      <li role="presentation">
+        <a class="tabs-toggle" href="/index-2" role="tab" aria-controls="tab-2" tabindex="-1" aria-selected="true">
+          Recruiter journey
+        </a>
+      </li>
+    </ul>
+
+  </div>
+    
+  <div class="tabs-content">
+    <div class="tabs-panel" id="tab-1" role="tabpanel" aria-hidden="false" data-id="tab-1">
+      <div class="tabs-panel-inner" tabindex="0">
+
+  
+    <!--End-->
+
+     
+        <h2>Recruiter journey</h2>
+
+        <ul class="nhsuk-grid-row nhsuk-card-group">
+          <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
+        
+            <div class="nhsuk-card nhsuk-card--clickable">
+              <div class="nhsuk-card__content">
+                <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                  <a class="nhsuk-card__link" href="/sprint-7/recruiter/login">Login</a>
+                </h2>
+                <p class="nhsuk-card__description">Page infomation</p>
+              </div>
+            </div>
+        
+          </li>
+
+          <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
+        
+            <div class="nhsuk-card nhsuk-card--clickable">
+              <div class="nhsuk-card__content">
+                <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                  <a class="nhsuk-card__link" href="/sprint-7/recruiter/dashboard">Dashboard</a>
+                </h2>
+                <p class="nhsuk-card__description">Page infomation</p>
+              </div>
+            </div>
+        
+          </li>
+
+          <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
+        
+            <div class="nhsuk-card nhsuk-card--clickable">
+              <div class="nhsuk-card__content">
+                <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                  <a class="nhsuk-card__link" href="/sprint-7/recruiter/create-or-reuse">Create or Reuse</a>
+                </h2>
+                <p class="nhsuk-card__description">Page infomation</p>
+              </div>
+            </div>
+        
+          </li>
+          </ul>
+
+          <h4>A - Create journey</h4>
+
+          <ul class="nhsuk-grid-row nhsuk-card-group">
+          <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
+        
+            <div class="nhsuk-card nhsuk-card--clickable">
+              <div class="nhsuk-card__content">
+                <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                  <a class="nhsuk-card__link" href="/sprint-7/recruiter/create-new-role-start">Create start page</a>
+                </h2>
+                <p class="nhsuk-card__description">Page infomation</p>
+              </div>
+            </div>
+        
+          </li>
+
+        </ul>
+
+          
+          <h4>B - Reuse journey</h4>
+          <ul class="nhsuk-grid-row nhsuk-card-group">
+
+            <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
+        
+              <div class="nhsuk-card nhsuk-card--clickable">
+                <div class="nhsuk-card__content">
+                  <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                    <a class="nhsuk-card__link" href="/sprint-7/recruiter/select-existing-listing">Select a previous listing to reuse</a>
+                  </h2>
+                  <p class="nhsuk-card__description">Page infomation</p>
+                </div>
+              </div>
+          
+            </li>
+
+      </ul>
+
+      <h4>C - Use NHS template</h4>
+          <ul class="nhsuk-grid-row nhsuk-card-group">
+
+            <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
+        
+              <div class="nhsuk-card nhsuk-card--clickable">
+                <div class="nhsuk-card__content">
+                  <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                    <a class="nhsuk-card__link" href="/sprint-6/recruiter/select-nhs-template">Select a standard NHS template</a>
+                  </h2>
+                  <p class="nhsuk-card__description">Page infomation</p>
+                </div>
+              </div>
+          
+            </li>
+          </ul>
+
+          <h4>D - BSA Admin Onboarding </h4>
+          <ul class="nhsuk-grid-row nhsuk-card-group">
+
+            <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
+        
+              <div class="nhsuk-card nhsuk-card--clickable">
+                <div class="nhsuk-card__content">
+                  <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                    <a class="nhsuk-card__link" href="/sprint-7/recruiter/onboarding-start">Onboarding settings journey</a>
+                  </h2>
+                  <p class="nhsuk-card__description">Page infomation</p>
+                </div>
+              </div>
+          
+            </li>
+          </ul>
+
+  
+
+        <hr>
+
+      
+
+
+{% endblock %}
