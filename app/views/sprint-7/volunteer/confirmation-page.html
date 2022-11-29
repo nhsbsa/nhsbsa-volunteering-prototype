@@ -1,0 +1,48 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Confirmation page template - NHS.UK prototype kit
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+
+      <div class="nhsuk-card nhsuk-card--confirmation nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-4">
+
+        <div class="nhsuk-card__content">
+          
+          <h1 class="nhsuk-card__title nhsuk-u-margin-bottom-4">
+            <strong>Application submitted</strong>
+          </h1>
+
+
+          <h1 class="nhsuk-card__title nhsuk-u-margin-bottom-4">
+            Walk and talk volunteer, Birch Hill Hospital
+          </h1>
+
+          <p class="nhsuk-u-font-size-24">
+            Your reference number
+            <br>
+            <strong class="nhsuk-u-font-size-32">HDJ2123F</strong>
+          </p>
+          
+        </div>
+
+      </div>
+
+      <p>We have sent a confirmation email to <a href="/sprint-7/volunteer/confirmation-email">example@email.com</a>.</p>
+
+      <h2>What happens next</h2>
+
+      <p>We've sent your application to Birch Hill Hospital. They will contact you to confirm their decision. This might take a few weeks.</p>
+
+      <p>You can sign in to your account at any time to view your completed applications and saved roles.</p>
+
+        <p>For queries regarding this role, you can email the volunteering service department at <a href="mailto:emailaddress">emma.recruiter@hospital.nhs.uk</a></p>
+
+      <p>Go back to <a href="/sprint-7/volunteer/results-page-postcode">your results page.<a></p>
+
+    </div>
+  </div>
+{% endblock %}

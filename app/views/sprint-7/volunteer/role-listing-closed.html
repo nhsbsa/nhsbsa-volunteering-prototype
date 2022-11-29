@@ -1,0 +1,204 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Start page template - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Breadcrumb -->
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/sprint-7/volunteer/landing-page">Home</a></li>
+    </ol>
+  </div>
+</nav>
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-width-container">
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-back-link">
+      <a class="nhsuk-back-link__link" onclick="history.back()">
+        <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
+          <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+        </svg>
+        Go back</a>
+    </div>
+    
+    <!--2/3 (1)-->
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-2 word-wrap" id="heading">Walk and talk Volunteer</h1>
+      <h2 id="employer_name" class="nhsuk-heading-m">Pennine Care NHS Trust</h2>
+
+      
+      <!--Closed-->
+      <div class="nhsuk-inset-text">
+        <span class="nhsuk-u-visually-hidden">Information: </span>
+        <p>This role listing is now closed</p>
+      </div>
+        
+      
+      
+    </div>
+
+
+
+    <!--1/3 (1)-->
+    
+
+
+    <!--2/3 (1)-->
+    <div class="nhsuk-grid-column-two-thirds">
+      
+  <h3 class="nhsuk-heading-xs nhsuk-u-margin-bottom-2">Role summary</h3>
+
+  <p> This is a rewarding volunteering opportunity within our mental health services for people with memory problems or dementia and their carers. You will support our therapy team with the running of this activity with the aim of maintaining and improving their well-being.  </p> 
+
+      <p>This role will suits someone friendly, approachable and enthusiastic. Whether you want to gain experience, improve your career prospects or just want to give some of your time to help others, this role could be for you!</p>
+
+
+
+  <h3 class="nhsuk-heading-xs nhsuk-u-margin-bottom-2 ">Main duties of the role</h3>
+
+  <ul>
+    <li>To encourage and support service users to participate in this therapeutic and social activity</li>
+    <li>To meet and greet service users as they arrive</li>
+    <li>To encourage people to participate and help them to feel good about themselves</li>
+    <li>To direct walkers along the designated route</li>
+  </ul>
+
+
+
+  <h3 class="nhsuk-heading-xs nhsuk-u-margin-bottom-2">About us</h3>
+
+  <p> At XX, we have a team of brilliant, active and highly valued team of volunteers who give their time to make a difference for patients and medical staff every week.</p> 
+
+      <p>Our volunteers have non-clinical roles that make a positive impact and improve the experience of patients using the hospital.</p>
+
+      <p>We have a dedicated team of staff who supports our volunteers from the start and provides comprehensive induction and on-going training opportunities. We can ensure you feel welcome and part of the team.</p>
+
+      <p>We welcome applications from all sections of the community and are keen to diversify our volunteer workforce.</p>
+
+<h2>Person specification</h2> 
+     <h5>Qualifications and training</h5>
+     <p>
+      No qualifications or previous training are required. </p>
+
+      <p>You will undertake a training induction as well as on-going training which is essential to the role.</p>
+
+     
+      <h2>Experience, knowledge and skills</h2> 
+      <ul>
+        <li>Good verbal communication skills</li>
+        <li>Reliability and good time keeping</li>
+        <li>Ability to effectively engage with those using the service</li>
+        <li>An enjoyment of the outdoors</li>
+        <li>No previous experience required</li>
+      </ul>
+
+      
+      <!--Link out section-->
+      <h2>Related reading</h2>
+
+      <ul>
+        <li><a href="/sprint-7/volunteer/role-listing#Related reading" class="nhsuk-link--no-visited-state">General guidance on the application process for volunteering opportunities</a></li>
+        <li><a href="/sprint-7/volunteer/role-listing#Related reading" class="nhsuk-link--no-visited-state">What it means to be an NHS volunteer</a></li>
+      </ul>
+
+
+      </div>
+
+      
+      <!--1/3 (2)-->
+      <div class="nhsuk-grid-column-one-third nhsuk-u-padding-top-2">
+          <div class="container-white">
+
+            <div class="forms-wrapper-white nhsuk-u-margin-bottom-4" style="overflow-wrap: break-word;">
+              <h3 class="nhsuk-heading-xs nhsuk-u-margin-bottom-2">For questions about this role, contact:</h3>
+              <div id="contact_details">
+                <p class="nhsuk-u-margin-bottom-2" id="contact_details_job_title">Walk and Talk team leader</p>
+                <p class="nhsuk-u-margin-bottom-2" id="contact_details_name">Emma Recruiter</p>
+                <p class="nhsuk-u-margin-bottom-2" id="contact_details_email"><a href="mailto:emailaddress">emma.recruiter@hospital.nhs.uk</a></p>
+                <p class="nhsuk-u-margin-bottom-2" id="contact_details_number">0700000000000</p>
+              </div>
+            </div>
+            </div>
+
+          </div>
+
+          <!--1/3 (3)-->
+      <div class="nhsuk-grid-column-one-third nhsuk-u-padding-top-2">
+        <div class="container-white">
+
+          <div class="forms-wrapper-white nhsuk-u-margin-bottom-4" style="overflow-wrap: break-word;">
+            <h3 class="nhsuk-heading-xs nhsuk-u-margin-bottom-2">Date posted:</h3>
+            <div id="date_posted">
+              <p class="nhsuk-u-margin-bottom-2" id="date_posted">10 September 2022</p>
+            </div>
+            <br>
+
+            <h3 class="nhsuk-heading-xs nhsuk-u-margin-bottom-2">Availability required:</h3>
+            <div id="availability">
+              <p class="nhsuk-u-margin-bottom-2" id="availability">Three hours per week, 9-6 <br>Tuesday or Thursday</p>
+            </div>
+            <br>
+
+            <h3 class="nhsuk-heading-xs nhsuk-u-margin-bottom-2">Reference number:</h3>
+            <div id="ref_no">
+              <p class="nhsuk-u-margin-bottom-2" id="ref_no">T683846464-6GDH</p>
+            </div>
+            <br>
+
+            <h3 class="nhsuk-heading-xs nhsuk-u-margin-bottom-2">Role location:</h3>
+            <div id="role_location">
+              <p class="nhsuk-u-margin-bottom-2" id="role_location">Burch Hill hospital<br>CMHT Older People<br>Stockport<br>SK2 5EQ</p>
+            </div>
+            <br>
+
+            <h3 class="nhsuk-heading-xs nhsuk-u-margin-bottom-2">Volunteer reports to:</h3>
+            <div id="report_to">
+              <p class="nhsuk-u-margin-bottom-2" id="report_to">Ward Administrator</p>
+            </div>
+            
+            <br>
+
+            <h3 class="nhsuk-heading-xs nhsuk-u-margin-bottom-2">Trust details:</h3>
+            <div id="report_to">
+              <p class="nhsuk-u-margin-bottom-2"  id="trust_details">Pennine Care NHS Trust<br>
+                <a href="https://www.nhsbsa.nhs.uk "target="_blank">https://www.nhsbsa.nhs.uk/ (Opens in a new tab)</a></p>
+
+                <br>
+                <br>
+                
+            <div>
+              <img class="nhsuk-card__img" src="/images/Trust-logo.png" alt="">
+            </div>
+            
+          </div>
+          </div>
+
+
+            
+            
+          </div>
+          </div>
+        
+
+          
+
+
+          
+</div>
+        </div>
+          </div>
+          </div>
+        </main>
+  
+     
+     
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,94 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Start page template - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+
+      <div class="nhsuk-grid-column-one-half">
+
+        <br>
+
+      <h2>
+        Sign in to NHS Volunteering
+      </h2>
+
+      <p>Sign in or <a href="/sprint-7/volunteer/account-or-guest#Sign in">create an account</a> to apply.</p>
+
+
+      
+      <form class="form" action="/sprint-7/volunteer/empty-form-page-1" method="post">
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="input-width-20">
+          Email address
+        </label>
+        <input class="nhsuk-input nhsuk-input--width-20" id="example" name="test-width-20" type="text" value="example.email@gmail.com">
+      </div>
+
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="input-width-20">
+          Password
+        </label>
+        <input class="nhsuk-input nhsuk-input--width-20" id="example" name="test-width-20" type="text" value="••••••••••">
+        
+      </div>
+      <p><a href="" class="nhsuk-link">I have forgotten my password</a></p>
+
+      
+      <!--Details-->
+      <details class="nhsuk-details">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Why create an account?
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <p>Create your personal account to make it easier to apply now and in the future.</p>
+          <p>You can:</p>
+          <ul>
+            <li>save opportunities as your favourite and review them later</li>
+            <li>save your application and continue when it suits you</li>
+            <li>review your past applications</li>
+            
+          </ul>
+          
+      
+        </div>
+      </details>
+    
+  <button class="nhsuk-button" type="submit">
+    Sign in and continue
+  </button>
+</form>
+<hr>
+
+</div>
+
+
+<div class="nhsuk-grid-column-one-half">
+
+  <br>
+
+<h2>
+  Or apply without an account
+</h2>
+<form class="form" action="/sprint-7/volunteer/account-or-guest" method="post">
+<p> You can use this option to apply without creating or having an account</p>
+
+<!--CTA button-->
+<button class="nhsuk-button nhsuk-button--secondary" type="submit">
+  Continue as guest
+</button>
+    </div>
+  </form>
+</div>
+
+    
+
+
+{% endblock %}
