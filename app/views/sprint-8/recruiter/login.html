@@ -1,0 +1,93 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Start page template - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+
+       
+      <div class="nhsuk-grid-row">
+
+        <div class="nhsuk-grid-column-one-half">
+  
+          <br>
+  
+        <h2>
+          Sign in to NHS Volunteering
+        </h2>
+  
+        <p>Sign in to your account to:
+          <ol>
+            <li>create new role listings or reuse any existing ones</li>
+            <li>edit how you want to receive application forms</li>
+            <li>update details about your team and your organisation</li>
+            <li>access data on active or closed applications</li>
+
+          </ol>
+        
+        
+        
+        </p>
+  
+  
+        
+        <form class="form" action="/sprint-7/recruiter/dashboard" method="post">
+        <div class="nhsuk-form-group">
+          <label class="nhsuk-label" for="input-width-20">
+            Email address
+          </label>
+          <input class="nhsuk-input nhsuk-input--width-20" id="example" name="test-width-20" type="text" value="example.email@gmail.com">
+        </div>
+  
+        <div class="nhsuk-form-group">
+          <label class="nhsuk-label" for="input-width-20">
+            Password
+          </label>
+          <input class="nhsuk-input nhsuk-input--width-20" id="example" name="test-width-20" type="text" value="••••••••••">
+          
+        </div>
+        <p><a href="" class="nhsuk-link">I have forgotten my password</a></p>
+  
+        
+        
+    <button class="nhsuk-button" type="submit">
+      Sign in
+    </button>
+  </form>
+  <hr>
+  
+  </div>
+  
+  
+  
+  <div class="nhsuk-grid-column-one-half">
+  
+    <br>
+  
+  <h2>
+    Or create a volunteering recruiter account
+  </h2>
+  <form class="form" action="/sprint-7/recruiter/onboarding-start" method="post">
+  <p> You can use this to register to:
+    <ol>
+      <li>start advertising roles</li>
+      <li>set details for your organisation and team members</li>
+    </ol>
+  </p>
+  
+  <!--CTA button-->
+  <button class="nhsuk-button nhsuk-button--secondary" type="submit">
+    Create an account
+  </button>
+      </div>
+    </form>
+  </div>
+  
+      
+{% endblock %}

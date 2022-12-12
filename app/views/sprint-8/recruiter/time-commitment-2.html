@@ -1,0 +1,105 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Recruiter dashboard prototype
+{% endblock %}
+
+
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-full">
+
+      <!-- Add your content here -->
+
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-two-thirds">
+            <div class="nhsuk-back-link">
+  <a class="nhsuk-back-link__link" href="/sprint-7/recruiter/time-commitment-1">
+  <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+  </svg>
+  Go back</a>
+</div>
+
+
+            
+                <h1 class="nhsuk-heading-l" id="heading-container">
+                    <span class="nhsuk-caption-l nhsuk-caption--bottom">Create a new role listing</span>
+                    <span class="nhsuk-heading-l" id="heading">Enter a minimum time commitment</span>
+                </h1>
+            
+
+          
+        <p class="nhsuk-heading-s">
+            Walk and Talk volunteer
+            <span class="status-box status-box-blue" aria-label="status for Walk and Talk volunteer is DRAFT" id="status_DRAFT" role="status">
+                DRAFT
+            </span>
+        </p>
+    
+    
+        
+            <p id="reference_number" role="note" aria-label="Reference number: T5555-22-9757">Reference no: T5555-22-9757</p>
+
+            <p>Enter details for the options that are relevant to this role.
+                <br>Select at least one option.</p>
+        
+    
+
+                
+            
+
+            <form class="form" action="/sprint-7/recruiter/define-availability" method="post">
+                
+
+    
+
+    
+        <div class="nhsuk-form-group ">
+    
+        <fieldset class="nhsuk-fieldset app-fieldset--custom-modifier ">
+            <legend class="nhsuk-fieldset__legend nhsuk-u-visually-hidden" id="">
+                Does the role require a minimum time commitment?
+            </legend>
+            
+            
+            <div class="nhsuk-form-group">
+                <label class="nhsuk-label" for="example">
+                    Minimum number of shifts per week
+                </label>
+                <input class="nhsuk-input nhsuk-input--width-20" id="input-width-20" name="test-width-20" type="text">
+            </div>
+
+              <div class="nhsuk-form-group">
+                <label class="nhsuk-label" for="example">
+                    Minimum number of weeks in a year
+                </label>
+                <input class="nhsuk-input nhsuk-input--width-20" id="input-width-20" name="test-width-20" type="text">
+            </div>
+
+              <div class="nhsuk-form-group">
+                <label class="nhsuk-label" for="example">
+                    Minimum number of hours per week
+                </label>
+                <input class="nhsuk-input nhsuk-input--width-20" id="input-width-20" name="test-width-20" type="text">
+            </div>
+                            </div>
+                        
+                    
+                
+            </div>
+        </fieldset>
+    
+        </div>
+    
+
+             
+                <input class="nhsuk-button" type="submit" name="continue" id="continue" value="Save and continue">
+                <p><a id="save_come_back" href="/sprint-7/recruiter/dashboard" class="nhsuk-link--no-visited-state">Save and come back later</a></p>
+
+            </form>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,65 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Confirmation page template - NHS.UK prototype kit
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+
+      <div class="nhsuk-card nhsuk-card--confirmation nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-4">
+
+        <div class="nhsuk-card__content">
+          
+          <h1 class="nhsuk-card__title nhsuk-u-margin-bottom-4">
+            <strong>Onboarding submitted</strong>
+          </h1>
+
+
+          <h2 class="nhsuk-card__title nhsuk-u-margin-bottom-4">
+            Settings saved:
+          </h2>
+
+          <ul>
+         <li>recruitment administrator(s)</li>
+          <li>role locations</li>
+          <li>organisation overview</li>
+          <li>primary contact</li>
+          <li>applications settings</li>
+          
+            </ul>
+        
+          
+        </div>
+
+      </div>
+
+      
+
+
+      <p>We have saved your default settings and have sent an onboarding request to <a href="/sprint-7/recruiter/onboard-confirmation#What happens next">BSA.admin@nhs.net</a>.</p>
+      
+      <p>We have sent a copy of your request to <a href="michele.obama@nhs.net">michele.obama@nhs.net</a>. </p>
+
+
+      <h2>What happens next</h2>
+
+      <p>A BSA administrator will review your request and send you a confirmation email. This may take a few days.</p>
+
+        <p>Once your account is created, you will be able to access and edit your default settings from the dashboard.</p>
+      
+        
+
+      <!--buttons-->        
+<a href="/sprint-7/recruiter/dashboard" <button class="nhsuk-button"> 
+  Return to dashboard
+  </button></a>
+
+
+      
+
+  
+    </div>
+  </div>
+{% endblock %}

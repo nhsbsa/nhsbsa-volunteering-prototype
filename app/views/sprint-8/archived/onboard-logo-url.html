@@ -1,0 +1,78 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Recruiter dashboard prototype
+{% endblock %}
+
+
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-full">
+
+      <!-- Add your content here -->
+
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-two-thirds">
+            <div class="nhsuk-back-link">
+  <a class="nhsuk-back-link__link" href="/sprint-7/recruiter/onboard-application-form">
+  <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+  </svg>
+  Go back</a>
+</div>
+
+
+            
+                <h1 class="nhsuk-heading-l" id="heading-container">
+                    <span class="nhsuk-heading-l" id="heading">Upload logo and enter volunteering webite link</span>
+                </h1>
+            
+    
+        <div class="nhsuk-form-group ">
+          
+          <h2>Upload images</h2>
+
+          <div class="nhsuk-form-group ">
+    
+            <label class="nhsuk-label " for="supportingDoc" id="">
+                Upload a file
+            </label>
+            
+            <input class="active-input_yellow-black-border" id="supportingDoc" name="supportingDoc" type="file" accept=".doc,.docx,.pdf">
+        
+          </div>
+
+              <button class="nhsuk-button nhsuk-button--secondary" type="submit">
+                Upload file
+              </button>
+
+
+    
+          
+
+            <h2>Add website address</h2>
+
+            <div class="nhsuk-form-group">
+              <label class="nhsuk-label" for="example">
+                Volunteering website address
+              </label>
+              <input class="nhsuk-input" id="example" name="example" type="text">
+            </div>
+
+              
+             
+            </div>
+        </fieldset>
+    
+        </div>
+        </div>
+    
+        <form class="form" action="/sprint-7/recruiter/onboard-check-your-answers" method="post">
+             
+                <input class="nhsuk-button" type="submit" name="continue" id="continue" value="Save and continue">
+            </form>
+        </div>
+    </div>
+{% endblock %}

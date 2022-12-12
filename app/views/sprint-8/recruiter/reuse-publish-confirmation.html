@@ -1,0 +1,68 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Confirmation page template - NHS.UK prototype kit
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+
+      <div class="nhsuk-card nhsuk-card--confirmation nhsuk-u-margin-top-0 nhsuk-u-margin-bottom-4">
+
+        <div class="nhsuk-card__content">
+          
+          <h1 class="nhsuk-card__title nhsuk-u-margin-bottom-4">
+            <strong>Role listing reused and published</strong>
+          </h1>
+
+
+          <h2 class="nhsuk-card__title nhsuk-u-margin-bottom-4">
+            Walk and talk volunteer, Birch Hill Hospital
+          </h2>
+
+          <p class="nhsuk-u-font-size-24">
+            Role reference number
+            <br>
+            <strong class="nhsuk-u-font-size-32">T5555-22-2650</strong>
+          </p>
+          
+        </div>
+
+      </div>
+
+      <p>We have sent a confirmation email to <a href="/sprint-7/recruiter/publish-confirmation">name.recruiter@nhs.net</a>.</p>
+
+      <h2>What happens next</h2>
+
+      <p>You have chosen to receive applications for this role through this service.</p>
+
+      <p>Go back to the dashboard to:</p>
+      <ul>
+
+        <li>edit the role listings</li>
+        <li>review received applications</li>
+        <li>monitor the performance of the role listing.</li>
+      </ul>
+
+      
+      <br>
+
+      <!--buttons-->        
+<a href="/sprint-7/recruiter/dashboard" <button class="nhsuk-button"> 
+  Return to dashboard
+  </button></a>
+
+  &nbsp;
+  
+  <a href="/sprint-6/volunteer/role-listing" target="_blank" <button class="nhsuk-button nhsuk-button--secondary">
+    View published role
+  </button></a> 
+
+
+      
+
+  
+    </div>
+  </div>
+{% endblock %}

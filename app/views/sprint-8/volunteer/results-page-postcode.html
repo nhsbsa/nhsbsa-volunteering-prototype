@@ -1,0 +1,436 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Content page template - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+
+
+
+<!-- Breadcrumb -->
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/sprint-7/volunteer/landing-page">Home</a></li>
+    </ol>
+  </div>
+</nav>
+
+
+{% endblock %}
+
+<!-- NHS.UK header -->
+{% block header %}
+<header class="nhsuk-header" role="banner">
+  <div class="nhsuk-width-container nhsuk-header__container">
+    <div class="nhsuk-header__logo">
+      <a class="nhsuk-header__link" href="/" aria-label="NHS homepage">
+        <svg class="nhsuk-logo nhsuk-logo--white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 16">
+          <path fill="#fff" d="M0 0h40v16H0z"></path>
+          <path fill="#005eb8" d="M3.9 1.5h4.4l2.6 9h.1l1.8-9h3.3l-2.8 13H9l-2.7-9h-.1l-1.8 9H1.1M17.3 1.5h3.6l-1 4.9h4L25 1.5h3.5l-2.7 13h-3.5l1.1-5.6h-4.1l-1.2 5.6h-3.4M37.7 4.4c-.7-.3-1.6-.6-2.9-.6-1.4 0-2.5.2-2.5 1.3 0 1.8 5.1 1.2 5.1 5.1 0 3.6-3.3 4.5-6.4 4.5-1.3 0-2.9-.3-4-.7l.8-2.7c.7.4 2.1.7 3.2.7s2.8-.2 2.8-1.5c0-2.1-5.1-1.3-5.1-5 0-3.4 2.9-4.4 5.8-4.4 1.6 0 3.1.2 4 .6"></path>
+        </svg>
+      </a>
+    </div>
+    <div class="nhsuk-header__content" id="content-header">
+      <div class="nhsuk-header__menu">
+        <button class="nhsuk-header__menu-toggle" id="toggle-menu" aria-controls="header-navigation" aria-expanded="false">Menu</button>
+      </div>
+      
+    </div>
+  </div>
+  <nav class="nhsuk-header__navigation" id="header-navigation" role="navigation" aria-label="Primary navigation" aria-labelledby="label-navigation">
+    <div class="nhsuk-width-container">
+      <p class="nhsuk-header__navigation-title"><span id="label-navigation">Menu</span>
+        <button class="nhsuk-header__navigation-close" id="close-menu">
+          <svg class="nhsuk-icon nhsuk-icon__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M13.41 12l5.3-5.29a1 1 0 1 0-1.42-1.42L12 10.59l-5.29-5.3a1 1 0 0 0-1.42 1.42l5.3 5.29-5.3 5.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l5.29-5.3 5.29 5.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z"></path>
+          </svg>
+          <span class="nhsuk-u-visually-hidden">Close menu</span>
+        </button>
+      </p>
+      <ul class="nhsuk-header__navigation-list">
+        <li class="nhsuk-header__navigation-item nhsuk-header__navigation-item--for-mobile">
+          <a class="nhsuk-header__navigation-link" href="/sprint-7/volunteer/landing-page">
+            Home
+            <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+            </svg>
+          </a>
+        </li>
+        <li class="nhsuk-header__navigation-item">
+          <a class="nhsuk-header__navigation-link" href="#?">
+            What it is like to be an NHS volunteer
+            <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+            </svg>
+          </a>
+        </li>
+        <li class="nhsuk-header__navigation-item">
+          <a class="nhsuk-header__navigation-link" href="#?">
+            How to get involved
+            <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+            </svg>
+          </a>
+        </li>
+        <li class="nhsuk-header__navigation-item">
+          <a class="nhsuk-header__navigation-link" href="#?">
+            Browse NHS services A-Z 
+            <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+            </svg>
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+  </nav>
+</header>
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-full">
+
+      <h1>
+        Search results
+      </h1>
+
+      
+
+<!--LEFT HAND FILTER PANEL-->  
+<div id="results-row" class="nhsuk-grid-row">
+<div class="nhsuk-grid-column-one-third">
+<div class="container-white">
+  
+  <h4>Search options</h4>
+
+  <!--Postcode--> 
+
+<div class="nhsuk-form-group">
+  <form class="form" action="/sprint-7/volunteer/results-page-remote-2" method="post">
+  <label class="nhsuk-label" for="example">
+    Postcode
+  </label>
+  <input class="nhsuk-input" id="example" name="example" type="text" value="P0STCOD3" tabindex="1">
+</div>
+
+  
+ <!--Maximum radius--> 
+ <div class="nhsuk-form-group">
+    <label class="nhsuk-label" for="select-1">
+      Maximum radius
+    </label>
+    <select class="nhsuk-select" id="select-1" name="select-1" tabindex="2">
+      <option value="1">- set maximum radius -</option>
+      <option value="2">up to 5 miles</option>
+      <option value="3">up to 10 miles</option>
+      <option value="4"selected>up to 15 miles</option>
+      <option value="5">up to 20 miles</option>
+      <option value="6">up to 25 miles</option>
+      <option value="7">up to 30 miles</option>
+      <option value="8">up to 50 miles</option>
+    </select>
+  </div>
+
+
+ <!--Keywords--> 
+ <div class="nhsuk-form-group">
+  <label class="nhsuk-label" for="example">
+    Keyword
+  </label>
+  <input class="nhsuk-input" id="example" name="example" type="text" tabindex="3">
+</div>
+
+
+<!--Role Checkboxes-->
+<label class="nhsuk-label" for="example">
+  Role types
+</label>
+
+<div class="nhsuk-checkboxes">
+
+  <div class="nhsuk-checkboxes__item">
+    <input class="nhsuk-checkboxes__input" id="contact" name="role" type="checkbox" value="meeting-greeting" tabindex="4">
+    <label class="nhsuk-label nhsuk-checkboxes__label" for="tm">
+      Patient participation and experience
+    </label>
+  </div>
+  <div class="nhsuk-checkboxes__item">
+    <input class="nhsuk-checkboxes__input" id="tm" name="role" type="checkbox" value="patient-facing" tabindex="5">
+    <label class="nhsuk-label nhsuk-checkboxes__label" for="tm">
+      Patient facing support and companionship
+    </label>
+  </div>
+  <div class="nhsuk-checkboxes__item">
+    <input class="nhsuk-checkboxes__input" id="ra" name="roles[]" type="checkbox" value="recreational-activities" tabindex="6">
+    <label class="nhsuk-label nhsuk-checkboxes__label" for="ra">
+      Leisure activities
+    </label>
+  </div>
+  <div class="nhsuk-checkboxes__item">
+    <input class="nhsuk-checkboxes__input" id="rm" name="roles[]" type="checkbox" value="admin-volunteering-support" tabindex="7">
+    <label class="nhsuk-label nhsuk-checkboxes__label" for="rm">
+      Volunteer admin support
+    </label>
+  </div>
+  <div class="nhsuk-checkboxes__item">
+    <input class="nhsuk-checkboxes__input" id="rm" name="roles[]" type="checkbox" value="16-18-roles" tabindex="8">
+    <label class="nhsuk-label nhsuk-checkboxes__label" for="rm">
+      Opportunties for young volunteers (16-18)
+    </label>
+  </div>
+  <div class="nhsuk-checkboxes__item">
+    <input class="nhsuk-checkboxes__input" id="rm" name="roles[]" type="checkbox" value="16-18-roles" tabindex="8">
+    <label class="nhsuk-label nhsuk-checkboxes__label" for="rm">
+      Remote opportunities
+    </label>
+  </div>
+  <div class="nhsuk-checkboxes__item">
+    <input class="nhsuk-checkboxes__input" id="rm" name="roles[]" type="checkbox" value="16-18-roles" tabindex="8">
+    <label class="nhsuk-label nhsuk-checkboxes__label" for="rm">
+      Community support
+    </label>
+  </div>
+  <div class="nhsuk-checkboxes__item">
+    <input class="nhsuk-checkboxes__input" id="rm" name="roles[]" type="checkbox" value="16-18-roles" tabindex="8">
+    <label class="nhsuk-label nhsuk-checkboxes__label" for="rm">
+      Charity and fundraising
+    </label>
+  </div>
+  <br>
+
+  <!--Time commitment--> 
+ <div class="nhsuk-form-group">
+ <label class="nhsuk-label" for="select-1">
+  Time commitment
+ </label>
+ <select class="nhsuk-select" id="select-1" name="select-1">
+  <option value="1"selected>- set time commitment -</option>
+  <option value="2">Anytime</option>
+  <option value="3">1 - 10 hours per week</option>
+  <option value="4">Up to 20 hours per week</option>
+ </select>
+</div>
+
+
+
+<button class="nhsuk-button nhsuk-button--secondary" type="submit">
+  Update search
+</button>
+</form>
+</div>
+</div>
+</div>
+
+
+
+<!--SEARCH RESULTS LIST-->
+
+  <div class="nhsuk-grid-column-two-thirds">
+
+<h2 id="results_count" class="nhsuk-heading-m">Found 23 results for POSTCOD3</h2>
+<hr>
+<noscript>
+<div class="nhsuk-form-group refresh">
+<button class="nhsuk-button nhsuk-button--secondary" type="submit" name="refresh" id="refresh">
+  Refresh
+</button>
+</div>
+</noscript>
+
+<!--result 1-->
+<div class="nhsuk-hint" id="contact-hint">
+  3.2 miles away
+</div>
+
+<h3> Walk and talk Volunteer, Pennine Care NHS Trust</h3>
+
+<!--included-->
+<ul>
+    <li> Main responsibilities: help run a walking group for people with memory problems or dementia, support service users to participate in social activities</li>
+    <li> Three hours per week, Tuesday or Thursday</li>
+    <li> CMHT Older People, Stockport SK2 5EQ</li>
+    </ul>
+
+<!--buttons-->        
+<a href="/sprint-7/volunteer/role-listing"> <button class="nhsuk-button"> 
+  View role
+  </button></a>
+  
+  <a href="/sprint-7/volunteer/account-or-guest" <button class="nhsuk-button nhsuk-button--secondary">
+    Sign in and save role
+  </button></a>  
+   
+
+
+
+<hr>
+
+<!--result 2-->
+<div class="nhsuk-hint" id="contact-hint">
+  10.28 miles away
+</div>
+
+<h3> Lived experience practitioner, Pennine Care NHS Trust</h3>
+
+<!--included-->
+<ul>
+    <li> Main responsibilities: use your own experience with mental health conditions to help others in crisis</li>
+    <li> Flexible hours, Monday to Wednesday</li>
+    <li> Memorial Hospital, Shooters Hill, London SE18 3RG</li>
+    </ul>
+
+<!--buttons-->        
+<a href="/sprint-7/volunteer/role-listing"> <button class="nhsuk-button"> 
+  View role
+  </button></a>
+  
+  <a href="/sprint-7/volunteer/account-or-guest" <button class="nhsuk-button nhsuk-button--secondary">
+    Sign in and save role
+  </button></a> 
+
+
+<hr>
+
+<!--result 3-->
+<div class="nhsuk-hint" id="contact-hint">
+  10.28 miles away
+</div>
+
+<h3> Community first responder (CFR), East of England Ambulance Service</h3>
+
+<!--included-->
+<ul>
+    <li> Main responsibilities: administer emergency care, including patient assessment skills, cardiopulmonary resuscitation and the use of an automatic external defibrillator (AED).</li>
+    <li> Eight hours per week, Monday to Sunday</li>
+    <li> Various areas in East of England areas</li>
+    </ul>
+
+<!--buttons-->        
+<a href="/sprint-7/volunteer/role-listing"> <button class="nhsuk-button"> 
+  View role
+  </button></a>
+  
+  <a href="/sprint-7/volunteer/account-or-guest" <button class="nhsuk-button nhsuk-button--secondary">
+    Sign in and save role
+  </button></a> 
+
+
+
+<hr>
+
+<!--result 4-->
+<div class="nhsuk-hint" id="contact-hint">
+  10.28 miles away
+</div>
+
+<h3> Patient support volunteer, Northern Care Alliance NHS Group</h3>
+
+<!--included-->
+<ul>
+    <li> Main responsibilities: communicate and interact with patients, offer refreshments or wheelchair assistance</li>
+    <li> Flexible hours, Monday to Sunday</li>
+    <li> Fairfield General Hospital, Bury BL9 7TD</li>
+    </ul>
+
+<!--buttons-->        
+<a href="/sprint-7/volunteer/role-listing"> <button class="nhsuk-button"> 
+  View role
+  </button></a>
+  
+  <a href="/sprint-7/volunteer/account-or-guest" <button class="nhsuk-button nhsuk-button--secondary">
+    Sign in and save role
+  </button></a>   
+
+
+
+<hr>
+
+<!--result 5-->
+<div class="nhsuk-hint" id="contact-hint">
+  10.28 miles away
+</div>
+
+<h3> Gardening assistant, Trafford General Hospital</h3>
+
+<!--included-->
+<ul>
+    <li> Main responsibilities: organise a range of gardening activities, enhance outdoor premises, support patients well-being</li>
+    <li> Two hours per week, Monday to Friday</li>
+    <li> Moorside unit, Bury M41 5SL</li>
+    </ul>
+
+<!--buttons-->        
+<a href="/sprint-7/volunteer/role-listing"> <button class="nhsuk-button"> 
+  View role
+  </button></a>
+  
+  <a href="/sprint-7/volunteer/account-or-guest" <button class="nhsuk-button nhsuk-button--secondary">
+    Sign in and save role
+  </button></a>  
+
+
+
+<hr>
+
+<!--result 6-->
+<div class="nhsuk-hint" id="contact-hint">
+  10.28 miles away
+</div>
+
+<h3> Library volunteer, Cambridge University Hospital</h3>
+
+<!--included-->
+<ul>
+    <li>Main responsibilities: general housekeeping of the library, issue book loans and returns</li>
+    <li> Three hours (10:00/13:00) - (14:00 /17:00) per week, Monday to Friday</li>
+    <li> Addenbrookes Hospital, Cambridge CB2 0QQ</li>
+    </ul>
+
+<!--buttons-->        
+<a href="/sprint-7/volunteer/role-listing"> <button class="nhsuk-button"> 
+  View role
+  </button></a>
+  
+  <a href="/sprint-7/volunteer/account-or-guest" <button class="nhsuk-button nhsuk-button--secondary">
+    Sign in and save role
+  </button></a>  
+
+
+
+<hr>
+
+
+<nav class="nhsuk-pagination" role="navigation" aria-label="Pagination">
+<ul class="nhsuk-list nhsuk-pagination__list">
+<li class="nhsuk-pagination-item--previous">
+
+</li>
+<li class="nhsuk-pagination-item--next">
+
+</li>
+</ul>
+</nav>
+
+
+
+</div>
+
+</div> 
+
+
+
+<br>
+
+
+
+
+
+
+    </div>
+
+  </div>
+{% endblock %}
