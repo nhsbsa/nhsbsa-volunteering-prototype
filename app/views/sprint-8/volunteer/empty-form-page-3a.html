@@ -80,82 +80,57 @@
     <div class="nhsuk-grid-column-full">
 
       <div class="nhsuk-back-link">
-        <a class="nhsuk-back-link__link" href="/sprint-8/volunteer/empty-form-page-4">
+        <a class="nhsuk-back-link__link" href="/sprint-8/volunteer/empty-form-page-2">
           <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
             <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
           </svg>
           Go back</a>
       </div>
 
-      <!--NEW H1 (hint)-->
+      <!--NEW H1-->
       <fieldset class="nhsuk-fieldset">
         <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
           <h1 class="nhsuk-fieldset__heading">
-            What is your availability?
+            What is your address?
           </h1>
         </legend>
 
         <div class="nhsuk-hint" id="contact-hint">
-          Question 5 of 6
+          Question 3 of 6
         </div>
 
-        <p class="nhsuk-body-l">This opportunity requires availability at specific dates and times.</p>
-
-        <p class="nhsuk-body-l">You will discuss with the manager which date and time, out of the ones required, you can make.</p>
+        <p>12 addresses found for postcode: <b>SS25 5OC</b></p>
 
         <div class="nhsuk-form-group">
-
-          
-          <!--Times-->
-          <div class="nhsuk-inset-text">
-            <span class="nhsuk-u-visually-hidden">Information: </span>
-            <p>Three hours, any day Monday to Friday<br>
-              10am - 1pm (morning shift)<br>
-              2pm - 5pm (afternoon shift)</p>
-          </div>
-
-          <div class="nhsuk-radios">
-            <div class="nhsuk-radios__item">
-              <input class="nhsuk-radios__input" id="example-hints-1" name="example-hints" type="radio" value="yes">
-              <label class="nhsuk-label nhsuk-radios__label" for="example-hints-1">
-                I could be available at any of the indicated times and dates
-              </label>
-            </div>
-
-            <div class="nhsuk-radios__item">
-              <input class="nhsuk-radios__input" id="example-hints-2" name="example-hints" type="radio" value="no">
-              <label class="nhsuk-label nhsuk-radios__label" for="example-hints-2">
-                I wish to discuss my availability with the volunteering service team
-              </label>
-            </div>
-
-
-
-          </div>
+          <label class="nhsuk-label" for="address-select">
+            Select your address
+          </label>
+          <select class="nhsuk-select" id="address-select" name="address-select">
+            <option value="1">94 Victoria Street, Southend-on-Sea, Essex</option>
+            <option value="2">95 Victoria Street, Southend-on-Sea, Essex</option>
+            <option value="3">96 Victoria Street, Southend-on-Sea, Essex</option>
+            <option value="4">97 Victoria Street, Southend-on-Sea, Essex</option>
+            <option value="5">98 Victoria Street, Southend-on-Sea, Essex</option>
+            <option value="6">99 Victoria Street, Southend-on-Sea, Essex</option>
+            <option value="7">100 Victoria Street, Southend-on-Sea, Essex</option>
+            <option value="8">101 Victoria Street, Southend-on-Sea, Essex</option>
+            <option value="9">102 Victoria Street, Southend-on-Sea, Essex</option>
+            <option value="10">103 Victoria Street, Southend-on-Sea, Essex</option>
+            <option value="11">104 Victoria Street, Southend-on-Sea, Essex</option>
+            <option value="12">105 Victoria Street, Southend-on-Sea, Essex</option>
+          </select>
         </div>
 
-      </fieldset>
+        <p><a href="#">Can't find address in the list</a></p>
 
+        <!--buttons-->
+        <a href="/sprint-8/volunteer/empty-form-page-4" class="nhsuk-button">
+          Save and continue
+        </a>
 
-  </div>
-  </div>
-
-<!--buttons-->
-
-
-  <a href="/sprint-8/volunteer/empty-form-page-6"> <button class="nhsuk-button">
-  Save and continue
-  </button></a>
-
-  &nbsp;
-
-  <a href="/sprint-8/volunteer/saved-applications" <button class="nhsuk-button nhsuk-button--secondary">
-    Save for later
-  </button></a>
-
-
-
-  </div>
-
+        <a href="/sprint-8/volunteer/saved-application s" class="nhsuk-button nhsuk-button--secondary">
+          Save for later
+        </a>
+    </div>
   </div>
 {% endblock %}
