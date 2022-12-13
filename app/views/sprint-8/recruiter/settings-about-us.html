@@ -23,16 +23,16 @@
 </div>
 
 
-            
 
-            
+
+
   <h1 class="nhsuk-heading-l" id="heading-container">
     <span class="nhsuk-caption-l nhsuk-caption--bottom">Confirm default organisation settings</span>
     <span class="nhsuk-heading-l" id="heading">Information on your organisation</span>
-  </h1> 
+  </h1>
 
 
-        
+
 
             <!--Give an overview of your organisation-->
             <form class="form" action="/sprint-8/recruiter/settings-menu" method="post">
@@ -40,32 +40,29 @@
 
                 <input type="hidden" name="_csrf" value="Ght2mB1x-EWmh83QMheZ8fsHCDfSh0HLA8ak">
                 <fieldset class="nhsuk-fieldset" id="">
-                    <legend class="nhsuk-fieldset__legend nhsuk-u-visually-hidden">
-                        Give an overview of your organisation
-                    </legend>
-                    <div tabindex="0" class="nhsuk-form-group ">
-                        <h2 class="nhsuk-heading-m">Give an overview of your organisation</h2>
 
-    
         <div class="nhsuk-form-group ">
 
             <div class="nhsuk-form-group">
                 <div class="nhsuk-form-group">
                     <label class="nhsuk-label" for="example">
-                        Introduce the volunteering service team, the atmosphere and the benefits of volunteering at your organisation. 
+                        Introduce the volunteering service team, the atmosphere and the benefits of volunteering at your organisation.
                     </label>
-                    
-                    <br>
-                
-                <div class="nhsuk-hint" id="example-hint">
+
+                <div class="nhsuk-inset-text">
                     This information will feature in all the role listings you and your team create. You can change them at any time in the 'Manage your account' section.
                 </div>
-                
-                <textarea class="nhsuk-textarea"  rows="12">At XX, we have a team of brilliant, active and highly valued team of volunteers who give their time to make a difference for patients and medical staff every week. Our volunteers have non-clinical roles that make a positive impact and improve the experience of patients using the hospital. We have a dedicated team of staff who supports our volunteers from the start and provides comprehensive induction and on-going training opportunities. We can ensure you feel welcome and part of the team. We welcome applications from all sections of the community and are keen to diversify our volunteer workforce. 
-                </textarea>
-                
-            
-                
+
+                <textarea class="nhsuk-textarea"  rows="12">{% raw %}At XX, we have a team of brilliant and valued volunteers who give their time to make a difference for patients and medical staff.
+
+We have a dedicated team of staff who supports our volunteers from the start. We provide comprehensive induction and ongoing training. We can ensure you feel welcome and part of the team.
+
+We welcome applications from all sections of the community and are keen to diversify our volunteer workforce.
+
+Our guidance on the application process outlines what to expect when you apply.{% endraw %}</textarea>
+
+
+
               </div>
               <input type="hidden" id="jobOverview-character-count" name="jobOverview-character-count" value="219">
             <p class="nhsuk-hint nhsuk-hint-character-count nhsuk-hint-character-count-remaining">
@@ -91,19 +88,14 @@
                 <h2 class="nhsuk-heading-m">Upload images</h2>
 
                 <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="example">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    </label>
-                    <br>
-
                   <label class="nhsuk-label " for="supportingDoc" id="">
                       Upload a file
                   </label>
-                  
+
                   <input class="active-input_yellow-black-border" id="supportingDoc" name="supportingDoc" type="file" accept=".doc,.docx,.pdf">
-              
+
                 </div>
-      
+
                     <button class="nhsuk-button nhsuk-button--secondary" type="submit">
                       Upload file
                     </button>
@@ -118,7 +110,7 @@
                     </tr>
                 </thead>
                 <tbody class="nhsuk-table__body">
-                    
+
                         <tr class="nhsuk-table__row">
                             <td class="nhsuk-table__cell">
                                 Trust logo
@@ -129,34 +121,29 @@
                                 </button>
                             </td>
                             <td class="nhsuk-table__cell">
-                                
+
                                   <a href="/sprint-8/recruiter/logo-url#Uploaded files" id="change_doc_6879">Change</a>
                                   or
-                                
+
                                 <a href="/sprint-8/recruiter/logo-url#Uploaded files" id="remove_doc_6879">Remove</a>
                             </td>
                         </tr>
-                  
+
                 </tbody>
             </table>
-      
+
       <hr>
-          
+
                     <div class="nhsuk-form-group">
                     <h2 class="nhsuk-heading-m">Add website address</h2>
-                    <label class="nhsuk-label" for="example">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    </label>
-                    <br>
-
                     <label class="nhsuk-label" for="example">
                       Volunteering website address
                     </label>
                     <input class="nhsuk-input" id="example" name="example" type="text" value="https://www.bhrhospitals.nhs.uk/volunteer">
                   </div>
-      
-                    
-                   
+
+
+
                   </div>
             </fieldset>
         </div>
@@ -168,14 +155,14 @@
 
 
 
-        
-                
+
+
                     </div>
                 </fieldset>
-               
-                
+
+
                     <input class="nhsuk-button" type="submit" id="save_continue" value="Save and return">
-                
+
             </form>
         </div>
     </div>
