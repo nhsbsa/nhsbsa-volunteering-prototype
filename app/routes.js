@@ -95,6 +95,11 @@ router.get('/sprint-:sprintId/volunteer/patient-facing-results', (req, res) => {
 router.post('/sprint-:sprintId/volunteer/update-search', (req, res) => {
     let basePath = "/sprint-"+req.params['sprintId']+"/volunteer/"
 
+    if (req.session.data.roles == undefined) {
+      req.session.data.roles = []
+      res.redirect(basePath + 'results-page-postcode')
+    }
+
     if (req.session.data.roles.includes("remote-opportunities")) {
       req.session.data.roles = []
       res.redirect(basePath + 'results-page-remote-2')
