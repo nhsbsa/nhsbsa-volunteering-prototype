@@ -1,5 +1,7 @@
 {% extends 'layout.html' %}
 
+{% import "../macros/_search-filter.html" as filter with context %}
+
 {% block pageTitle %}
   Content page template - NHS.UK prototype kit
 {% endblock %}
@@ -102,130 +104,9 @@
 
 <!--LEFT HAND FILTER PANEL-->
 <div id="results-row" class="nhsuk-grid-row">
-<div class="nhsuk-grid-column-one-third">
-<div class="container-white">
-
-  <h4>Search options</h4>
-
-  <!--Postcode-->
-
-<div class="nhsuk-form-group">
-  <form class="form" action="/sprint-8/volunteer/results-page-postcode" method="post">
-  <label class="nhsuk-label" for="example">
-    Postcode
-  </label>
-  <input class="nhsuk-input" id="example" name="example" type="text" value="P0STCOD3" tabindex="1">
-</div>
-
-
- <!--Maximum radius-->
- <div class="nhsuk-form-group">
-    <label class="nhsuk-label" for="select-1">
-      Maximum radius
-    </label>
-    <select class="nhsuk-select" id="select-1" name="select-1" tabindex="2">
-      <option value="1">- set maximum radius -</option>
-      <option value="2">up to 5 miles</option>
-      <option value="3">up to 10 miles</option>
-      <option value="4"selected>up to 15 miles</option>
-      <option value="5">up to 20 miles</option>
-      <option value="6">up to 25 miles</option>
-      <option value="7">up to 30 miles</option>
-      <option value="8">up to 50 miles</option>
-    </select>
+  <div class="nhsuk-grid-column-one-third">
+    {{ filter.search_filter() }}
   </div>
-
-
- <!--Keywords-->
- <div class="nhsuk-form-group">
-  <label class="nhsuk-label" for="example">
-    Keyword
-  </label>
-  <input class="nhsuk-input" id="example" name="example" type="text" tabindex="3">
-</div>
-
-
-<!--Role Checkboxes-->
-<label class="nhsuk-label" for="example">
-  Role types
-</label>
-
-<div class="nhsuk-checkboxes">
-
-  <div class="nhsuk-checkboxes__item">
-    <input class="nhsuk-checkboxes__input" id="contact" name="role" type="checkbox" value="meeting-greeting" tabindex="4">
-    <label class="nhsuk-label nhsuk-checkboxes__label" for="tm">
-      Patient participation and experience
-    </label>
-  </div>
-  <div class="nhsuk-checkboxes__item">
-    <input class="nhsuk-checkboxes__input" id="tm" name="role" type="checkbox" value="patient-facing" tabindex="5">
-    <label class="nhsuk-label nhsuk-checkboxes__label" for="tm">
-      Patient facing support and companionship
-    </label>
-  </div>
-  <div class="nhsuk-checkboxes__item">
-    <input class="nhsuk-checkboxes__input" id="ra" name="roles[]" type="checkbox" value="recreational-activities" tabindex="6">
-    <label class="nhsuk-label nhsuk-checkboxes__label" for="ra">
-      Leisure activities
-    </label>
-  </div>
-  <div class="nhsuk-checkboxes__item">
-    <input class="nhsuk-checkboxes__input" id="rm" name="roles[]" type="checkbox" value="admin-volunteering-support" tabindex="7">
-    <label class="nhsuk-label nhsuk-checkboxes__label" for="rm">
-      Volunteer admin support
-    </label>
-  </div>
-  <div class="nhsuk-checkboxes__item">
-    <input class="nhsuk-checkboxes__input" id="rm" name="roles[]" type="checkbox" value="16-18-roles" tabindex="8">
-    <label class="nhsuk-label nhsuk-checkboxes__label" for="rm">
-      Opportunties for young volunteers (16-18)
-    </label>
-  </div>
-  <div class="nhsuk-checkboxes__item">
-    <input class="nhsuk-checkboxes__input" id="rm" name="roles[]" type="checkbox" value="16-18-roles" tabindex="8">
-    <label class="nhsuk-label nhsuk-checkboxes__label" for="rm">
-      Remote opportunities
-    </label>
-  </div>
-  <div class="nhsuk-checkboxes__item">
-    <input class="nhsuk-checkboxes__input" id="rm" name="roles[]" type="checkbox" value="16-18-roles" tabindex="8">
-    <label class="nhsuk-label nhsuk-checkboxes__label" for="rm">
-      Community support
-    </label>
-  </div>
-  <div class="nhsuk-checkboxes__item">
-    <input class="nhsuk-checkboxes__input" id="rm" name="roles[]" type="checkbox" value="16-18-roles" tabindex="8">
-    <label class="nhsuk-label nhsuk-checkboxes__label" for="rm">
-      Charity and fundraising
-    </label>
-  </div>
-  <br>
-
-  <!--Time commitment-->
- <div class="nhsuk-form-group">
- <label class="nhsuk-label" for="select-1">
-  Time commitment
- </label>
- <select class="nhsuk-select" id="select-1" name="select-1">
-  <option value="1"selected>- set time commitment -</option>
-  <option value="2">Anytime</option>
-  <option value="3">1 - 10 hours per week</option>
-  <option value="4">Up to 20 hours per week</option>
- </select>
-</div>
-
-
-
-<button class="nhsuk-button nhsuk-button--secondary" type="submit">
-  Update search
-</button>
-</form>
-</div>
-</div>
-</div>
-
-
 
 <!--SEARCH RESULTS LIST-->
 

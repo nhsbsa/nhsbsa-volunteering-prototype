@@ -1,0 +1,75 @@
+{% from 'checkboxes/macro.njk' import checkboxes %}
+
+{% macro search_filter() %}
+<div class="container-white">
+
+  <h4>Search options</h4>
+
+  <!--Postcode-->
+  <div class="nhsuk-form-group">
+    <form class="form" action="/sprint-8/volunteer/update-search" method="post">
+      <label class="nhsuk-label" for="example">
+        Postcode
+      </label>
+      <input class="nhsuk-input" id="example" name="example" type="text" value="P0STCOD3" tabindex="1">
+    </div>
+
+    <!--Maximum radius-->
+    <div class="nhsuk-form-group">
+      <label class="nhsuk-label" for="select-1">
+        Maximum radius
+      </label>
+      <select class="nhsuk-select" id="select-1" name="select-1" tabindex="2">
+        <option value="1">- set maximum radius -</option>
+        <option value="2">up to 5 miles</option>
+        <option value="3">up to 10 miles</option>
+        <option value="4"selected>up to 15 miles</option>
+        <option value="5">up to 20 miles</option>
+        <option value="6">up to 25 miles</option>
+        <option value="7">up to 30 miles</option>
+        <option value="8">up to 50 miles</option>
+      </select>
+    </div>
+
+    <!--Keywords-->
+    <div class="nhsuk-form-group">
+      <label class="nhsuk-label" for="example">
+        Keyword
+      </label>
+      <input class="nhsuk-input" id="example" name="example" type="text" tabindex="3">
+    </div>
+
+    <!--Role Checkboxes-->
+      {{ checkboxes({
+        "idPrefix": "role-type",
+        "name": "roles",
+        "fieldset": {
+          "legend": {
+            "text": "Role types",
+            "classes": "nhsuk-fieldset__legend",
+            isPageHeading: false
+          }
+        },
+        "items": role_types
+      })}}
+
+      <!--Time commitment-->
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="select-1">
+          Time commitment
+        </label>
+        <select class="nhsuk-select" id="select-1" name="select-1">
+          <option value="1"selected>- set time commitment -</option>
+          <option value="2">Anytime</option>
+          <option value="3">1 - 10 hours per week</option>
+          <option value="4">Up to 20 hours per week</option>
+        </select>
+      </div>
+
+      <button class="nhsuk-button nhsuk-button--secondary" type="submit">
+        Update search
+      </button>
+    </form>
+  </div>
+</form>
+{% endmacro %}
