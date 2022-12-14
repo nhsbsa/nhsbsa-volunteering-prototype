@@ -8,149 +8,125 @@
 
 {% block content %}
   <div class="nhsuk-grid-row">
-
     <div class="nhsuk-grid-column-full">
 
       <!-- Add your content here -->
       <div class="nhsuk-grid-row">
         <div class="nhsuk-grid-column-two-thirds">
-            <div class="nhsuk-back-link">
-  <a class="nhsuk-back-link__link" href="/sprint-8/recruiter/tasklist-1">
-  <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-    <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
-  </svg>
-  Go back</a>
-</div>
+          <div class="nhsuk-back-link">
+            <a class="nhsuk-back-link__link" href="/sprint-8/recruiter/tasklist-1">
+              <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+              </svg>
+              Go back
+            </a>
+          </div>
 
+          <h1 class="nhsuk-heading-l" id="heading-container">
+            <span class="nhsuk-caption-l nhsuk-caption--bottom" id="flow-heading">Create a new role listing</span>
+            <span class="nhsuk-heading-l" id="heading">Provide a role overview to create your listing</span>
+          </h1>
 
-            
-
-            
-  <h1 class="nhsuk-heading-l" id="heading-container">
-    <span class="nhsuk-caption-l nhsuk-caption--bottom" id="flow-heading">Create a new role listing</span>
-    <span class="nhsuk-heading-l" id="heading">Provide a role overview to create your listing</span>
-  </h1> 
-
-
-            
-                
-    
-        <p class="nhsuk-heading-s">
+          <p class="nhsuk-heading-s">
             Walk and Talk volunteer
             <span class="status-box status-box-blue" aria-label="status for CVFlowOffline is DRAFT" id="status_DRAFT" role="status">
-                DRAFT
+              DRAFT
             </span>
-        </p>
-    
-    
-        
-            <p id="reference_number" role="note" aria-label="Reference number: T5555-22-9759">Reference no: T5555-22-9759</p>
-        
-    
-            
-            
+          </p>
 
-            <div class="nhsuk-inset-text">
-                <span class="nhsuk-u-visually-hidden">Information: </span>
-                <p>You can add the time commitment and edit your settings for the role location and application form later.</p>
-            </div>
+          <p id="reference_number" role="note" aria-label="Reference number: T5555-22-9759">Reference no: T5555-22-9759</p>
 
-            <!--Introduce the role-->
+          <div class="nhsuk-inset-text">
+            <p>You can edit your organisation's default settings later.</p>
+          </div>
 
-            <form class="form" action="/sprint-8/recruiter/time-commitment-1" method="post">
+          <form class="form" action="/sprint-8/recruiter/time-commitment-1" method="post">
 
-                <input type="hidden" name="_csrf" value="Ght2mB1x-EWmh83QMheZ8fsHCDfSh0HLA8ak">
-                <fieldset class="nhsuk-fieldset" id="">
-                    <legend class="nhsuk-fieldset__legend nhsuk-u-visually-hidden">
-                        Introduce the role
-                    </legend>
-                    <div tabindex="0" class="nhsuk-form-group ">
-                        <h2 class="nhsuk-heading-m">Introduce the role</h2>
+            <input type="hidden" name="_csrf" value="Ght2mB1x-EWmh83QMheZ8fsHCDfSh0HLA8ak">
 
-    
-        <div class="nhsuk-form-group ">
+            <!--Role summary-->
 
-            <div class="nhsuk-form-group">
-                <label class="nhsuk-label" for="example">
-                    Role summary
-                </label>
-                <div class="nhsuk-hint" id="example-hint">
-                    Give a short summary of the role and what type of person would be suited for it. Be concise.
-                </div>
-                <textarea class="nhsuk-textarea" id="example" name="example" rows="6" aria-describedby="example-hint"></textarea>
+            <div tabindex="0" class="nhsuk-form-group ">
+              <label class="nhsuk-label nhsuk-label--m" for="role-summary">
+                Role summary
+              </label>
+
+              <div class="nhsuk-hint" id="role-summary-hint">
+                <p>Give a short summary of the role and of what it will entail.</p>
+
+                <p>Add any information about physical demands that might prevent people from carrying out the role.</p>
               </div>
+
+              <textarea class="nhsuk-textarea" id="role-summary" name="role-summary" rows="6" aria-describedby="role-summary-hint"></textarea>
+
               <input type="hidden" id="jobOverview-character-count" name="jobOverview-character-count" value="219">
-            <p class="nhsuk-hint nhsuk-hint-character-count nhsuk-hint-character-count-remaining">
+
+              <p class="nhsuk-hint nhsuk-hint-character-count nhsuk-hint-character-count-remaining">
                 You have <span class="nhsuk-character-count-remaining">1500</span> characters remaining
-            </p>
-            <p class="nhsuk-hint nhsuk-hint-character-count nhsuk-hint-character-count-toomany nhsuk-error-message" style="display: none;">
+              </p>
+
+              <p class="nhsuk-hint nhsuk-hint-character-count nhsuk-hint-character-count-toomany nhsuk-error-message" style="display: none;">
                 You have <span class="nhsuk-character-count-toomany"></span> characters too many
-            </p>
-            <noscript>
+              </p>
+
+              <noscript>
                 <span class="nhsuk-hint" aria-live="polite">
-                    You can enter up to 1500 characters
+                  You can enter up to 1500 characters
                 </span>
                 <style type="text/css">
-                    .nhsuk-hint-character-count { display:none; }
+                .nhsuk-hint-character-count { display:none; }
                 </style>
-            </noscript>
+              </noscript>
 
-            <hr>
+              <hr>
 
+              <!--Main responsibilities-->
 
+              <input type="hidden" name="_csrf" value="Ght2mB1x-EWmh83QMheZ8fsHCDfSh0HLA8ak">
 
+                <div tabindex="0" class="nhsuk-form-group ">
 
-            <!--Main responsibilities-->
+                  <label class="nhsuk-label nhsuk-label--m" for="person-description">
+                    Finding the right person for the role
+                  </label>
 
-                <input type="hidden" name="_csrf" value="Ght2mB1x-EWmh83QMheZ8fsHCDfSh0HLA8ak">
-                <fieldset class="nhsuk-fieldset" id="">
-                    <legend class="nhsuk-fieldset__legend nhsuk-u-visually-hidden">
-                        Briefly describe the main duties of the role
-                    </legend>
-                    <div tabindex="0" class="nhsuk-form-group ">
-                        <h2 class="nhsuk-heading-m">Briefly describe the main duties of the role</h2>
-
-    
-        <div class="nhsuk-form-group ">
-
-            <div class="nhsuk-form-group">
-                <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="example">
-                        Main duties and responsibilities of the role
-                    </label>
-                
-                <div class="nhsuk-hint" id="example-hint">
-                    <p>Describe in more details what the role will entail and what is expected of the volunteer.</p>
+                  <div class="nhsuk-hint" id="person-description-hint">
+                    <p>Describe what type of person would suit this role.</p>
 
                     <p>Include information about the people with whom they will be interacting.</p>
-                </div>
-                <textarea class="nhsuk-textarea" id="example" name="example" rows="6" aria-describedby="example-hint"></textarea>
-              </div>
-              <input type="hidden" id="jobOverview-character-count" name="jobOverview-character-count" value="219">
-            <p class="nhsuk-hint nhsuk-hint-character-count nhsuk-hint-character-count-remaining">
-                You have <span class="nhsuk-character-count-remaining">1500</span> characters remaining
-            </p>
-            <p class="nhsuk-hint nhsuk-hint-character-count nhsuk-hint-character-count-toomany nhsuk-error-message" style="display: none;">
-                You have <span class="nhsuk-character-count-toomany"></span> characters too many
-            </p>
-            <noscript>
-                <span class="nhsuk-hint" aria-live="polite">
-                    You can enter up to 1500 characters
-                </span>
-                <style type="text/css">
-                    .nhsuk-hint-character-count { display:none; }
-                </style>
-            </noscript>
-        </fieldset>
+                  </div>
 
-                    </div>
-                </fieldset>
-              
-                
-                    <input class="nhsuk-button" type="submit" id="save_continue" value="Save and continue">
-                    <p><a id="save_come_back" href="/sprint-8/recruiter/dashboard" class="nhsuk-link--no-visited-state">Save and come back later</a></p>
-                
-            </form>
+                  <textarea class="nhsuk-textarea" id="person-description" name="person-description" rows="6" aria-describedby="person-description-hint"></textarea>
+
+                </div>
+
+                <input type="hidden" id="jobOverview-character-count" name="jobOverview-character-count" value="219">
+
+                <p class="nhsuk-hint nhsuk-hint-character-count nhsuk-hint-character-count-remaining">
+                  You have <span class="nhsuk-character-count-remaining">1500</span> characters remaining
+                </p>
+
+                <p class="nhsuk-hint nhsuk-hint-character-count nhsuk-hint-character-count-toomany nhsuk-error-message" style="display: none;">
+                  You have <span class="nhsuk-character-count-toomany"></span> characters too many
+                </p>
+
+                <noscript>
+                  <span class="nhsuk-hint" aria-live="polite">
+                    You can enter up to 1500 characters
+                  </span>
+                  <style type="text/css">
+                  .nhsuk-hint-character-count { display:none; }
+                  </style>
+                </noscript>
+
+            </div>
+
+            <input class="nhsuk-button" type="submit" id="save_continue" value="Save and continue">
+            <p><a id="save_come_back" href="/sprint-8/recruiter/dashboard" class="nhsuk-link--no-visited-state">Save and come back later</a></p>
+
+          </form>
         </div>
+      </div>
     </div>
+  </div>
 {% endblock %}
